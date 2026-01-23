@@ -36,6 +36,9 @@ GUI CAD から一歩進んで **設計をコードとして記述する**
 
 ## 設計コードの生成（ChatGPT）
 
+※ ChatGPT は設計判断を代行するものではなく、
+　設計意図をコード化する補助として使用しています。
+
 まず、設計内容を言語化して  
 ChatGPT にコードを生成させます。
 
@@ -204,3 +207,7 @@ FreeCAD でそのまま実行する。
 
 - Full Code Mechanical Design  
   https://samizo-aitl.github.io/full-code-mechanical-design/
+
+※ FreeCAD の API は将来変更される可能性があります。
+　本記事は考え方の説明を主目的としています。
+

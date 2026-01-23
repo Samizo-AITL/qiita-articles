@@ -155,13 +155,18 @@ CAD の使い方は大きく広がります。
 
 ---
 
-## 補足
+## 使用したコード
 
-本記事で紹介した形状は、  
-設計手法の説明を目的としたデモです。
+本記事で生成した形状のコードは、以下のリポジトリで公開しています。
 
-使用したコードは、以下のリポジトリで管理しています。
+- 関数定義ロフト＋ねじりソリッド  
+  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py
 
-- https://github.com/Samizo-AITL/qiita-articles
+- 分岐スパイラル形状  
+  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py
 
-※ FreeCAD の API は将来変更される可能性があります。
+---
+
+## ライセンス
+
+本記事で使用しているコードは MIT License で公開しています。

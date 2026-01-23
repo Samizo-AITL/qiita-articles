@@ -140,18 +140,14 @@ GUI CAD を否定するのではなく、
 
 ---
 
-## ライセンス / 出典
+## 出典・補足
 
-本記事は、以下の資料を元にした要約・解説です。
+本記事は、以下の資料で整理している考え方を
+Qiita向けに要約・解説したものです。
 
-- 出典: Full Code Mechanical Design  
+- Full Code Mechanical Design  
   https://samizo-aitl.github.io/full-code-mechanical-design/
 
-ライセンス:
-- 文章: CC BY 4.0  
-- 図表: CC BY-NC 4.0  
-- コード: Apache License 2.0
-
-© Samizo-AITL
-
-
+本記事本文は「考え方の共有」を目的としています。
+具体的なコードや資料の利用条件については、
+上記ページをご参照ください。

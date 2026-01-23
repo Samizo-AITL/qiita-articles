@@ -41,7 +41,7 @@ FreeCAD を使って **コードだけで形状を生成する例** を示しま
 
 まずは完成状態です。
 
-![result_model](../assets/images/04_1.png)
+![result_model](https://samizo-aitl.github.io/qiita-articles/assets/images/04_1.png)
 
 - `Params`：設計条件（上流）
 - `Body`：Part Design の形状（下流）
@@ -57,7 +57,7 @@ Sketch でも Pad でもありません。
 
 それが分かるのが、この画面です。
 
-![params_sheet](../assets/images/04_2.png)
+![params_sheet](https://samizo-aitl.github.io/qiita-articles/assets/images/04_2.png)
 
 ```text
 LEN = 120.00 mm

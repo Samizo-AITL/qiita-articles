@@ -166,3 +166,20 @@ Part Design を使い続けながら、
 次回は、  
 この設計を **Git でどう管理するか**、  
 差分・再設計・引き継ぎの話に進みます。
+
+---
+
+## ライセンス / 出典
+
+本記事は、以下の資料を元にした要約・解説です。
+
+- 出典: Full Code Mechanical Design  
+  https://samizo-aitl.github.io/full-code-mechanical-design/
+
+ライセンス:
+- 文章: CC BY 4.0  
+- 図表: CC BY-NC 4.0  
+- コード: Apache License 2.0
+
+© Samizo-AITL
+

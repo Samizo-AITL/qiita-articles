@@ -67,7 +67,7 @@ GUIで形を作り、
 以下は、FreeCAD上で  
 **Pythonコードから生成されたモデル**の例です。
 
-![FreeCADでPythonコードから生成したモデル](../assets/images/02_freecad.png)
+![FreeCADでPythonコードから生成したモデル](https://samizo-aitl.github.io/qiita-articles/assets/images/02_freecad.png)
 
 この形状自体は単純ですが、重要なのはそこではありません。
 

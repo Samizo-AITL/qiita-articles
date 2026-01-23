@@ -125,16 +125,11 @@ FreeCADは万能ではありませんが、
 
 ---
 
-## ライセンス / 出典
+## 補足
 
-本記事は、以下の資料を元にした要約・解説です。
+本記事は、設計をコード化する流れを理解するための
+前提知識として FreeCAD を紹介しています。
 
-- 出典: Full Code Mechanical Design  
-  https://samizo-aitl.github.io/full-code-mechanical-design/
+ライセンスや具体的な利用条件については、
+公式ドキュメントおよび本家ページをご参照ください。
 
-ライセンス:
-- 文章: CC BY 4.0  
-- 図表: CC BY-NC 4.0  
-- コード: Apache License 2.0
-
-© Samizo-AITL

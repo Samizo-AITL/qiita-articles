@@ -46,7 +46,7 @@ ChatGPT にコードを生成させます。
 - 長さによる板厚の設計判断
 - 取付穴の配置ルール
 
-![code_generation](../assets/images/03_6.png)
+![code_generation](https://samizo-aitl.github.io/qiita-articles/assets/images/03_6.png)
 
 ここでは、  
 **設計意図を文章で与え、コードとして出力させています。**
@@ -58,7 +58,7 @@ ChatGPT にコードを生成させます。
 生成されたコードを、  
 FreeCAD のマクロエディタにそのまま貼り付けます。
 
-![macro_editor](../assets/images/03_7.png)
+![macro_editor](https://samizo-aitl.github.io/qiita-articles/assets/images/03_7.png)
 
 この時点では、  
 まだ GUI でスケッチも操作もしていません。
@@ -141,7 +141,7 @@ Gui.SendMsgToActiveView("ViewFit")
 マクロを実行すると、  
 設計ルールに基づいた形状が生成されます。
 
-![result](../assets/images/03_9.png)
+![result](https://samizo-aitl.github.io/qiita-articles/assets/images/03_9.png)
 
 - 再実行＝再設計
 - 寸法変更＝派生設計

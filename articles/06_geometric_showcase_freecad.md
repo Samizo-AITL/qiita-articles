@@ -32,7 +32,7 @@ GUI のスケッチや拘束を一切使わず、
 
 ### 関数定義ロフト＋ねじりソリッド
 
-![function_loft](https://raw.githubusercontent.com/Samizo-AITL/qiita-articles/main/assets/images/06_1.png)
+![function_loft](https://samizo-aitl.github.io/qiita-articles/assets/images/06_1.png)
 
 この形状は、
 
@@ -52,7 +52,7 @@ GUI のスケッチや拘束を一切使わず、
 
 次は、さらに「GUIで作る気がしない」系です。
 
-![branched_spiral](https://raw.githubusercontent.com/Samizo-AITL/qiita-articles/main/assets/images/06_2.png)
+![branched_spiral](https://samizo-aitl.github.io/qiita-articles/assets/images/06_2.png)
 
 こちらは、
 

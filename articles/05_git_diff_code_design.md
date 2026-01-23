@@ -182,3 +182,20 @@ GUI CAD を否定する必要はありません。
 
 これで  
 *Full Code Mechanical Design* の連載は一区切りです。
+
+---
+
+## ライセンス / 出典
+
+本記事は、以下の資料を元にした要約・解説です。
+
+- 出典: Full Code Mechanical Design  
+  https://samizo-aitl.github.io/full-code-mechanical-design/
+
+ライセンス:
+- 文章: CC BY 4.0  
+- 図表: CC BY-NC 4.0  
+- コード: Apache License 2.0
+
+© Samizo-AITL
+

@@ -1,6 +1,11 @@
 ---
-# GUI CADから脱却して設計をコード化するという考え方
-機械設計,CAD,Python
+title: GUI CADから脱却して設計をコード化するという考え方
+tags:
+  - 機械設計
+  - CAD
+  - Python
+qiita: true
+published_at: 2026-01-23
 ---
 
 ## はじめに

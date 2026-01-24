@@ -18,10 +18,14 @@ tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 
 ## ▶ デモ（完成版）
 
-👉 **そのまま遊べる完成デモ**  
-```
-/qiita-articles/demos/svg-shooter-fsm/
-```
+**そのまま遊べる完成デモ**  
+
+👇 **こちらをクリック**  
+https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/
+
+※ 別タブで開きます
+
+---
 
 - 🎮 キーボード操作
 - 📱 スマホ操作対応

@@ -71,8 +71,6 @@ bullet.setAttribute("cy", y - 5);
 
 https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
 
-- `demos/svg-shooter/index.html`
-
 （リポジトリに置いて、ブラウザで開くだけで動きます）
 
 ---

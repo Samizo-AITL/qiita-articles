@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SVG Shooter (FSM)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="title">SVG Shooter (FSM)</div>
+    <div class="hint">
+      ←/→ or A/D: Move / Space: Shot / R: Restart
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel">
+      <svg id="game" viewBox="0 0 360 480" role="img" aria-label="SVG Shooter">
+        <!-- frame -->
+        <rect x="0" y="0" width="360" height="480" class="bg"></rect>
+
+        <!-- layers -->
+        <g id="layer-enemies"></g>
+        <g id="layer-bullets"></g>
+        <g id="layer-player"></g>
+        <g id="layer-ui"></g>
+      </svg>
+
+      <!-- mobile controls -->
+      <div class="mobile">
+        <button id="btn-left"  class="btn">◀</button>
+        <button id="btn-shot"  class="btn">●</button>
+        <button id="btn-right" class="btn">▶</button>
+        <button id="btn-restart" class="btn">R</button>
+      </div>
+
+      <div class="note">
+        <span class="badge">FSM</span>
+        <span class="badge">Difficulty</span>
+        <span class="badge">Enemy FSM</span>
+        <span class="badge">SVG DOM</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

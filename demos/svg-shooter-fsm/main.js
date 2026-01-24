@@ -22,6 +22,7 @@
     INIT: "init",
     READY: "ready",
     PLAY: "play",
+    PAUSE: "pause",          // ★追加：一時停止
     GAME_OVER: "game_over"
   });
 
@@ -95,6 +96,16 @@
 
   // キーボード入力は FSM に従って分離する
   document.addEventListener("keydown", (e) => {
+    // ★ PLAY <-> PAUSE（Pキーで一時停止/再開）
+    if (e.code === "KeyP") {
+      if (game.state === State.PLAY) {
+        changeState(State.PAUSE);
+      } else if (game.state === State.PAUSE) {
+        changeState(State.PLAY);
+      }
+      return;
+    }
+
     // READY → PLAY は開始専用（Space をショットと共有しない）
     if (game.state === State.READY && e.code === "Space") {
       changeState(State.PLAY);
@@ -109,7 +120,7 @@
       return;
     }
 
-    // PLAY 中のみ操作を受け付ける
+    // PLAY 中のみ操作を受け付ける（PAUSE中は入力を止める）
     if (game.state !== State.PLAY) return;
 
     if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", true);
@@ -118,6 +129,7 @@
   });
 
   document.addEventListener("keyup", (e) => {
+    // PLAY 中のみキーを戻す（PAUSEでキー状態が残らないようにするのも有効）
     if (game.state !== State.PLAY) return;
 
     if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", false);
@@ -224,7 +236,7 @@
     game.bullets = [];
     game.enemies = [];
 
-    // 入力状態も初期化（これ重要）
+    // 入力状態も初期化（重要）
     key.left = false;
     key.right = false;
     key.shot = false;
@@ -254,12 +266,33 @@
 
     if (next === State.PLAY) {
       game.ui.textCenter.textContent = "";
-      game.playT = 0;
+      // ※playTはPLAY突入時にリセットする設計だと「再開で時間が戻る」ので
+      //   PAUSE解除時はここを叩かない（KeyPでPAUSE→PLAYに戻すのでここは通る）
+      //   ただし、PAUSE解除でplayTを維持したい場合は下の1行を削除してください。
+      // game.playT = 0;
+
+      // ★PAUSE解除でキーが残って暴発しないようにする
+      key.left = false;
+      key.right = false;
+      key.shot = false;
+      return;
+    }
+
+    if (next === State.PAUSE) {
+      game.ui.textCenter.textContent = "PAUSE (P で再開)";
+      // ★停止時に入力を切る（押しっぱなし対策）
+      key.left = false;
+      key.right = false;
+      key.shot = false;
       return;
     }
 
     if (next === State.GAME_OVER) {
       game.ui.textCenter.textContent = "GAME OVER  (R で再開)";
+      // ★ゲームオーバー時も入力を切る
+      key.left = false;
+      key.right = false;
+      key.shot = false;
       return;
     }
   }
@@ -540,6 +573,7 @@
   function tick() {
     game.t++;
 
+    // ★PLAYのときだけ世界が進む（PAUSE中は完全停止）
     if (game.state === State.PLAY) {
       game.playT++;
       updateDifficulty();

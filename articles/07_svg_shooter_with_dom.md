@@ -76,7 +76,7 @@ bullet.setAttribute("cy", y - 5);
   allowfullscreen>
 </iframe>
 
-> ※もし表示されない場合はこちら  
+> 下記クリックにより、全体表示されます。 
 > https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
 
 ---

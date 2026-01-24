@@ -51,7 +51,7 @@ bullet.setAttribute("cy", y - 5);
 
 ---
 
-## 完成版デモ（その場で遊べます）
+## 完成版デモ
 
 <iframe
   src="https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/"
@@ -63,7 +63,7 @@ bullet.setAttribute("cy", y - 5);
 </iframe>
 
 下記クリックにより、全体表示されます。<br> 
-[**svg-shooter**](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
+[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
 
 ---
 

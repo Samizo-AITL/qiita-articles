@@ -54,53 +54,6 @@
   const btnRestart = $("#btn-restart");
 
   // -----------------------------
-  // Input
-  // -----------------------------
-  const key = {
-    left: false,
-    right: false,
-    shot: false
-  };
-
-  function setKey(name, v) { key[name] = v; }
-
-  document.addEventListener("keydown", (e) => {
-    if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", true);
-    if (e.code === "ArrowRight" || e.code === "KeyD") setKey("right", true);
-    if (e.code === "Space") setKey("shot", true);
-
-    if (e.code === "KeyR") {
-      if (game.state === State.GAME_OVER || game.state === State.READY) {
-        changeState(State.INIT);
-      }
-    }
-
-    // Start from READY by shot
-    if (game.state === State.READY && e.code === "Space") changeState(State.PLAY);
-  });
-
-  document.addEventListener("keyup", (e) => {
-    if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", false);
-    if (e.code === "ArrowRight" || e.code === "KeyD") setKey("right", false);
-    if (e.code === "Space") setKey("shot", false);
-  });
-
-  // mobile: hold buttons
-  const hold = (btn, onDown, onUp) => {
-    const down = (e) => { e.preventDefault(); onDown(); };
-    const up = (e) => { e.preventDefault(); onUp(); };
-    btn.addEventListener("pointerdown", down);
-    btn.addEventListener("pointerup", up);
-    btn.addEventListener("pointercancel", up);
-    btn.addEventListener("pointerleave", up);
-  };
-
-  hold(btnLeft,  () => setKey("left", true),  () => setKey("left", false));
-  hold(btnRight, () => setKey("right", true), () => setKey("right", false));
-  hold(btnShot,  () => setKey("shot", true),  () => setKey("shot", false));
-  btnRestart.addEventListener("click", () => changeState(State.INIT));
-
-  // -----------------------------
   // Game state
   // -----------------------------
   const game = {
@@ -128,6 +81,81 @@
       textCenter: null
     }
   };
+
+  // -----------------------------
+  // Input
+  // -----------------------------
+  const key = {
+    left: false,
+    right: false,
+    shot: false
+  };
+
+  function setKey(name, v) { key[name] = v; }
+
+  // キーボード入力は FSM に従って分離する
+  document.addEventListener("keydown", (e) => {
+    // READY → PLAY は開始専用（Space をショットと共有しない）
+    if (game.state === State.READY && e.code === "Space") {
+      changeState(State.PLAY);
+      return;
+    }
+
+    // リスタートは READY / GAME_OVER から
+    if (e.code === "KeyR") {
+      if (game.state === State.GAME_OVER || game.state === State.READY) {
+        changeState(State.INIT);
+      }
+      return;
+    }
+
+    // PLAY 中のみ操作を受け付ける
+    if (game.state !== State.PLAY) return;
+
+    if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", true);
+    if (e.code === "ArrowRight" || e.code === "KeyD") setKey("right", true);
+    if (e.code === "Space") setKey("shot", true);
+  });
+
+  document.addEventListener("keyup", (e) => {
+    if (game.state !== State.PLAY) return;
+
+    if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", false);
+    if (e.code === "ArrowRight" || e.code === "KeyD") setKey("right", false);
+    if (e.code === "Space") setKey("shot", false);
+  });
+
+  // mobile: hold buttons
+  const hold = (btn, onDown, onUp) => {
+    const down = (e) => { e.preventDefault(); onDown(); };
+    const up = (e) => { e.preventDefault(); onUp(); };
+    btn.addEventListener("pointerdown", down);
+    btn.addEventListener("pointerup", up);
+    btn.addEventListener("pointercancel", up);
+    btn.addEventListener("pointerleave", up);
+  };
+
+  // モバイル操作も FSM に従う（READY のショットボタン＝開始）
+  hold(btnLeft, () => {
+    if (game.state !== State.PLAY) return;
+    setKey("left", true);
+  }, () => setKey("left", false));
+
+  hold(btnRight, () => {
+    if (game.state !== State.PLAY) return;
+    setKey("right", true);
+  }, () => setKey("right", false));
+
+  hold(btnShot, () => {
+    if (game.state === State.READY) {
+      changeState(State.PLAY);
+      return;
+    }
+    if (game.state !== State.PLAY) return;
+    setKey("shot", true);
+  }, () => setKey("shot", false));
+
+  btnRestart.addEventListener("click", () => changeState(State.INIT));
 
   // -----------------------------
   // Setup / reset
@@ -196,6 +224,11 @@
     game.bullets = [];
     game.enemies = [];
 
+    // 入力状態も初期化（これ重要）
+    key.left = false;
+    key.right = false;
+    key.shot = false;
+
     clearGroup(gBullets);
     clearGroup(gEnemies);
   }
@@ -235,11 +268,9 @@
   // Difficulty
   // -----------------------------
   function updateDifficulty() {
-    // score + time based ramp
     const s = game.score;
     const sec = game.playT / 60;
 
-    // thresholds
     if (s >= 900 || sec >= 45) game.difficulty = Difficulty.HARD;
     else if (s >= 350 || sec >= 20) game.difficulty = Difficulty.NORMAL;
     else game.difficulty = Difficulty.EASY;
@@ -278,7 +309,7 @@
       b.node.setAttribute("cy", b.y);
 
       if (b.y < -10) {
-        gBullets.removeChild(b.node);
+        if (b.node && b.node.parentNode) b.node.parentNode.removeChild(b.node);
         game.bullets.splice(i, 1);
       }
     }
@@ -315,16 +346,14 @@
 
   function spawnEnemy() {
     const e = createEnemy();
-    // difficulty param injection only (FSM stays same)
     if (game.difficulty === Difficulty.HARD) e.hp = 2;
     game.enemies.push(e);
   }
 
   function enemyShoot(enemy) {
-    // simple "down bullet" as small circle (reusing enemies layer)
     const p = el("circle", { cx: enemy.x, cy: enemy.y + 10, r: 2.5, fill: "#ffd27a" });
     gEnemies.appendChild(p);
-    // piggyback as enemy projectile inside enemies array via marker
+
     game.enemies.push({
       kind: "proj",
       x: enemy.x,
@@ -342,13 +371,12 @@
       enemy.y += enemy.vy;
       enemy.node.setAttribute("cy", enemy.y);
       if (enemy.y > H + 10) {
-        gEnemies.removeChild(enemy.node);
+        if (enemy.node && enemy.node.parentNode) enemy.node.parentNode.removeChild(enemy.node);
         enemy._dead = true;
       }
       return;
     }
 
-    // Enemy FSM
     switch (enemy.state) {
       case EnemyState.SPAWN:
         enemy.state = EnemyState.MOVE;
@@ -358,11 +386,9 @@
         enemy.y += enemy.vy;
         enemy.x += enemy.vx;
 
-        // bounce walls
         if (enemy.x < 14) { enemy.x = 14; enemy.vx *= -1; }
         if (enemy.x > W - 14) { enemy.x = W - 14; enemy.vx *= -1; }
 
-        // decide attack (difficulty-based chance)
         const { fireChance } = diffParams();
         enemy.canAttack = Math.random() < fireChance;
 
@@ -377,7 +403,6 @@
         break;
 
       case EnemyState.DEAD:
-        // handled by cleanup
         break;
     }
 
@@ -388,7 +413,6 @@
   }
 
   function updateEnemies() {
-    // spawn control by difficulty (spawnPerSec)
     const { spawnPerSec } = diffParams();
     game.spawnAcc += spawnPerSec / 60;
     while (game.spawnAcc >= 1) {
@@ -398,7 +422,6 @@
 
     for (const e of game.enemies) updateEnemy(e);
 
-    // cleanup dead-marked
     for (let i = game.enemies.length - 1; i >= 0; i--) {
       const e = game.enemies[i];
       if (e._dead) {
@@ -417,15 +440,13 @@
     if (key.left) p.x -= p.speed;
     if (key.right) p.x += p.speed;
 
-    // clamp
     p.x = Math.max(16, Math.min(W - 16, p.x));
 
-    // shot (cooldown)
     if (game.shotCool > 0) game.shotCool--;
 
     if (key.shot && game.shotCool === 0) {
       spawnBullet(p.x, p.y - 14);
-      game.shotCool = 7; // fire rate
+      game.shotCool = 7;
     }
 
     syncPlayerShape();
@@ -451,10 +472,8 @@
         if (e.kind === "proj") continue;
         if (e.state === EnemyState.DEAD) continue;
 
-        // approximate rect as circle
         const hit = dist2(b.x, b.y, e.x, e.y) < (b.r + 10) * (b.r + 10);
         if (hit) {
-          // remove bullet
           if (b.node && b.node.parentNode) b.node.parentNode.removeChild(b.node);
           game.bullets.splice(bi, 1);
 
@@ -464,7 +483,6 @@
             e._dead = true;
             game.score += 50;
           } else {
-            // small feedback by brightening
             e.node.setAttribute("fill", "#ffd1dc");
           }
           break;
@@ -496,7 +514,6 @@
   }
 
   function damagePlayer() {
-    // simple invuln by immediate state check to avoid multi-hit in same frame
     if (game._justHit) return;
     game._justHit = true;
 
@@ -514,7 +531,6 @@
     const top = `SCORE:${game.score}  LIFE:${game.lives}  DIFF:${game.difficulty.toUpperCase()}  TIME:${sec}s`;
     game.ui.textTop.textContent = top;
 
-    // one-frame hit guard reset
     game._justHit = false;
   }
 

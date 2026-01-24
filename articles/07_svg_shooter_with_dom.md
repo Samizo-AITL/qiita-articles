@@ -4,42 +4,57 @@ tags: [JavaScript, SVG, Web, 初心者]
 private: false
 ---
 
-## 何ができる？
+## 🎮 何ができる？
 
-- SVGだけで「自機・弾・敵・当たり判定・スコア・ライフ・ゲームオーバー」まで実装
-- 図形はすべてDOM（`querySelector` / `setAttribute` で操作）
-- DevToolsで状態が見えるので、デバッグが楽
+**SVGだけ**で、ミニシューティングゲームを最後まで作りました。
 
----
+- 🚀 自機・弾・敵・当たり判定・スコア・ライフ・ゲームオーバーまで実装
+- 🧩 図形はすべて **SVG × DOM**
+- 🔍 `querySelector` / `setAttribute` で操作
+- 🛠 DevToolsで状態が見えるのでデバッグが楽
 
-## 操作
-
-- 移動：`←` `→` または `A` `D`
-- 連射：`Space`
-- リスタート：`R`
-- スマホ：画面下のボタン
+「Canvasは難しそう…」という人向けの  
+**DOM感覚で作れるシューティング**です。
 
 ---
 
-## なぜCanvasじゃなくSVGなのか
+## 🎮 操作方法
 
-Canvasは「描画結果」を作る仕組みなので、図形そのものを後から触りにくいです。
-
-SVGはDOMなので、弾も敵も「要素」です。
-
-- `querySelector` で取れる
-- `setAttribute` で座標を書き換えられる
-- DevToolsで今の座標や属性が見える
-- Git diffで図形差分が追える
+- ⬅ ➡：移動（`←` `→` / `A` `D`）
+- 🔫：連射（`Space`）
+- 🔄：リスタート（`R`）
+- 📱 スマホ：画面下のボタン
 
 ---
 
-## コア部分：DOM操作（例）
+## 🤔 なぜ Canvas じゃなく SVG？
 
-弾は `<circle>` を生成し、座標だけ更新します。
+Canvasは「描画結果」を作る仕組みなので、  
+**あとから特定の弾や敵を触るのが難しい**です。
+
+SVGはDOMなので、
+
+- 🎯 弾も敵も **要素**
+- 🔍 `querySelector` で取得できる
+- ✏ `setAttribute` で座標を書き換えるだけ
+- 🧠 DevToolsで状態が丸見え
+- 📄 Git diffで図形差分も追える
+
+👉 **仕組み理解・教材用途ではSVGがかなり強い**です。
+
+---
+
+## 🧩 コア部分：DOM操作（例）
+
+弾は `<circle>` を生成し、  
+**座標（`cx`,`cy`）を書き換えるだけ**で移動します。
 
 ```js
-const bullet = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+const bullet = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "circle"
+);
+
 bullet.setAttribute("cx", x);
 bullet.setAttribute("cy", y);
 bullet.setAttribute("r", 3);
@@ -49,37 +64,27 @@ svg.appendChild(bullet);
 bullet.setAttribute("cy", y - 5);
 ```
 
----
-
-## 完成版デモ
-
-<iframe
-  src="https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/"
-  width="520"
-  height="380"
-  loading="lazy"
-  style="border:1px solid #ccc; border-radius:10px;"
-  allowfullscreen>
-</iframe>
-
-下記クリックにより、全体表示されます。<br> 
-[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
+> 💡 Canvasのような再描画ループは不要です。
 
 ---
 
-### 操作方法
-- 移動：`←` `→` または `A` `D`
-- 連射：`Space`
-- リスタート：`R`
-- スマホ：画面下のボタン
+## ▶️ 完成版デモ（そのまま遊べます）
+
+👇 **こちらをクリック**  
+https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
+
+※ 別タブで開きます
 
 ---
 
-## まとめ
+## ✅ まとめ
 
-- SVGはDOM → 操作・デバッグが楽
-- シューティング程度ならSVGで十分作れる
-- 仕組み理解・教材・デモ用途で特に強い
+- ✨ SVGはDOM → 操作・理解・デバッグが圧倒的に楽
+- 🎮 シューティング程度ならSVGで十分
+- 📘 学習・教材・デモ用途にとても向いている
 
-次は「敵のパターン化」「弾幕」「当たり判定の最適化」を足す予定です。
+次は以下を追加予定です。
 
+- 👾 敵のパターン化  
+- 🌊 弾幕表現  
+- ⚡ 当たり判定の最適化

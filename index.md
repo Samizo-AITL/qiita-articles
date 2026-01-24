@@ -1,3 +1,8 @@
+---
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
 # qiita-articles
 
 このリポジトリは、Qiitaに投稿した技術記事を  
@@ -6,6 +11,14 @@
 Qiitaは公開・拡散の場、  
 GitHubは **記事の正本・編集履歴・構造管理の場**  
 という役割分担を前提にしています。
+
+---
+
+## 🔗 Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/qiita-articles/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/qiita-articles/tree/main) |
 
 ---
 

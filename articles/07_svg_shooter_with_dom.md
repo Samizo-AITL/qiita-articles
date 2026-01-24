@@ -65,13 +65,27 @@ bullet.setAttribute("cy", y - 5);
 
 ---
 
-## 完成版コード
+## 完成版デモ（その場で遊べます）
 
-完成版はここ（単一HTML）です：
+<iframe
+  src="https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/"
+  width="520"
+  height="380"
+  loading="lazy"
+  style="border:1px solid #ccc; border-radius:10px;"
+  allowfullscreen>
+</iframe>
 
-https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
+> ※もし表示されない場合はこちら  
+> https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
 
-（リポジトリに置いて、ブラウザで開くだけで動きます）
+---
+
+### 操作方法
+- 移動：`←` `→` または `A` `D`
+- 連射：`Space`
+- リスタート：`R`
+- スマホ：画面下のボタン
 
 ---
 

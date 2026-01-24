@@ -63,7 +63,7 @@ bullet.setAttribute("cy", y - 5);
 </iframe>
 
 下記クリックにより、全体表示されます。<br> 
-[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
+[**svg-shooter**](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
 
 ---
 

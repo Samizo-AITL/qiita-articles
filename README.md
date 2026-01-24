@@ -51,9 +51,28 @@ qiita-articles/
 
 ## Articles
 
-- 01 : GUI CADから脱却して設計をコード化するという考え方
+- **01**  
+  [GUI CADから脱却して設計をコード化するという考え方](articles/01_gui-cad-to-code.md)
 
-（必要に応じて年別・テーマ別に拡張）
+- **02**  
+  [FreeCADとは何か（GUIとコードの位置づけ）](articles/02_what-is-freecad.md)
+
+- **03**  
+  [FreeCADをコード設計ツールとして使う](articles/03_freecad_code_design.md)
+
+- **04**  
+  [コードで行うパーツ設計の実例](articles/04_part_design_with_code.md)
+
+- **05**  
+  [CAD設計をGit diffでレビューする](articles/05_git_diff_code_design.md)
+
+- **06**  
+  [FreeCAD幾何モデルのショーケース](articles/06_geometric_showcase_freecad.md)
+
+- **07**  
+  [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/07_svg_shooter_with_dom.md)
+
+（必要に応じて番号順に追記）
 
 ---
 

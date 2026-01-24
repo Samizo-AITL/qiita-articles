@@ -89,6 +89,11 @@ qiita-articles/
 - **10**  
   [SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/10_svg_shooter_complete_game.md)
 
+- **11**  
+  [Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）](articles/011_canvas_barrage_fun.md)
+
+- **12**  
+  [SVGとCanvas、同じシューティングを作ってみたら体験が全然違った](articles/012_svg_vs_canvas_same_game.md)
 
 （必要に応じて番号順に追記）
 

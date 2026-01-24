@@ -1,38 +1,36 @@
 ---
-title: "【JS】FSMで難易度と敵AIを制御する｜SVGシューティング設計拡張"
-tags: ["JavaScript", "SVG", "FSM", "GameDev", "AI"]
+title: "【JS】SVGシューティングに難易度と敵AIを足す｜FSMで“体感が変わる”ゲームへ"
+tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 ---
 
-# 📈 FSMで難易度と敵AIを制御する  
-*— SVGシューティングを「成長するゲーム」にする —*
+# 🎮 SVGシューティングに難易度と敵AIを足す  
+— FSMで「遊び心地」が変わる瞬間 —
 
-前回の記事では、  
-🎮 **SVGシューティングを FSM（有限状態機械）で整理**しました。
+⚠️ **この記事は完成版ではありません。**
 
-今回はその FSM を前提に、  
-**ゲームらしさの核心**に踏み込みます。
+- **07_**：SVG + DOM でゲームを動かした  
+- **08_**：FSMで壊れない構造に整理した  
+- **09_（この記事）**：その構造に *難易度と敵AI* を足す  
+- **10_**：完成版（遊ぶだけならここだけ見ればOK）
 
----
-
-## 🎯 今回やること
-
-- 📈 難易度スケーリング（時間・スコア連動）
-- 👾 敵AIの状態分岐（FSM in FSM）
-- 🧠 if 文に戻らない拡張方法
+👉 **ゲームを遊びたい人は 10_ へ。**  
+この記事は「体感がどう変わるか」を確認する回です。
 
 ---
 
-## ⚠️ FSMが無いと何が起きるか
+## 目的はひとつだけ
 
-- 難易度調整が「数値いじり地獄」になる
-- 敵の挙動が if / else で崩壊する
-- 後から仕様追加できない
+> **同じゲームなのに、  
+> 時間が経つと“別の遊び心地”になる**
 
-👉 **FSMは「拡張の土台」**です。
+派手な演出はしません。  
+**FSMを入れた意味が、操作して分かる**ことを目指します。
 
 ---
 
-## 📊 難易度レベルを状態として定義
+## 📈 難易度は「状態」として扱う
+
+まず、難易度を enum で定義します。
 
 ```js
 const Difficulty = {
@@ -44,51 +42,67 @@ const Difficulty = {
 let difficulty = Difficulty.EASY;
 ```
 
+👉 フラグではなく「状態」として扱うのがポイント。
+
 ---
 
-## 📈 スコア連動で難易度遷移
+## ⏱ 難易度は自動で切り替える
+
+スコアや経過時間を元に、状態を更新します。
 
 ```js
-function updateDifficulty(score) {
-  if (score > 1000) {
+function updateDifficulty(score, timeSec) {
+  if (score > 800 || timeSec > 40) {
     difficulty = Difficulty.HARD;
-  } else if (score > 500) {
+  } else if (score > 300 || timeSec > 20) {
     difficulty = Difficulty.NORMAL;
+  } else {
+    difficulty = Difficulty.EASY;
   }
 }
 ```
 
-👉 **「条件分岐」だが、  
-FSMの *外* に増殖しないのが重要**
+- プレイヤー操作は不要
+- 遊んでいるだけで変わる
+
+👉 **気づいたらキツくなっている**
 
 ---
 
-## 👾 敵AIも FSM で作る
+## 👾 敵にも FSM を持たせる
 
-### 敵の状態設計
+敵は「ただ落ちてくる箱」から卒業します。
 
 ```js
 const EnemyState = {
-  SPAWN: "spawn",     // ✨ 出現
-  MOVE: "move",       // ➡ 移動
-  ATTACK: "attack",   // 🔫 攻撃
-  DEAD: "dead"        // ☠ 撃破
+  SPAWN: "spawn",
+  MOVE: "move",
+  ATTACK: "attack",
+  DEAD: "dead"
 };
+```
+
+各敵は自分の状態を持ちます。
+
+```js
+enemy.state = EnemyState.SPAWN;
 ```
 
 ---
 
-## 🔁 敵ごとの FSM ループ
+## 🔄 敵の振る舞い（超シンプル版）
 
 ```js
 function updateEnemy(enemy) {
   switch (enemy.state) {
+
     case EnemyState.SPAWN:
       enemy.state = EnemyState.MOVE;
       break;
 
     case EnemyState.MOVE:
-      if (enemy.canAttack) {
+      moveEnemy(enemy);
+      if (canAttack(enemy)) {
         enemy.state = EnemyState.ATTACK;
       }
       break;
@@ -101,62 +115,83 @@ function updateEnemy(enemy) {
 }
 ```
 
-👉 **敵1体＝小さなFSM**  
-👉 プレイヤーFSMと干渉しない
+👉 行動の理由がコードから読み取れる。
 
 ---
 
-## 📈 難易度 × 敵AI の接続
+## 🎯 難易度が「体感」に効くポイント
+
+難易度ごとにパラメータを変えます。
 
 ```js
-function configureEnemy(enemy) {
-  if (difficulty === Difficulty.HARD) {
-    enemy.speed = 4;      // ⚡ 高速
-    enemy.fireRate = 0.5; // 🔥 高頻度
+function getDifficultyParams() {
+  switch (difficulty) {
+    case Difficulty.HARD:
+      return { speed: 2.5, fireRate: 0.02 };
+    case Difficulty.NORMAL:
+      return { speed: 1.8, fireRate: 0.01 };
+    default:
+      return { speed: 1.2, fireRate: 0.005 };
   }
 }
 ```
 
-✨ FSMは変えない  
-✨ **パラメータだけ差し替える**
+- EASY：遅い・撃たない
+- HARD：速い・よく撃つ
+
+👉 見た目は同じ、**中身だけ違う**。
 
 ---
 
-## 🧠 FSMが「AIっぽく」見える理由
+## 🧠 FSMが効いている理由
 
-- 🤖 状態ごとに振る舞いが明確
-- 🔁 状態遷移＝意思決定に見える
-- 📐 ロジックが図として説明できる
+- ゲーム全体：Game FSM
+- 難易度：Difficulty FSM
+- 敵1体ごと：Enemy FSM
 
-👉 実際は **純FSM + 数値制御**  
-👉 でも設計的には立派な AI
+それぞれが **独立している**。
+
+👉 どれかを変えても、他が壊れない。
 
 ---
 
-## 📐 全体構造（09版）
+## 📐 構造イメージ（09時点）
 
 ```
 Game FSM
- ├─ INIT
- ├─ READY
- ├─ PLAY
- │    ├─ Difficulty FSM 📈
- │    └─ Enemy FSM 👾👾👾
- └─ GAME_OVER
+ └─ PLAY
+     ├─ Difficulty FSM
+     ├─ Enemy FSM (per enemy)
+     └─ Collision
 ```
 
 ---
 
-## ✨ まとめ
+## ✨ この段階で起きる変化
 
-- ✅ FSMは「整理」だけでなく「拡張」のためにある
-- ✅ 難易度・AIは FSM に**寄生させる**
-- ✅ if 文を増やさずゲームが成長する
+- 同じステージなのに
+- 時間が経つと忙しくなる
+- 何度も遊ぶと感覚が違う
+
+👉 **「ゲームっぽくなった」瞬間**。
 
 ---
 
-## 🔮 次回予告（10_）
+## 🔮 次（10_）でやること
 
-- 🤖 FSM × 自動制御（自機AI / デモプレイ）
-- 🧠 状態×スコア×行動履歴
-- 🚀 AITL（FSM × 制御 × 知能）への接続
+- UI整理
+- 操作説明
+- 一時停止・リスタート
+- デモとして完成させる
+
+👉 **遊ぶだけなら10_だけ見ればOK**。
+
+---
+
+## 🎯 まとめ
+
+- 難易度と敵AIは「状態」として扱う
+- FSMを入れると“理由のある動き”になる
+- 見た目を変えなくても、体感は変えられる
+
+次は **完成版（10_）** です。

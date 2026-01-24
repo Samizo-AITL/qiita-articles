@@ -80,6 +80,16 @@ qiita-articles/
 - **07**  
   [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/07_svg_shooter_with_dom.md)
 
+- **08**  
+  [SVGシューティングをFSMで整理する（DOMゲームを壊さない設計）](articles/08_svg_shooter_with_fsm.md)
+
+- **09**  
+  [FSMで難易度と敵AIを制御する（SVGシューティング設計拡張）](articles/09_svg_shooter_fsm_difficulty_ai.md)
+
+- **10**  
+  [SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/10_svg_shooter_complete_game.md)
+
+
 （必要に応じて番号順に追記）
 
 ---

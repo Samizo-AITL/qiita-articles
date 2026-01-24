@@ -66,7 +66,6 @@
 (() => {
   "use strict";
 
-  // ---------- SVG helpers ----------
   const NS = "http://www.w3.org/2000/svg";
   const el = (name, attrs = {}) => {
     const node = document.createElementNS(NS, name);
@@ -74,7 +73,6 @@
     return node;
   };
 
-  // ---------- Game constants ----------
   const W = 480, H = 320;
   const PLAYER_Y = 285;
   const PLAYER_HALF_W = 16;
@@ -82,16 +80,13 @@
   const ENEMY_W = 28;
   const ENEMY_H = 18;
 
-  // Tuning (feel free to tweak)
   const PLAYER_SPEED = 260;     // px/s
   const BULLET_SPEED = 520;     // px/s
   const ENEMY_SPEED_MIN = 50;   // px/s
   const ENEMY_SPEED_MAX = 120;  // px/s
-  const SPAWN_PER_SEC = 1.7;    // enemies per second (average)
+  const SPAWN_PER_SEC = 1.7;    // enemies per second
   const FIRE_COOLDOWN = 0.12;   // seconds between shots
 
-  // ---------- DOM ----------
-  const svg = document.querySelector("#game");
   const gPlayer = document.querySelector("#player");
   const gBullets = document.querySelector("#bullets");
   const gEnemies = document.querySelector("#enemies");
@@ -106,46 +101,40 @@
   const btnFire = document.querySelector("#btnFire");
   const btnRestart = document.querySelector("#btnRestart");
 
-  // ---------- State ----------
   let running = true;
 
   const state = {
-    t: 0,
     score: 0,
     life: 3,
-
     playerX: W / 2,
-
-    bullets: [], // {x, y, vy, node}
-    enemies: [], // {x, y, vy, node}
-
+    bullets: [],
+    enemies: [],
     keys: { left: false, right: false, fire: false },
     fireTimer: 0,
-
     spawnAccumulator: 0
   };
 
-  // ---------- Input ----------
   const setKey = (k, v) => { state.keys[k] = v; };
 
   window.addEventListener("keydown", (e) => {
     if (e.repeat) return;
-    if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") setKey("left", true);
-    if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") setKey("right", true);
+    const k = e.key.toLowerCase();
+    if (e.key === "ArrowLeft" || k === "a") setKey("left", true);
+    if (e.key === "ArrowRight" || k === "d") setKey("right", true);
     if (e.key === " " || e.code === "Space") setKey("fire", true);
-    if (e.key.toLowerCase() === "r") restart();
+    if (k === "r") restart();
   });
 
   window.addEventListener("keyup", (e) => {
-    if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") setKey("left", false);
-    if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") setKey("right", false);
+    const k = e.key.toLowerCase();
+    if (e.key === "ArrowLeft" || k === "a") setKey("left", false);
+    if (e.key === "ArrowRight" || k === "d") setKey("right", false);
     if (e.key === " " || e.code === "Space") setKey("fire", false);
   });
 
-  // Touch/Buttons (press-and-hold for move/fire)
   const hold = (btn, onDown, onUp) => {
     btn.addEventListener("pointerdown", (e) => { e.preventDefault(); btn.setPointerCapture(e.pointerId); onDown(); });
-    btn.addEventListener("pointerup", (e) => { e.preventDefault(); onUp(); });
+    btn.addEventListener("pointerup",   (e) => { e.preventDefault(); onUp(); });
     btn.addEventListener("pointercancel", (e) => { e.preventDefault(); onUp(); });
     btn.addEventListener("pointerleave", () => { onUp(); });
   };
@@ -154,7 +143,6 @@
   hold(btnFire,  () => setKey("fire", true),  () => setKey("fire", false));
   btnRestart.addEventListener("click", restart);
 
-  // ---------- Game object creation ----------
   function spawnBullet(x, y) {
     const node = el("circle", { cx: x, cy: y, r: BULLET_R, fill: "#ef4444" });
     gBullets.appendChild(node);
@@ -166,7 +154,6 @@
     const y = -ENEMY_H;
     const vy = rand(ENEMY_SPEED_MIN, ENEMY_SPEED_MAX);
 
-    // Enemy as <g> for easy future upgrades
     const node = el("g", { transform: `translate(${x},${y})` });
     node.appendChild(el("rect", {
       x: -ENEMY_W/2, y: -ENEMY_H/2, width: ENEMY_W, height: ENEMY_H,
@@ -182,7 +169,6 @@
   }
 
   function boom(x, y) {
-    // Simple ring effect
     const ring = el("circle", { cx: x, cy: y, r: 4, fill: "none", stroke: "#f97316", "stroke-width": 2, opacity: 1 });
     gFx.appendChild(ring);
 
@@ -198,22 +184,15 @@
     requestAnimationFrame(tick);
   }
 
-  // ---------- Collision ----------
   function hitBulletEnemy(b, e) {
-    // Bullet is circle, enemy is AABB (rect)
     const ex0 = e.x - ENEMY_W/2;
     const ex1 = e.x + ENEMY_W/2;
     const ey0 = e.y - ENEMY_H/2;
     const ey1 = e.y + ENEMY_H/2;
-
-    const bx = b.x;
-    const by = b.y;
-
-    return (bx >= ex0 && bx <= ex1 && by >= ey0 && by <= ey1);
+    return (b.x >= ex0 && b.x <= ex1 && b.y >= ey0 && b.y <= ey1);
   }
 
   function hitEnemyPlayer(e) {
-    // Player as AABB
     const px0 = state.playerX - PLAYER_HALF_W;
     const px1 = state.playerX + PLAYER_HALF_W;
     const py0 = PLAYER_Y - 10;
@@ -227,7 +206,6 @@
     return !(ex1 < px0 || ex0 > px1 || ey1 < py0 || ey0 > py1);
   }
 
-  // ---------- Loop ----------
   let last = performance.now();
   function loop(now) {
     const dt = Math.min(0.033, (now - last) / 1000);
@@ -241,49 +219,32 @@
   }
 
   function update(dt) {
-    state.t += dt;
-
-    // Player movement
     let vx = 0;
     if (state.keys.left) vx -= PLAYER_SPEED;
     if (state.keys.right) vx += PLAYER_SPEED;
-
     state.playerX = clamp(state.playerX + vx * dt, PLAYER_HALF_W, W - PLAYER_HALF_W);
 
-    // Fire
     state.fireTimer -= dt;
     if (state.keys.fire && state.fireTimer <= 0) {
       spawnBullet(state.playerX, PLAYER_Y - 18);
       state.fireTimer = FIRE_COOLDOWN;
     }
 
-    // Spawn enemies (Poisson-like using accumulator)
     state.spawnAccumulator += dt * SPAWN_PER_SEC;
     while (state.spawnAccumulator >= 1) {
       spawnEnemy();
       state.spawnAccumulator -= 1;
     }
 
-    // Move bullets
-    for (const b of state.bullets) {
-      b.y += b.vy * dt;
-    }
+    for (const b of state.bullets) b.y += b.vy * dt;
+    for (const e of state.enemies) e.y += e.vy * dt;
 
-    // Move enemies
-    for (const e of state.enemies) {
-      e.y += e.vy * dt;
-    }
-
-    // Bullet-enemy collisions
     const deadBullets = new Set();
     const deadEnemies = new Set();
 
     for (let i = 0; i < state.bullets.length; i++) {
       const b = state.bullets[i];
-      if (b.y < -10) {
-        deadBullets.add(i);
-        continue;
-      }
+      if (b.y < -10) { deadBullets.add(i); continue; }
       for (let j = 0; j < state.enemies.length; j++) {
         if (deadEnemies.has(j)) continue;
         const e = state.enemies[j];
@@ -297,7 +258,6 @@
       }
     }
 
-    // Enemy-player collision / out of bounds
     for (let j = 0; j < state.enemies.length; j++) {
       if (deadEnemies.has(j)) continue;
       const e = state.enemies[j];
@@ -306,22 +266,14 @@
         deadEnemies.add(j);
         state.life -= 1;
         boom(e.x, e.y);
-        if (state.life <= 0) {
-          gameOver("GAME OVER");
-          return;
-        }
+        if (state.life <= 0) { gameOver("GAME OVER"); return; }
       } else if (e.y > H + 20) {
-        // Enemy escaped: small penalty
         deadEnemies.add(j);
         state.life -= 1;
-        if (state.life <= 0) {
-          gameOver("GAME OVER");
-          return;
-        }
+        if (state.life <= 0) { gameOver("GAME OVER"); return; }
       }
     }
 
-    // Remove dead bullets
     if (deadBullets.size) {
       state.bullets = state.bullets.filter((b, idx) => {
         if (!deadBullets.has(idx)) return true;
@@ -330,7 +282,6 @@
       });
     }
 
-    // Remove dead enemies
     if (deadEnemies.size) {
       state.enemies = state.enemies.filter((e, idx) => {
         if (!deadEnemies.has(idx)) return true;
@@ -339,22 +290,16 @@
       });
     }
 
-    // HUD/status
     hud.textContent = `SCORE ${state.score} / LIFE ${state.life}`;
     status.textContent = `SCORE=${state.score}  LIFE=${state.life}  BULLETS=${state.bullets.length}  ENEMIES=${state.enemies.length}`;
   }
 
   function render() {
-    // Player
     gPlayer.setAttribute("transform", `translate(${state.playerX}, ${PLAYER_Y})`);
-
-    // Bullets
     for (const b of state.bullets) {
       b.node.setAttribute("cx", String(b.x));
       b.node.setAttribute("cy", String(b.y));
     }
-
-    // Enemies
     for (const e of state.enemies) {
       e.node.setAttribute("transform", `translate(${e.x}, ${e.y})`);
     }
@@ -368,7 +313,6 @@
   }
 
   function restart() {
-    // Clear DOM groups
     for (const b of state.bullets) b.node.remove();
     for (const e of state.enemies) e.node.remove();
     state.bullets = [];
@@ -382,7 +326,6 @@
 
     overlay.setAttribute("visibility", "hidden");
 
-    // Resume loop if stopped
     if (!running) {
       running = true;
       last = performance.now();
@@ -393,11 +336,9 @@
     }
   }
 
-  // ---------- Utilities ----------
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
   function rand(lo, hi) { return lo + Math.random() * (hi - lo); }
 
-  // Start
   hud.textContent = `SCORE 0 / LIFE 3`;
   status.textContent = `SCORE=0  LIFE=3`;
   requestAnimationFrame(loop);

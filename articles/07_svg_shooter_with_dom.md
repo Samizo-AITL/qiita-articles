@@ -4,20 +4,6 @@ tags: [JavaScript, SVG, Web, 初心者]
 private: false
 ---
 
-## 動いてるところ（動画）
-
-<video
-  src="https://raw.githubusercontent.com/Samizo-AITL/qiita-articles/main/assets/videos/svg-shooter-demo.mp4"
-  controls
-  autoplay
-  loop
-  muted
-  playsinline
-  style="max-width:100%; border:1px solid #ccc; border-radius:10px;">
-</video>
-
----
-
 ## 何ができる？
 
 - SVGだけで「自機・弾・敵・当たり判定・スコア・ライフ・ゲームオーバー」まで実装
@@ -76,8 +62,8 @@ bullet.setAttribute("cy", y - 5);
   allowfullscreen>
 </iframe>
 
-> 下記クリックにより、全体表示されます。 
-> https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
+下記クリックにより、全体表示されます。 
+https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
 
 ---
 

@@ -69,6 +69,8 @@ bullet.setAttribute("cy", y - 5);
 
 完成版はここ（単一HTML）です：
 
+https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
+
 - `demos/svg-shooter/index.html`
 
 （リポジトリに置いて、ブラウザで開くだけで動きます）

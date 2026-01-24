@@ -29,6 +29,9 @@
         <button id="btnFire">FIRE</button>
         <button id="btnRestart">RESTART</button>
       </div>
+      <p class="hint">
+        難易度：序盤やさしく → スコアに応じて増える（Qiitaデモ用）
+      </p>
     </div>
 
     <div class="panel">
@@ -66,6 +69,7 @@
 (() => {
   "use strict";
 
+  // ---------- SVG helpers ----------
   const NS = "http://www.w3.org/2000/svg";
   const el = (name, attrs = {}) => {
     const node = document.createElementNS(NS, name);
@@ -73,6 +77,7 @@
     return node;
   };
 
+  // ---------- Game constants ----------
   const W = 480, H = 320;
   const PLAYER_Y = 285;
   const PLAYER_HALF_W = 16;
@@ -82,11 +87,17 @@
 
   const PLAYER_SPEED = 260;     // px/s
   const BULLET_SPEED = 520;     // px/s
-  const ENEMY_SPEED_MIN = 50;   // px/s
-  const ENEMY_SPEED_MAX = 120;  // px/s
-  const SPAWN_PER_SEC = 1.7;    // enemies per second
-  const FIRE_COOLDOWN = 0.12;   // seconds between shots
 
+  // ★難易度（Qiitaデモ向け：序盤やさしめ）
+  const ENEMY_SPEED_MIN_BASE = 35;  // px/s（下げた）
+  const ENEMY_SPEED_MAX_BASE = 70;  // px/s（下げた）
+
+  // ★出現頻度（序盤は少なく）
+  const SPAWN_PER_SEC_BASE = 0.6;   // enemies per second（1.7 → 0.6）
+
+  const FIRE_COOLDOWN = 0.12;       // seconds between shots
+
+  // ---------- DOM ----------
   const gPlayer = document.querySelector("#player");
   const gBullets = document.querySelector("#bullets");
   const gEnemies = document.querySelector("#enemies");
@@ -101,9 +112,11 @@
   const btnFire = document.querySelector("#btnFire");
   const btnRestart = document.querySelector("#btnRestart");
 
+  // ---------- State ----------
   let running = true;
 
   const state = {
+    t: 0,
     score: 0,
     life: 3,
     playerX: W / 2,
@@ -111,9 +124,11 @@
     enemies: [],
     keys: { left: false, right: false, fire: false },
     fireTimer: 0,
-    spawnAccumulator: 0
+    spawnAccumulator: 0,
+    lastHealScore: 0
   };
 
+  // ---------- Input ----------
   const setKey = (k, v) => { state.keys[k] = v; };
 
   window.addEventListener("keydown", (e) => {
@@ -143,6 +158,27 @@
   hold(btnFire,  () => setKey("fire", true),  () => setKey("fire", false));
   btnRestart.addEventListener("click", restart);
 
+  // ---------- Difficulty ----------
+  function difficulty01() {
+    // スコア0→150で0→1（それ以上は1固定）
+    return clamp(state.score / 150, 0, 1);
+  }
+
+  function spawnRatePerSec() {
+    // 0.6 → 1.2 まで徐々に増える（「すぐ死ぬ」を防ぐ）
+    const d = difficulty01();
+    return SPAWN_PER_SEC_BASE + d * 0.6;
+  }
+
+  function enemySpeedRange() {
+    // 35..70 → 45..95 まで徐々に増える
+    const d = difficulty01();
+    const min = ENEMY_SPEED_MIN_BASE + d * 10;
+    const max = ENEMY_SPEED_MAX_BASE + d * 25;
+    return { min, max };
+  }
+
+  // ---------- Game object creation ----------
   function spawnBullet(x, y) {
     const node = el("circle", { cx: x, cy: y, r: BULLET_R, fill: "#ef4444" });
     gBullets.appendChild(node);
@@ -152,7 +188,9 @@
   function spawnEnemy() {
     const x = rand(ENEMY_W/2 + 6, W - ENEMY_W/2 - 6);
     const y = -ENEMY_H;
-    const vy = rand(ENEMY_SPEED_MIN, ENEMY_SPEED_MAX);
+
+    const { min, max } = enemySpeedRange();
+    const vy = rand(min, max);
 
     const node = el("g", { transform: `translate(${x},${y})` });
     node.appendChild(el("rect", {
@@ -184,6 +222,7 @@
     requestAnimationFrame(tick);
   }
 
+  // ---------- Collision ----------
   function hitBulletEnemy(b, e) {
     const ex0 = e.x - ENEMY_W/2;
     const ex1 = e.x + ENEMY_W/2;
@@ -206,6 +245,7 @@
     return !(ex1 < px0 || ex0 > px1 || ey1 < py0 || ey0 > py1);
   }
 
+  // ---------- Loop ----------
   let last = performance.now();
   function loop(now) {
     const dt = Math.min(0.033, (now - last) / 1000);
@@ -219,26 +259,33 @@
   }
 
   function update(dt) {
+    state.t += dt;
+
+    // Player movement
     let vx = 0;
     if (state.keys.left) vx -= PLAYER_SPEED;
     if (state.keys.right) vx += PLAYER_SPEED;
     state.playerX = clamp(state.playerX + vx * dt, PLAYER_HALF_W, W - PLAYER_HALF_W);
 
+    // Fire
     state.fireTimer -= dt;
     if (state.keys.fire && state.fireTimer <= 0) {
       spawnBullet(state.playerX, PLAYER_Y - 18);
       state.fireTimer = FIRE_COOLDOWN;
     }
 
-    state.spawnAccumulator += dt * SPAWN_PER_SEC;
+    // Spawn enemies (difficulty-scaled)
+    state.spawnAccumulator += dt * spawnRatePerSec();
     while (state.spawnAccumulator >= 1) {
       spawnEnemy();
       state.spawnAccumulator -= 1;
     }
 
+    // Move bullets/enemies
     for (const b of state.bullets) b.y += b.vy * dt;
     for (const e of state.enemies) e.y += e.vy * dt;
 
+    // Collisions
     const deadBullets = new Set();
     const deadEnemies = new Set();
 
@@ -274,6 +321,7 @@
       }
     }
 
+    // Remove dead
     if (deadBullets.size) {
       state.bullets = state.bullets.filter((b, idx) => {
         if (!deadBullets.has(idx)) return true;
@@ -281,7 +329,6 @@
         return false;
       });
     }
-
     if (deadEnemies.size) {
       state.enemies = state.enemies.filter((e, idx) => {
         if (!deadEnemies.has(idx)) return true;
@@ -290,8 +337,16 @@
       });
     }
 
+    // ★救済：スコア50ごとにライフ+1（最大3）
+    if (state.score >= state.lastHealScore + 50) {
+      state.lastHealScore = state.score;
+      state.life = Math.min(3, state.life + 1);
+    }
+
+    // HUD/status
     hud.textContent = `SCORE ${state.score} / LIFE ${state.life}`;
-    status.textContent = `SCORE=${state.score}  LIFE=${state.life}  BULLETS=${state.bullets.length}  ENEMIES=${state.enemies.length}`;
+    status.textContent =
+      `SCORE=${state.score}  LIFE=${state.life}  BULLETS=${state.bullets.length}  ENEMIES=${state.enemies.length}  SPAWN/s=${spawnRatePerSec().toFixed(2)}`;
   }
 
   function render() {
@@ -318,11 +373,13 @@
     state.bullets = [];
     state.enemies = [];
 
+    state.t = 0;
     state.score = 0;
     state.life = 3;
     state.playerX = W / 2;
     state.fireTimer = 0;
     state.spawnAccumulator = 0;
+    state.lastHealScore = 0;
 
     overlay.setAttribute("visibility", "hidden");
 
@@ -339,6 +396,7 @@
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
   function rand(lo, hi) { return lo + Math.random() * (hi - lo); }
 
+  // Start
   hud.textContent = `SCORE 0 / LIFE 3`;
   status.textContent = `SCORE=0  LIFE=3`;
   requestAnimationFrame(loop);

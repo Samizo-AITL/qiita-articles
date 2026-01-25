@@ -104,7 +104,7 @@ qiita-articles/
   [GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる](articles/13_ga4_world_clock.md)
 
 - **14**  
-  [AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/014_ai_template_rekiden_kawanakajima.md)
+  [AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/14_ai_template_rekiden_kawanakajima.md)
 
 - **15**  
   [AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす](articles/15_ai_game_fsm_design_rekiden.md)

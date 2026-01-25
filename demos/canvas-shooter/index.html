@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Canvas Shooter - Rich BGM</title>
+<title>Canvas Shooter - Boss Battle</title>
 <style>
   body { margin:0; background:black; overflow:hidden; }
   canvas { display:block; }
@@ -25,18 +25,13 @@ function resize(){
 // =====================
 // AUDIO
 // =====================
-let audioCtx;
-let masterGain, bgmGain, filter;
-let bgmTimer = null;
-let bgmStarted = false;
-let step = 0;
-
-const seq = [110, 0, 165, 0, 220, 0, 165, 0];
+let audioCtx, masterGain, bgmGain, filter;
+let bgmStarted=false, bgmTimer;
+let bossGain, bossOscs=[], bossPlaying=false;
 
 function initAudio(){
   if(!audioCtx){
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
+    audioCtx = new (window.AudioContext||window.webkitAudioContext)();
     masterGain = audioCtx.createGain();
     masterGain.gain.value = 0.6;
     masterGain.connect(audioCtx.destination);
@@ -45,105 +40,113 @@ function initAudio(){
     bgmGain.gain.value = 0.05;
 
     filter = audioCtx.createBiquadFilter();
-    filter.type = "lowpass";
-    filter.frequency.value = 600;
+    filter.type="lowpass";
+    filter.frequency.value=600;
 
     bgmGain.connect(filter).connect(masterGain);
   }
   if(!bgmStarted){
     startBGM();
-    bgmStarted = true;
+    bgmStarted=true;
   }
 }
 
 function playShoot(){
   if(!audioCtx) return;
-  const o = audioCtx.createOscillator();
-  const g = audioCtx.createGain();
-
-  o.type = "square";
-  o.frequency.setValueAtTime(900, audioCtx.currentTime);
-  o.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.08);
-
-  g.gain.setValueAtTime(0.12, audioCtx.currentTime);
-  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
-
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.type="square";
+  o.frequency.setValueAtTime(900,audioCtx.currentTime);
+  o.frequency.exponentialRampToValueAtTime(300,audioCtx.currentTime+0.08);
+  g.gain.setValueAtTime(0.12,audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.1);
   o.connect(g).connect(masterGain);
-  o.start();
-  o.stop(audioCtx.currentTime + 0.1);
+  o.start(); o.stop(audioCtx.currentTime+0.1);
 }
 
 function playHit(){
   if(!audioCtx) return;
-  const o = audioCtx.createOscillator();
-  const g = audioCtx.createGain();
-
-  o.type = "sawtooth";
-  o.frequency.value = 140;
-
-  g.gain.setValueAtTime(0.25, audioCtx.currentTime);
-  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.25);
-
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.type="sawtooth";
+  o.frequency.value=140;
+  g.gain.setValueAtTime(0.25,audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.25);
   o.connect(g).connect(masterGain);
-  o.start();
-  o.stop(audioCtx.currentTime + 0.25);
+  o.start(); o.stop(audioCtx.currentTime+0.25);
 }
 
-// ---- BGM ----
+// ---- normal BGM ----
+let step=0;
+const seq=[110,0,165,0,220,0,165,0];
 function startBGM(){
-  bgmTimer = setInterval(()=>{
+  bgmTimer=setInterval(()=>{
     if(!audioCtx) return;
-
-    const freq = seq[step];
-    if(freq){
-      const o = audioCtx.createOscillator();
-      const g = audioCtx.createGain();
-
-      o.type = "triangle";
-      o.frequency.value = freq;
-
-      g.gain.value = 0.08;
-
+    const f=seq[step];
+    if(f){
+      const o=audioCtx.createOscillator();
+      const g=audioCtx.createGain();
+      o.type="triangle"; o.frequency.value=f;
+      g.gain.value=0.08;
       o.connect(g).connect(bgmGain);
-      o.start();
-      o.stop(audioCtx.currentTime + 0.18);
+      o.start(); o.stop(audioCtx.currentTime+0.18);
     }
-    step = (step + 1) % seq.length;
-  }, 180);
+    step=(step+1)%seq.length;
+  },180);
 }
 
 function updateBGM(){
-  if(!bgmGain || !filter) return;
-  if(score > 30){
-    bgmGain.gain.value = 0.09;
-    filter.frequency.value = 1200;
-  } else {
-    bgmGain.gain.value = 0.05;
-    filter.frequency.value = 600;
+  if(score>30){
+    bgmGain.gain.value=0.09;
+    filter.frequency.value=1200;
   }
+}
+
+// ---- boss BGM ----
+function startBossBGM(){
+  if(bossPlaying||!audioCtx) return;
+  bossPlaying=true;
+  bgmGain.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+1);
+  bossGain=audioCtx.createGain();
+  bossGain.gain.value=0.06;
+  bossGain.connect(masterGain);
+  [55,82,110].forEach(f=>{
+    const o=audioCtx.createOscillator();
+    const g=audioCtx.createGain();
+    o.type="sawtooth"; o.frequency.value=f;
+    g.gain.value=0.25/3;
+    o.connect(g).connect(bossGain);
+    o.start();
+    bossOscs.push(o);
+  });
+}
+function stopBossBGM(){
+  if(!bossPlaying) return;
+  bossPlaying=false;
+  bossOscs.forEach(o=>o.stop());
+  bossOscs=[];
+  bgmGain.gain.exponentialRampToValueAtTime(0.05,audioCtx.currentTime+1);
 }
 
 // =====================
 // GAME STATE
 // =====================
-let player = { x: canvas.width/2, y: canvas.height-70 };
-let bullets = [];
-let enemies = [];
-let shake = 0;
-let score = 0;
+let player={x:canvas.width/2,y:canvas.height-40};
+let bullets=[], enemies=[], enemyBullets=[];
+let shake=0, score=0;
+let spiralAngle=0;
 
 // =====================
 // INPUT
 // =====================
-document.addEventListener("mousemove", e=>{
+document.addEventListener("mousemove",e=>{
   initAudio();
-  player.x = e.clientX;
+  player.x=e.clientX;
 });
-
-document.addEventListener("keydown", e=>{
+document.addEventListener("keydown",e=>{
   initAudio();
-  if(e.key === " ") shoot();
-  if(e.key === "r") location.reload();
+  if(e.key===" ") shoot();
+  if(e.key==="r") location.reload();
 });
 
 // =====================
@@ -151,96 +154,132 @@ document.addEventListener("keydown", e=>{
 // =====================
 function shoot(){
   playShoot();
-  bullets.push({ x: player.x, y: player.y, v: -14 });
+  bullets.push({x:player.x,y:player.y,v:-14});
 }
 
-function spawnEnemy(){
+function spawnEnemy(type="normal"){
   enemies.push({
-    x: Math.random() * canvas.width,
-    y: -30,
-    v: 2 + Math.random() * 2,
-    r: 16
+    type,
+    x:Math.random()*canvas.width,
+    y:-30,
+    v:type==="boss"?1:2+Math.random()*2,
+    r:type==="boss"?28:16,
+    hp:type==="boss"?20:1
   });
 }
-setInterval(spawnEnemy, 450);
+
+setInterval(()=>spawnEnemy(),450);
+
+function fireCircle(e){
+  const n=20, speed=3;
+  for(let i=0;i<n;i++){
+    const a=(Math.PI*2/n)*i+spiralAngle;
+    enemyBullets.push({
+      x:e.x,y:e.y,
+      vx:Math.cos(a)*speed,
+      vy:Math.sin(a)*speed,
+      r:4
+    });
+  }
+  spiralAngle+=0.15;
+}
 
 function update(){
-  bullets.forEach(b => b.y += b.v);
-  enemies.forEach(e => e.y += e.v);
+  bullets.forEach(b=>b.y+=b.v);
+  enemyBullets.forEach(b=>{b.x+=b.vx;b.y+=b.vy;});
+  enemies.forEach(e=>e.y+=e.v);
 
-  bullets = bullets.filter(b => b.y > -50);
-  enemies = enemies.filter(e => e.y < canvas.height + 50);
+  bullets=bullets.filter(b=>b.y>-50);
+  enemyBullets=enemyBullets.filter(b=>
+    b.x>-50&&b.x<canvas.width+50&&b.y>-50&&b.y<canvas.height+50
+  );
+  enemies=enemies.filter(e=>e.y<canvas.height+80);
 
-  enemies.forEach((e, ei)=>{
-    bullets.forEach((b, bi)=>{
-      const dx = e.x - b.x;
-      const dy = e.y - b.y;
-      if(dx*dx + dy*dy < e.r*e.r){
-        enemies.splice(ei,1);
+  enemies.forEach(e=>{
+    if(e.type==="boss" && Math.random()<0.03){
+      fireCircle(e);
+    }
+  });
+
+  enemies.forEach((e,ei)=>{
+    bullets.forEach((b,bi)=>{
+      const dx=e.x-b.x, dy=e.y-b.y;
+      if(dx*dx+dy*dy<e.r*e.r){
         bullets.splice(bi,1);
-        shake = 12;
-        score++;
-        playHit();
+        e.hp--; playHit();
+        if(e.hp<=0){
+          if(e.type==="boss") stopBossBGM();
+          enemies.splice(ei,1);
+          shake=20;
+          score+=e.type==="boss"?10:1;
+        }
       }
     });
   });
+
+  enemyBullets.forEach(b=>{
+    const dx=b.x-player.x, dy=b.y-player.y;
+    if(dx*dx+dy*dy<100) location.reload();
+  });
+
+  if(score===30){
+    spawnEnemy("boss");
+    startBossBGM();
+  }
 }
 
 // =====================
 // DRAW
 // =====================
 function clearWithTrail(){
-  ctx.fillStyle = "rgba(0,0,0,0.25)";
+  ctx.fillStyle="rgba(0,0,0,0.25)";
   ctx.fillRect(0,0,canvas.width,canvas.height);
-}
-
-function drawPlayer(p){
-  const s = 18;
-  ctx.save();
-  ctx.shadowBlur = 25;
-  ctx.shadowColor = "#00ffff";
-  ctx.fillStyle = "#00ccff";
-  ctx.fillRect(p.x-s, p.y-s, s*2, s*2);
-  ctx.restore();
 }
 
 function draw(){
   ctx.save();
   if(shake){
-    ctx.translate(
-      (Math.random()-0.5)*shake,
-      (Math.random()-0.5)*shake
-    );
+    ctx.translate((Math.random()-0.5)*shake,(Math.random()-0.5)*shake);
     shake--;
   }
-
   clearWithTrail();
 
-  if(score > 30){
-    ctx.globalCompositeOperation = "lighter";
-  }
-
-  drawPlayer(player);
-
   bullets.forEach(b=>{
-    ctx.fillStyle = "orange";
+    ctx.fillStyle="orange";
     ctx.beginPath();
     ctx.arc(b.x,b.y,6,0,Math.PI*2);
     ctx.fill();
   });
 
+  enemyBullets.forEach(b=>{
+    ctx.shadowBlur=15;
+    ctx.shadowColor="magenta";
+    ctx.fillStyle="magenta";
+    ctx.beginPath();
+    ctx.arc(b.x,b.y,b.r,0,Math.PI*2);
+    ctx.fill();
+  });
+
   enemies.forEach(e=>{
-    ctx.fillStyle = "red";
+    ctx.shadowBlur=30;
+    ctx.shadowColor=e.type==="boss"?"lime":"red";
+    ctx.fillStyle=e.type==="boss"?"lime":"red";
     ctx.beginPath();
     ctx.arc(e.x,e.y,e.r*2,0,Math.PI*2);
     ctx.fill();
   });
 
-  ctx.restore();
+  ctx.shadowBlur=25;
+  ctx.shadowColor="#00ffff";
+  ctx.fillStyle="#00ccff";
+  ctx.beginPath();
+  ctx.arc(player.x,player.y,12,0,Math.PI*2);
+  ctx.fill();
 
-  ctx.fillStyle = "white";
-  ctx.font = "16px monospace";
-  ctx.fillText("SCORE: " + score, 20, 30);
+  ctx.restore();
+  ctx.fillStyle="white";
+  ctx.font="16px monospace";
+  ctx.fillText("SCORE: "+score,20,30);
 }
 
 // =====================

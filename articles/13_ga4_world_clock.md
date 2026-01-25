@@ -1,9 +1,6 @@
 ---
 title: "13.【GA4】リアルタイムで海外アクセスを見るなら、主要都市の現在時刻も並べる"
-emoji: "🌐"
-type: "tech"
 topics: ["ga4", "analytics", "ui", "javascript"]
-published: false
 ---
 
 GA4 のリアルタイム画面で  

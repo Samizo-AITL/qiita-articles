@@ -2,16 +2,10 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Canvas Shooter - BGM</title>
+<title>Canvas Shooter - Rich BGM</title>
 <style>
-  body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-  }
-  canvas {
-    display: block;
-  }
+  body { margin:0; background:black; overflow:hidden; }
+  canvas { display:block; }
 </style>
 </head>
 <body>
@@ -23,7 +17,6 @@ const ctx = canvas.getContext("2d");
 
 resize();
 window.addEventListener("resize", resize);
-
 function resize(){
   canvas.width = innerWidth;
   canvas.height = innerHeight;
@@ -33,13 +26,29 @@ function resize(){
 // AUDIO
 // =====================
 let audioCtx;
-let bgmGain;
-let bgmOscs = [];
+let masterGain, bgmGain, filter;
+let bgmTimer = null;
 let bgmStarted = false;
+let step = 0;
+
+const seq = [110, 0, 165, 0, 220, 0, 165, 0];
 
 function initAudio(){
   if(!audioCtx){
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.6;
+    masterGain.connect(audioCtx.destination);
+
+    bgmGain = audioCtx.createGain();
+    bgmGain.gain.value = 0.05;
+
+    filter = audioCtx.createBiquadFilter();
+    filter.type = "lowpass";
+    filter.frequency.value = 600;
+
+    bgmGain.connect(filter).connect(masterGain);
   }
   if(!bgmStarted){
     startBGM();
@@ -59,7 +68,7 @@ function playShoot(){
   g.gain.setValueAtTime(0.12, audioCtx.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
 
-  o.connect(g).connect(audioCtx.destination);
+  o.connect(g).connect(masterGain);
   o.start();
   o.stop(audioCtx.currentTime + 0.1);
 }
@@ -70,36 +79,48 @@ function playHit(){
   const g = audioCtx.createGain();
 
   o.type = "sawtooth";
-  o.frequency.setValueAtTime(140, audioCtx.currentTime);
+  o.frequency.value = 140;
 
-  g.gain.setValueAtTime(0.22, audioCtx.currentTime);
+  g.gain.setValueAtTime(0.25, audioCtx.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.25);
 
-  o.connect(g).connect(audioCtx.destination);
+  o.connect(g).connect(masterGain);
   o.start();
   o.stop(audioCtx.currentTime + 0.25);
 }
 
 // ---- BGM ----
 function startBGM(){
-  bgmGain = audioCtx.createGain();
-  bgmGain.gain.value = 0.04;
-  bgmGain.connect(audioCtx.destination);
+  bgmTimer = setInterval(()=>{
+    if(!audioCtx) return;
 
-  const notes = [110, 165, 220]; // A系アンビ
-  notes.forEach((freq, i)=>{
-    const o = audioCtx.createOscillator();
-    o.type = "sine";
-    o.frequency.value = freq;
+    const freq = seq[step];
+    if(freq){
+      const o = audioCtx.createOscillator();
+      const g = audioCtx.createGain();
 
-    const g = audioCtx.createGain();
-    g.gain.value = 0.3 / notes.length;
+      o.type = "triangle";
+      o.frequency.value = freq;
 
-    o.connect(g).connect(bgmGain);
-    o.start();
+      g.gain.value = 0.08;
 
-    bgmOscs.push(o);
-  });
+      o.connect(g).connect(bgmGain);
+      o.start();
+      o.stop(audioCtx.currentTime + 0.18);
+    }
+    step = (step + 1) % seq.length;
+  }, 180);
+}
+
+function updateBGM(){
+  if(!bgmGain || !filter) return;
+  if(score > 30){
+    bgmGain.gain.value = 0.09;
+    filter.frequency.value = 1200;
+  } else {
+    bgmGain.gain.value = 0.05;
+    filter.frequency.value = 600;
+  }
 }
 
 // =====================
@@ -130,11 +151,7 @@ document.addEventListener("keydown", e=>{
 // =====================
 function shoot(){
   playShoot();
-  bullets.push({
-    x: player.x,
-    y: player.y,
-    v: -14
-  });
+  bullets.push({ x: player.x, y: player.y, v: -14 });
 }
 
 function spawnEnemy(){
@@ -178,12 +195,12 @@ function clearWithTrail(){
 }
 
 function drawPlayer(p){
-  const size = 18;
+  const s = 18;
   ctx.save();
   ctx.shadowBlur = 25;
   ctx.shadowColor = "#00ffff";
   ctx.fillStyle = "#00ccff";
-  ctx.fillRect(p.x-size, p.y-size, size*2, size*2);
+  ctx.fillRect(p.x-s, p.y-s, s*2, s*2);
   ctx.restore();
 }
 
@@ -204,12 +221,14 @@ function draw(){
   }
 
   drawPlayer(player);
+
   bullets.forEach(b=>{
     ctx.fillStyle = "orange";
     ctx.beginPath();
     ctx.arc(b.x,b.y,6,0,Math.PI*2);
     ctx.fill();
   });
+
   enemies.forEach(e=>{
     ctx.fillStyle = "red";
     ctx.beginPath();
@@ -229,6 +248,7 @@ function draw(){
 // =====================
 function loop(){
   update();
+  updateBGM();
   draw();
   requestAnimationFrame(loop);
 }

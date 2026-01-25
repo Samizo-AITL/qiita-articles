@@ -46,6 +46,7 @@ https://samizo-aitl.github.io/qiita-articles/demos/canvas-shooter/
 - R：リスタート  
 
 ※ シンプルな操作に絞っています。
+  Canvas版はBGMと効果音あり（最初の操作後に有効）
 
 ---
 

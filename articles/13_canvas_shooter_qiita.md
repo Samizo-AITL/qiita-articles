@@ -1,5 +1,5 @@
 ---
-title: "11.【JS】Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）"
+title: "13.【JS】Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）"
 tags: ["JavaScript", "Canvas", "GameDev", "Web"]
 ---
 

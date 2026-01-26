@@ -1,5 +1,5 @@
 ---
-title: "07.【最終回】FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造"
+title: "07. FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造"
 tags:
   - 機械設計
   - CAD

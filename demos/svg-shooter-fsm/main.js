@@ -22,7 +22,7 @@
     INIT: "init",
     READY: "ready",
     PLAY: "play",
-    PAUSE: "pause",          // ★追加：一時停止
+    PAUSE: "pause",
     GAME_OVER: "game_over"
   });
 
@@ -36,6 +36,14 @@
     SPAWN: "spawn",
     MOVE: "move",
     ATTACK: "attack",
+    DEAD: "dead"
+  });
+
+  const BossState = Object.freeze({
+    WAIT: "wait",
+    SPAWN: "spawn",
+    FIGHT: "fight",
+    RAGE: "rage",
     DEAD: "dead"
   });
 
@@ -55,6 +63,51 @@
   const btnRestart = $("#btn-restart");
 
   // -----------------------------
+  // Audio (minimal)
+  // -----------------------------
+  const audio = {
+    seShot: new Audio("shot.mp3"),
+    seHit: new Audio("hit.mp3"),
+    seBoss: new Audio("boss.mp3"),
+    bgm: new Audio("bgm.mp3"),
+    bossBgm: new Audio("boss_bgm.mp3"),
+    unlocked: false
+  };
+  audio.bgm.loop = true;
+  audio.bossBgm.loop = true;
+  audio.bgm.volume = 0.25;
+  audio.bossBgm.volume = 0.28;
+
+  function playSE(a) {
+    if (!audio.unlocked) return;
+    try {
+      a.currentTime = 0;
+      a.play();
+    } catch {}
+  }
+  function startBGM(which) {
+    if (!audio.unlocked) return;
+    try {
+      audio.bgm.pause();
+      audio.bossBgm.pause();
+      if (which === "boss") audio.bossBgm.play();
+      else audio.bgm.play();
+    } catch {}
+  }
+  // ブラウザ制約：ユーザー操作でアンロック
+  function unlockAudioOnce() {
+    if (audio.unlocked) return;
+    audio.unlocked = true;
+    // いったん無音再生で解錠を狙う（環境依存）
+    try {
+      audio.bgm.play().then(() => audio.bgm.pause()).catch(() => {});
+      audio.bossBgm.play().then(() => audio.bossBgm.pause()).catch(() => {});
+    } catch {}
+  }
+  document.addEventListener("pointerdown", unlockAudioOnce, { once: true });
+  document.addEventListener("keydown", unlockAudioOnce, { once: true });
+
+  // -----------------------------
   // Game state
   // -----------------------------
   const game = {
@@ -63,10 +116,13 @@
     score: 0,
     lives: 3,
 
-    t: 0,             // total frames
-    playT: 0,         // frames since PLAY start
-    spawnAcc: 0,      // spawn accumulator
-    shotCool: 0,      // player shot cooldown
+    t: 0,
+    playT: 0,
+    spawnAcc: 0,
+    shotCool: 0,
+
+    // ★無敵フレーム（被弾直後の多段ヒット対策）
+    invFrames: 0,
 
     player: {
       x: W / 2,
@@ -77,6 +133,24 @@
 
     bullets: [],
     enemies: [],
+
+    boss: {
+      state: BossState.WAIT,
+      alive: false,
+      x: W / 2,
+      y: 70,
+      w: 120,
+      h: 46,
+      vx: 1.3,
+      hp: 0,
+      hpMax: 0,
+      cool: 0,
+      phase: 1,
+      node: null,
+      hpBarBg: null,
+      hpBar: null
+    },
+
     ui: {
       textTop: null,
       textCenter: null
@@ -91,36 +165,28 @@
     right: false,
     shot: false
   };
-
   function setKey(name, v) { key[name] = v; }
 
-  // キーボード入力は FSM に従って分離する
   document.addEventListener("keydown", (e) => {
-    // ★ PLAY <-> PAUSE（Pキーで一時停止/再開）
+    // PLAY <-> PAUSE
     if (e.code === "KeyP") {
-      if (game.state === State.PLAY) {
-        changeState(State.PAUSE);
-      } else if (game.state === State.PAUSE) {
-        changeState(State.PLAY);
-      }
+      if (game.state === State.PLAY) changeState(State.PAUSE);
+      else if (game.state === State.PAUSE) changeState(State.PLAY);
       return;
     }
 
-    // READY → PLAY は開始専用（Space をショットと共有しない）
+    // READY -> PLAY
     if (game.state === State.READY && e.code === "Space") {
       changeState(State.PLAY);
       return;
     }
 
-    // リスタートは READY / GAME_OVER から
+    // restart
     if (e.code === "KeyR") {
-      if (game.state === State.GAME_OVER || game.state === State.READY) {
-        changeState(State.INIT);
-      }
+      if (game.state === State.GAME_OVER || game.state === State.READY) changeState(State.INIT);
       return;
     }
 
-    // PLAY 中のみ操作を受け付ける（PAUSE中は入力を止める）
     if (game.state !== State.PLAY) return;
 
     if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", true);
@@ -129,7 +195,6 @@
   });
 
   document.addEventListener("keyup", (e) => {
-    // PLAY 中のみキーを戻す（PAUSEでキー状態が残らないようにするのも有効）
     if (game.state !== State.PLAY) return;
 
     if (e.code === "ArrowLeft" || e.code === "KeyA") setKey("left", false);
@@ -137,7 +202,6 @@
     if (e.code === "Space") setKey("shot", false);
   });
 
-  // mobile: hold buttons
   const hold = (btn, onDown, onUp) => {
     const down = (e) => { e.preventDefault(); onDown(); };
     const up = (e) => { e.preventDefault(); onUp(); };
@@ -147,22 +211,11 @@
     btn.addEventListener("pointerleave", up);
   };
 
-  // モバイル操作も FSM に従う（READY のショットボタン＝開始）
-  hold(btnLeft, () => {
-    if (game.state !== State.PLAY) return;
-    setKey("left", true);
-  }, () => setKey("left", false));
-
-  hold(btnRight, () => {
-    if (game.state !== State.PLAY) return;
-    setKey("right", true);
-  }, () => setKey("right", false));
+  hold(btnLeft, () => { if (game.state === State.PLAY) setKey("left", true); }, () => setKey("left", false));
+  hold(btnRight, () => { if (game.state === State.PLAY) setKey("right", true); }, () => setKey("right", false));
 
   hold(btnShot, () => {
-    if (game.state === State.READY) {
-      changeState(State.PLAY);
-      return;
-    }
+    if (game.state === State.READY) { changeState(State.PLAY); return; }
     if (game.state !== State.PLAY) return;
     setKey("shot", true);
   }, () => setKey("shot", false));
@@ -172,9 +225,7 @@
   // -----------------------------
   // Setup / reset
   // -----------------------------
-  function clearGroup(g) {
-    while (g.firstChild) g.removeChild(g.firstChild);
-  }
+  function clearGroup(g) { while (g.firstChild) g.removeChild(g.firstChild); }
 
   function initUI() {
     clearGroup(gUI);
@@ -210,7 +261,6 @@
       stroke: "rgba(255,255,255,.35)",
       "stroke-width": 1
     });
-
     ship.id = "playerShip";
     gPlayer.appendChild(ship);
   }
@@ -220,6 +270,8 @@
     if (!ship) return;
     const x = game.player.x, y = game.player.y;
     ship.setAttribute("points", `${x},${y - 12} ${x - 10},${y + 10} ${x + 10},${y + 10}`);
+    // ★無敵中は点滅（見える化）
+    ship.setAttribute("opacity", game.invFrames > 0 ? ((game.t % 6) < 3 ? "0.35" : "1") : "1");
   }
 
   function resetGameCore() {
@@ -230,19 +282,184 @@
     game.playT = 0;
     game.spawnAcc = 0;
     game.shotCool = 0;
+    game.invFrames = 0;
 
     game.player.x = W / 2;
 
     game.bullets = [];
     game.enemies = [];
 
-    // 入力状態も初期化（重要）
     key.left = false;
     key.right = false;
     key.shot = false;
 
     clearGroup(gBullets);
     clearGroup(gEnemies);
+
+    resetBoss();
+  }
+
+  // -----------------------------
+  // Boss
+  // -----------------------------
+  function resetBoss() {
+    const b = game.boss;
+    b.state = BossState.WAIT;
+    b.alive = false;
+    b.x = W / 2;
+    b.y = 70;
+    b.vx = 1.3;
+    b.hp = 0;
+    b.hpMax = 0;
+    b.cool = 0;
+    b.phase = 1;
+
+    if (b.node && b.node.parentNode) b.node.parentNode.removeChild(b.node);
+    if (b.hpBarBg && b.hpBarBg.parentNode) b.hpBarBg.parentNode.removeChild(b.hpBarBg);
+    if (b.hpBar && b.hpBar.parentNode) b.hpBar.parentNode.removeChild(b.hpBar);
+
+    b.node = null;
+    b.hpBarBg = null;
+    b.hpBar = null;
+  }
+
+  function spawnBoss() {
+    const b = game.boss;
+    b.state = BossState.SPAWN;
+    b.alive = true;
+    b.hpMax = 600;
+    b.hp = b.hpMax;
+    b.phase = 1;
+    b.cool = 30;
+
+    // body
+    const body = el("rect", {
+      x: b.x - b.w / 2,
+      y: -80,
+      width: b.w,
+      height: b.h,
+      rx: 10,
+      fill: "#9a7bff",
+      stroke: "rgba(255,255,255,.25)",
+      "stroke-width": 1.2
+    });
+    body.id = "bossBody";
+    gEnemies.appendChild(body);
+    b.node = body;
+
+    // HP bar (top)
+    const bg = el("rect", { x: 10, y: 30, width: W - 20, height: 8, rx: 4, fill: "rgba(255,255,255,.18)" });
+    const bar = el("rect", { x: 10, y: 30, width: W - 20, height: 8, rx: 4, fill: "#ffffff" });
+    gUI.appendChild(bg);
+    gUI.appendChild(bar);
+    b.hpBarBg = bg;
+    b.hpBar = bar;
+
+    playSE(audio.seBoss);
+    startBGM("boss");
+  }
+
+  function bossShoot(pattern) {
+    const b = game.boss;
+    const shots = [];
+
+    if (pattern === 1) {
+      // 3-way
+      shots.push({ vx: -0.9, vy: 3.0 });
+      shots.push({ vx:  0.0, vy: 3.2 });
+      shots.push({ vx:  0.9, vy: 3.0 });
+    } else {
+      // 5-way + faster (RAGE)
+      shots.push({ vx: -1.4, vy: 3.6 });
+      shots.push({ vx: -0.7, vy: 3.8 });
+      shots.push({ vx:  0.0, vy: 4.0 });
+      shots.push({ vx:  0.7, vy: 3.8 });
+      shots.push({ vx:  1.4, vy: 3.6 });
+    }
+
+    for (const s of shots) {
+      const p = el("circle", { cx: b.x, cy: b.y + b.h / 2, r: 3, fill: "#ffd27a" });
+      gEnemies.appendChild(p);
+      game.enemies.push({
+        kind: "bproj",
+        x: b.x,
+        y: b.y + b.h / 2,
+        vx: s.vx,
+        vy: s.vy,
+        r: 3,
+        state: "bproj",
+        node: p
+      });
+    }
+  }
+
+  function updateBoss() {
+    const b = game.boss;
+
+    // 30秒経過で出現（好きに条件変更OK）
+    if (!b.alive && b.state === BossState.WAIT) {
+      if (game.playT >= 30 * 60) spawnBoss();
+      return;
+    }
+
+    if (!b.alive) return;
+
+    if (b.state === BossState.SPAWN) {
+      // 上から降りてくる
+      const targetY = 70;
+      const yNow = parseFloat(b.node.getAttribute("y"));
+      const yNext = yNow + 2.0;
+      b.node.setAttribute("y", yNext);
+      if (yNext >= targetY) {
+        b.state = BossState.FIGHT;
+        b.node.setAttribute("y", targetY);
+      }
+      // x追従（まだ動かない）
+      b.node.setAttribute("x", b.x - b.w / 2);
+      return;
+    }
+
+    if (b.state === BossState.DEAD) return;
+
+    // phase
+    if (b.hp <= b.hpMax * 0.35) b.state = BossState.RAGE;
+
+    // move
+    b.x += b.vx;
+    if (b.x < b.w / 2 + 8) { b.x = b.w / 2 + 8; b.vx *= -1; }
+    if (b.x > W - (b.w / 2 + 8)) { b.x = W - (b.w / 2 + 8); b.vx *= -1; }
+
+    // shoot cooldown
+    if (b.cool > 0) b.cool--;
+    else {
+      bossShoot(b.state === BossState.RAGE ? 2 : 1);
+      b.cool = (b.state === BossState.RAGE) ? 18 : 28;
+    }
+
+    // sync node
+    b.node.setAttribute("x", b.x - b.w / 2);
+    b.node.setAttribute("y", b.y - b.h / 2);
+
+    // hp bar
+    const ratio = Math.max(0, b.hp / b.hpMax);
+    b.hpBar.setAttribute("width", (W - 20) * ratio);
+  }
+
+  function killBoss() {
+    const b = game.boss;
+    b.state = BossState.DEAD;
+    b.alive = false;
+
+    if (b.node) b.node.setAttribute("opacity", "0.3");
+    if (b.hpBarBg && b.hpBarBg.parentNode) b.hpBarBg.parentNode.removeChild(b.hpBarBg);
+    if (b.hpBar && b.hpBar.parentNode) b.hpBar.parentNode.removeChild(b.hpBar);
+    b.hpBarBg = null;
+    b.hpBar = null;
+
+    // 通常BGMに戻す（勝利音などに差し替えOK）
+    startBGM("normal");
+
+    game.score += 1000;
   }
 
   // -----------------------------
@@ -260,39 +477,37 @@
     }
 
     if (next === State.READY) {
-      game.ui.textCenter.textContent = "SPACE で開始 / R でリセット";
+      game.ui.textCenter.textContent = "SPACE で開始 / R でリセット / PでPAUSE";
       return;
     }
 
     if (next === State.PLAY) {
       game.ui.textCenter.textContent = "";
-      // ※playTはPLAY突入時にリセットする設計だと「再開で時間が戻る」ので
-      //   PAUSE解除時はここを叩かない（KeyPでPAUSE→PLAYに戻すのでここは通る）
-      //   ただし、PAUSE解除でplayTを維持したい場合は下の1行を削除してください。
-      // game.playT = 0;
-
-      // ★PAUSE解除でキーが残って暴発しないようにする
+      // PAUSE解除で暴発しない
       key.left = false;
       key.right = false;
       key.shot = false;
+
+      // ★通常BGM開始（ボス中はボスBGMが優先される）
+      if (!game.boss.alive) startBGM("normal");
       return;
     }
 
     if (next === State.PAUSE) {
       game.ui.textCenter.textContent = "PAUSE (P で再開)";
-      // ★停止時に入力を切る（押しっぱなし対策）
       key.left = false;
       key.right = false;
       key.shot = false;
+      // BGM止めたいなら：audio.bgm.pause(); audio.bossBgm.pause();
       return;
     }
 
     if (next === State.GAME_OVER) {
       game.ui.textCenter.textContent = "GAME OVER  (R で再開)";
-      // ★ゲームオーバー時も入力を切る
       key.left = false;
       key.right = false;
       key.shot = false;
+      try { audio.bgm.pause(); audio.bossBgm.pause(); } catch {}
       return;
     }
   }
@@ -321,7 +536,7 @@
   }
 
   // -----------------------------
-  // Bullets
+  // Bullets (player)
   // -----------------------------
   function spawnBullet(px, py) {
     const b = {
@@ -349,7 +564,7 @@
   }
 
   // -----------------------------
-  // Enemies (Enemy FSM per unit)
+  // Enemies (includes enemy projectiles)
   // -----------------------------
   function createEnemy() {
     const { enemySpeed } = diffParams();
@@ -378,6 +593,9 @@
   }
 
   function spawnEnemy() {
+    // ★ボス出現中は雑魚を止めたいなら return してOK
+    if (game.boss.alive) return;
+
     const e = createEnemy();
     if (game.difficulty === Difficulty.HARD) e.hp = 2;
     game.enemies.push(e);
@@ -404,6 +622,19 @@
       enemy.y += enemy.vy;
       enemy.node.setAttribute("cy", enemy.y);
       if (enemy.y > H + 10) {
+        if (enemy.node && enemy.node.parentNode) enemy.node.parentNode.removeChild(enemy.node);
+        enemy._dead = true;
+      }
+      return;
+    }
+
+    // boss projectile subtype
+    if (enemy.kind === "bproj") {
+      enemy.x += enemy.vx;
+      enemy.y += enemy.vy;
+      enemy.node.setAttribute("cx", enemy.x);
+      enemy.node.setAttribute("cy", enemy.y);
+      if (enemy.y > H + 10 || enemy.x < -10 || enemy.x > W + 10) {
         if (enemy.node && enemy.node.parentNode) enemy.node.parentNode.removeChild(enemy.node);
         enemy._dead = true;
       }
@@ -480,7 +711,10 @@
     if (key.shot && game.shotCool === 0) {
       spawnBullet(p.x, p.y - 14);
       game.shotCool = 7;
+      playSE(audio.seShot);
     }
+
+    if (game.invFrames > 0) game.invFrames--;
 
     syncPlayerShape();
   }
@@ -495,22 +729,43 @@
 
   function checkCollision() {
     const p = game.player;
+    const b = game.boss;
 
     // bullets vs enemies
     for (let bi = game.bullets.length - 1; bi >= 0; bi--) {
-      const b = game.bullets[bi];
+      const blt = game.bullets[bi];
 
+      // vs boss
+      if (b.alive && b.node) {
+        const hitBoss =
+          (blt.x >= b.x - b.w / 2 && blt.x <= b.x + b.w / 2) &&
+          (blt.y >= b.y - b.h / 2 && blt.y <= b.y + b.h / 2);
+
+        if (hitBoss) {
+          if (blt.node && blt.node.parentNode) blt.node.parentNode.removeChild(blt.node);
+          game.bullets.splice(bi, 1);
+
+          b.hp -= 10;
+          playSE(audio.seHit);
+          if (b.hp <= 0) killBoss();
+          continue;
+        }
+      }
+
+      // vs normal enemies
       for (let ei = game.enemies.length - 1; ei >= 0; ei--) {
         const e = game.enemies[ei];
-        if (e.kind === "proj") continue;
+        if (e.kind === "proj" || e.kind === "bproj") continue;
         if (e.state === EnemyState.DEAD) continue;
 
-        const hit = dist2(b.x, b.y, e.x, e.y) < (b.r + 10) * (b.r + 10);
+        const hit = dist2(blt.x, blt.y, e.x, e.y) < (blt.r + 10) * (blt.r + 10);
         if (hit) {
-          if (b.node && b.node.parentNode) b.node.parentNode.removeChild(b.node);
+          if (blt.node && blt.node.parentNode) blt.node.parentNode.removeChild(blt.node);
           game.bullets.splice(bi, 1);
 
           e.hp -= 1;
+          playSE(audio.seHit);
+
           if (e.hp <= 0) {
             e.state = EnemyState.DEAD;
             e._dead = true;
@@ -523,9 +778,11 @@
       }
     }
 
+    if (game.invFrames > 0) return; // ★無敵中は以降の被弾判定をスキップ
+
     // enemy body vs player
     for (const e of game.enemies) {
-      if (e.kind === "proj") continue;
+      if (e.kind === "proj" || e.kind === "bproj") continue;
       if (e.state === EnemyState.DEAD) continue;
 
       const hit = dist2(p.x, p.y, e.x, e.y) < (p.r + 10) * (p.r + 10);
@@ -537,7 +794,7 @@
 
     // enemy projectiles vs player
     for (const e of game.enemies) {
-      if (e.kind !== "proj") continue;
+      if (e.kind !== "proj" && e.kind !== "bproj") continue;
       const hit = dist2(p.x, p.y, e.x, e.y) < (p.r + e.r + 2) * (p.r + e.r + 2);
       if (hit) {
         e._dead = true;
@@ -547,10 +804,11 @@
   }
 
   function damagePlayer() {
-    if (game._justHit) return;
-    game._justHit = true;
+    if (game.invFrames > 0) return;
 
     game.lives -= 1;
+    game.invFrames = 60; // ★1秒無敵（60fps想定）
+
     if (game.lives <= 0) {
       changeState(State.GAME_OVER);
     }
@@ -563,8 +821,6 @@
     const sec = Math.floor(game.playT / 60);
     const top = `SCORE:${game.score}  LIFE:${game.lives}  DIFF:${game.difficulty.toUpperCase()}  TIME:${sec}s`;
     game.ui.textTop.textContent = top;
-
-    game._justHit = false;
   }
 
   // -----------------------------
@@ -573,11 +829,11 @@
   function tick() {
     game.t++;
 
-    // ★PLAYのときだけ世界が進む（PAUSE中は完全停止）
     if (game.state === State.PLAY) {
       game.playT++;
       updateDifficulty();
       updatePlayer();
+      updateBoss();
       updateEnemies();
       updateBullets();
       checkCollision();

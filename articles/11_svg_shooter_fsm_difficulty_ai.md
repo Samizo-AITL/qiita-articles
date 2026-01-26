@@ -1,5 +1,5 @@
 ---
-title: "10.【JS】SVGシューティングに難易度と敵AIを足す｜FSMで“体感が変わる”ゲームへ"
+title: "11.【JS】SVGシューティングに難易度と敵AIを足す｜FSMで“体感が変わる”ゲームへ"
 tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 ---
 

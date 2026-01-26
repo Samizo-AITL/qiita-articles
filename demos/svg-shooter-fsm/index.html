@@ -10,7 +10,9 @@
   <header class="bar">
     <div class="title">SVG Shooter (FSM)</div>
     <div class="hint">
-      ←/→ or A/D: Move / Space: Shot / R: Restart
+      ←/→ or A/D: Move /
+      Space: Shot / P: Pause /
+      R: Restart
     </div>
   </header>
 
@@ -29,9 +31,9 @@
 
       <!-- mobile controls -->
       <div class="mobile">
-        <button id="btn-left"  class="btn">◀</button>
-        <button id="btn-shot"  class="btn">●</button>
-        <button id="btn-right" class="btn">▶</button>
+        <button id="btn-left"    class="btn">◀</button>
+        <button id="btn-shot"    class="btn">●</button>
+        <button id="btn-right"   class="btn">▶</button>
         <button id="btn-restart" class="btn">R</button>
       </div>
 
@@ -39,10 +41,19 @@
         <span class="badge">FSM</span>
         <span class="badge">Difficulty</span>
         <span class="badge">Enemy FSM</span>
+        <span class="badge">Boss FSM</span>
+        <span class="badge">Audio</span>
         <span class="badge">SVG DOM</span>
       </div>
     </div>
   </main>
+
+  <!-- ★ Audio assets（HTML管理にしたい場合） -->
+  <audio id="se-shot" src="./shot.mp3" preload="auto"></audio>
+  <audio id="se-hit" src="./hit.mp3" preload="auto"></audio>
+  <audio id="se-boss" src="./boss.mp3" preload="auto"></audio>
+  <audio id="bgm" src="./bgm.mp3" loop preload="auto"></audio>
+  <audio id="boss-bgm" src="./boss_bgm.mp3" loop preload="auto"></audio>
 
   <script src="./main.js"></script>
 </body>

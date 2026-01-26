@@ -83,6 +83,9 @@ qiita-articles/
   [FreeCAD幾何モデルのショーケース](articles/06_geometric_showcase_freecad.md)
 
 - **07**  
+  [FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造](articles/07_full_code_mechanical_design_scope.md)
+
+- **07**  
   [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/07_svg_shooter_with_dom.md)
 
 - **08**  

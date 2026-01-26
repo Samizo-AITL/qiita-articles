@@ -1,5 +1,5 @@
 ---
-title: "09.【JS】SVGシューティングをFSMで整理する｜DOMゲームを壊さないための中間設計"
+title: "10.【JS】SVGシューティングをFSMで整理する｜DOMゲームを壊さないための中間設計"
 tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 ---
 

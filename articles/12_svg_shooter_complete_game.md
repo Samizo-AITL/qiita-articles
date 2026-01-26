@@ -1,5 +1,5 @@
 ---
-title: "10.【JS】SVGシューティング完成版｜FSMは裏側、遊ぶのが主役"
+title: "12.【JS】SVGシューティング完成版｜FSMは裏側、遊ぶのが主役"
 tags: ["JavaScript", "SVG", "GameDev", "FSM"]
 ---
 

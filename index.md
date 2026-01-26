@@ -115,14 +115,14 @@ qiita-articles/
 - **17**  
   [AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/17_ai_vs_ai_auto_history_rekiden.md)
 
-- **18**  
-  [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/18_skyedge_powerline_inspection_spec.md)
+- **901**  
+  [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 
-- **19**  
-  [送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る](articles/19_skyedge_powerline_vi_budget.md)
+- **902**  
+  [送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る](articles/902_skyedge_powerline_vi_budget.md)
 
-- **20**  
-  [送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ](articles/20_skyedge_cmos_lens_distance_tradeoff.md)
+- **903**  
+  [送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ](articles/903_skyedge_cmos_lens_distance_tradeoff.md)
   
 （必要に応じて番号順に追記）
 

@@ -1,5 +1,5 @@
 ---
-title: "06.【FreeCAD】GUI操作ゼロでここまで作れる ― 関数定義だけで生成する幾何学ソリッド"
+title: "06. FreeCAD: GUI操作ゼロでここまで作れる ― 関数定義だけで生成する幾何学ソリッド"
 tags:
   - FreeCAD
   - CAD

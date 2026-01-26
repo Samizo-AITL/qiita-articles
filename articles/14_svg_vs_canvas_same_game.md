@@ -1,5 +1,5 @@
 ---
-title: "12.【JS】SVGとCanvas、同じシューティングを作ってみたら体験が全然違った"
+title: "14.【JS】SVGとCanvas、同じシューティングを作ってみたら体験が全然違った"
 tags: ["JavaScript", "SVG", "Canvas", "GameDev", "Web"]
 ---
 

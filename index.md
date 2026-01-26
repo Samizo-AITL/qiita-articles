@@ -85,44 +85,44 @@ qiita-articles/
 - **07**  
   [FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造](articles/07_full_code_mechanical_design_scope.md)
 
-- **07**  
-  [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/07_svg_shooter_with_dom.md)
-
 - **08**  
-  [SVGシューティングをFSMで整理する（DOMゲームを壊さない設計）](articles/08_svg_shooter_with_fsm.md)
+  [GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる](articles/08_ga4_world_clock.md)
 
 - **09**  
-  [FSMで難易度と敵AIを制御する（SVGシューティング設計拡張）](articles/09_svg_shooter_fsm_difficulty_ai.md)
+  [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/09_svg_shooter_with_dom.md)
 
 - **10**  
-  [SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/10_svg_shooter_complete_game.md)
+  [SVGシューティングをFSMで整理する（DOMゲームを壊さない設計）](articles/10_svg_shooter_with_fsm.md)
 
 - **11**  
-  [Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）](articles/11_canvas_shooter_qiita.md)
+  [FSMで難易度と敵AIを制御する（SVGシューティング設計拡張）](articles/11_svg_shooter_fsm_difficulty_ai.md)
 
 - **12**  
-  [SVGとCanvas、同じシューティングを作ってみたら体験が全然違った](articles/12_svg_vs_canvas_same_game.md)
+  [SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/12_svg_shooter_complete_game.md)
 
 - **13**  
-  [GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる](articles/13_ga4_world_clock.md)
+  [Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）](articles/13_canvas_shooter_qiita.md)
 
 - **14**  
-  [AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/14_ai_template_rekiden_kawanakajima.md)
+  [SVGとCanvas、同じシューティングを作ってみたら体験が全然違った](articles/14_svg_vs_canvas_same_game.md)
 
 - **15**  
-  [AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす](articles/15_ai_game_fsm_design_rekiden.md)
+  [AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/15_ai_template_rekiden_kawanakajima.md)
 
 - **16**  
-  [AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/16_ai_vs_ai_auto_history_rekiden.md)
+  [AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす](articles/16_ai_game_fsm_design_rekiden.md)
 
 - **17**  
-  [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/17_skyedge_powerline_inspection_spec.md)
+  [AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/17_ai_vs_ai_auto_history_rekiden.md)
 
 - **18**  
-  [送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る](articles/18_skyedge_powerline_vi_budget.md)
+  [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/18_skyedge_powerline_inspection_spec.md)
 
 - **19**  
-  [送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ](articles/19_skyedge_cmos_lens_distance_tradeoff.md)
+  [送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る](articles/19_skyedge_powerline_vi_budget.md)
+
+- **20**  
+  [送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ](articles/20_skyedge_cmos_lens_distance_tradeoff.md)
   
 （必要に応じて番号順に追記）
 

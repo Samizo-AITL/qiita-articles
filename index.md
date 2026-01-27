@@ -121,6 +121,9 @@ qiita-articles/
 - **19**  
   [GitHub ActionsでMarkdownからプレゼン資料を自動生成しようとして、日本語豆腐で止まった話【Marp】](articles/19_marp_github_actions_japanese_tofu.md)
 
+- **20**  
+  [日本語豆腐（□）はなぜ設定で直らないのか｜PPTXとフォントの構造【Marp】](articles/20_marp_japanese_tofu_not_fixable_by_settings.md)
+
 - **901**  
   [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

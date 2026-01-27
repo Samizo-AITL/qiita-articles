@@ -111,7 +111,7 @@ qiita-articles/
   [AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/17_ai_vs_ai_auto_history_rekiden.md)
 
 - **18**  
-  [VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法【Marp】](articles/18_FN_vscode_md_to_html_pptx_marp.md)
+  [VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法【Marp】](articles/18_vscode_md_to_html_pptx_marp.md)
 
 - **901**  
   [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)

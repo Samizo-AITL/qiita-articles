@@ -78,7 +78,7 @@ physical-first.html
 
 ### 実行結果（HTML 生成）
 
-![HTML生成](https://samizo-aitl.github.io/assets/images/18_02.png)
+![HTML生成](https://samizo-aitl.github.io/qiita-articles/assets/images/18_02.png)
 
 ### 確認方法
 - `physical-first.html` をブラウザで開く  
@@ -102,7 +102,7 @@ physical-first.pptx
 
 ### 実行結果（PPTX 生成）
 
-![PPTX生成](https://samizo-aitl.github.io/assets/images/18_03.png)
+![PPTX生成](https://samizo-aitl.github.io/qiita-articles/assets/images/18_03.png)
 
 ### 確認方法
 - `physical-first.pptx` を PowerPoint で開く  

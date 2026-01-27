@@ -58,7 +58,7 @@ size: 16:9
 
 ### 作業画面（md 準備）
 
-![md準備（VS Code）](./assets/images/18_01.png)
+![md準備（VS Code）](https//:samizo-aitl.github.io/qiita-articles/assets/images/18_01.png)
 
 ---
 

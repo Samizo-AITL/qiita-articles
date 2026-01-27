@@ -1,5 +1,5 @@
 ---
-title: "18. 【Marp】VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法"
+title: "18.【Marp】VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法"
 tags:
   - Markdown
   - Marp

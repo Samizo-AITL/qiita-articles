@@ -118,6 +118,9 @@ qiita-articles/
 - **18**  
   [VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法【Marp】](articles/18_vscode_md_to_html_pptx_marp.md)
 
+- **19**  
+  [GitHub ActionsでMarkdownからプレゼン資料を自動生成しようとして、日本語豆腐で止まった話【Marp】](articles/19_marp_github_actions_japanese_tofu.md)
+
 - **901**  
   [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

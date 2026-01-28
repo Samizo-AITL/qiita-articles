@@ -1,7 +1,9 @@
 ---
-title: "08.【GA4】リアルタイムで海外アクセスを見るなら、主要都市の現在時刻も並べる"
-topics: ["ga4", "analytics", "ui", "javascript"]
+title: "qiita-articles"
+description: "qiita-articles"
 ---
+
+# 08.【GA4】リアルタイムで海外アクセスを見るなら、主要都市の現在時刻も並べる
 
 GA4 のリアルタイム画面を見ていると、
 

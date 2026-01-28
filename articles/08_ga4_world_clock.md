@@ -58,14 +58,7 @@ GA4 のリアルタイム画面の横に置くイメージで、
 > 以下は **コード例の表示のみ**です。  
 > 実際に動くデモは次のセクションを参照してください。
 
-```html
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <title>GA4 World Clock Demo</title>
-</head>
-<body>
+<h2>🌐 World Clock｜主要都市の現在時刻</h2>
 
 <table>
   <thead>
@@ -76,12 +69,12 @@ GA4 のリアルタイム画面の横に置くイメージで、
     </tr>
   </thead>
   <tbody>
-    <tr><td>JP Japan</td><td>Tokyo</td><td id="time-tokyo"></td></tr>
-    <tr><td>US USA (East)</td><td>New York</td><td id="time-ny"></td></tr>
-    <tr><td>US USA (West)</td><td>Los Angeles</td><td id="time-la"></td></tr>
-    <tr><td>GB UK</td><td>London</td><td id="time-london"></td></tr>
-    <tr><td>FR France</td><td>Paris</td><td id="time-paris"></td></tr>
-    <tr><td>CN China</td><td>Beijing</td><td id="time-beijing"></td></tr>
+    <tr><td>🇯🇵 Japan</td><td>Tokyo</td><td id="time-tokyo"></td></tr>
+    <tr><td>🇺🇸 USA (East)</td><td>New York</td><td id="time-ny"></td></tr>
+    <tr><td>🇺🇸 USA (West)</td><td>Los Angeles</td><td id="time-la"></td></tr>
+    <tr><td>🇬🇧 UK</td><td>London</td><td id="time-london"></td></tr>
+    <tr><td>🇫🇷 France</td><td>Paris</td><td id="time-paris"></td></tr>
+    <tr><td>🇨🇳 China</td><td>Beijing</td><td id="time-beijing"></td></tr>
   </tbody>
 </table>
 
@@ -108,22 +101,6 @@ function updateWorldClock() {
 updateWorldClock();
 setInterval(updateWorldClock, 1000);
 </script>
-
-</body>
-</html>
-```
-
----
-
-## ▶ デモ（※ここが重要）
-
-以下は **Jekyllを通さない純HTML** のため、  
-**実際にリアルタイムで時刻が更新されます。**
-
-🔗 **Demo（実行ページ）**  
-https://samizo-aitl.github.io/qiita-articles/demo/08_ga4_world_clock.html
-
-GA4 のリアルタイム画面を横に置いて見る用途を想定しています。
 
 ---
 

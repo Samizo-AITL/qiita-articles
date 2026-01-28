@@ -54,33 +54,18 @@ GA4 のリアルタイム画面の横に置くイメージで、
 **主要都市の「今この瞬間」**を並べます。
 
 > ⚠️ **注意**  
-> Qiita では JavaScript が実行されないため、  
+> Qiita では JavaScript が実行されません。  
 > 以下は **コード例の表示のみ**です。  
-> 実際に動くデモは後述の GitHub Pages を参照してください。
+> 実際に動くデモは次のセクションを参照してください。
 
-```
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <title>GA4 World Clock Demo</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      font-family: sans-serif;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 6px 10px;
-    }
-    th {
-      background: #f5f5f5;
-    }
-  </style>
 </head>
 <body>
-
-<h2>World Clock (GA4 Realtime Side View)</h2>
 
 <table>
   <thead>
@@ -126,18 +111,17 @@ setInterval(updateWorldClock, 1000);
 
 </body>
 </html>
-
 ```
 
 ---
 
-## ▶ デモ（実際に動くページ）
+## ▶ デモ（※ここが重要）
 
-以下の GitHub Pages では、  
-上記コードが **実際にリアルタイム更新**されます。
+以下は **Jekyllを通さない純HTML** のため、  
+**実際にリアルタイムで時刻が更新されます。**
 
-🔗 **Demo**  
-https://samizo-aitl.github.io/qiita-articles/articles/08_ga4_world_clock.html
+🔗 **Demo（実行ページ）**  
+https://samizo-aitl.github.io/qiita-articles/demo/08_ga4_world_clock.html
 
 GA4 のリアルタイム画面を横に置いて見る用途を想定しています。
 
@@ -155,9 +139,6 @@ GA4 のリアルタイム表示に
 が、  
 **数値を細かく読まなくても直感的に分かる**ようになります。
 
-これは分析というより、  
-**状況理解を一段深くするための補助情報**です。
-
 ---
 
 ## ✅ まとめ
@@ -174,7 +155,7 @@ GA4 のリアルタイム表示に
 
 - 外部 API 不要  
 - `Intl.DateTimeFormat` のみ使用  
-- GitHub Pages ならそのまま動作  
+- デモは **front matter なし HTML**  
 
 GA4 を見ながら、  
 「今、誰がどんな時間帯に見ているのか」を  

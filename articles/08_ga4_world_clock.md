@@ -21,7 +21,7 @@ GA4 のリアルタイム画面を見ていると、
 
 ## 📍 GA4 リアルタイムの世界分布
 
-![](https://samizo-aitl.github.io/qiita-articles/assets/images/13_1_ga4_map.png)
+![](https://samizo-aitl.github.io/qiita-articles/assets/images/08_1.png)
 
 このマップを見て、
 

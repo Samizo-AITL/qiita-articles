@@ -58,6 +58,30 @@ GA4 のリアルタイム画面の横に置くイメージで、
 > 以下は **コード例の表示のみ**です。  
 > 実際に動くデモは後述の GitHub Pages を参照してください。
 
+```
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>GA4 World Clock Demo</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      font-family: sans-serif;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+    }
+    th {
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+<h2>World Clock (GA4 Realtime Side View)</h2>
+
 <table>
   <thead>
     <tr>
@@ -67,16 +91,15 @@ GA4 のリアルタイム画面の横に置くイメージで、
     </tr>
   </thead>
   <tbody>
-    <tr><td>🇯🇵 Japan</td><td>Tokyo</td><td id="time-tokyo"></td></tr>
-    <tr><td>🇺🇸 USA (East)</td><td>New York</td><td id="time-ny"></td></tr>
-    <tr><td>🇺🇸 USA (West)</td><td>Los Angeles</td><td id="time-la"></td></tr>
-    <tr><td>🇬🇧 UK</td><td>London</td><td id="time-london"></td></tr>
-    <tr><td>🇫🇷 France</td><td>Paris</td><td id="time-paris"></td></tr>
-    <tr><td>🇨🇳 China</td><td>Beijing</td><td id="time-beijing"></td></tr>
+    <tr><td>JP Japan</td><td>Tokyo</td><td id="time-tokyo"></td></tr>
+    <tr><td>US USA (East)</td><td>New York</td><td id="time-ny"></td></tr>
+    <tr><td>US USA (West)</td><td>Los Angeles</td><td id="time-la"></td></tr>
+    <tr><td>GB UK</td><td>London</td><td id="time-london"></td></tr>
+    <tr><td>FR France</td><td>Paris</td><td id="time-paris"></td></tr>
+    <tr><td>CN China</td><td>Beijing</td><td id="time-beijing"></td></tr>
   </tbody>
 </table>
 
-```html
 <script>
 function updateWorldClock() {
   const now = new Date();
@@ -100,6 +123,10 @@ function updateWorldClock() {
 updateWorldClock();
 setInterval(updateWorldClock, 1000);
 </script>
+
+</body>
+</html>
+
 ```
 
 ---

@@ -99,21 +99,6 @@ setInterval(updateWorldClock, 1000);
 
 ---
 
-## ▶ 実際に動くデモはこちら
-
-Qiita の記事本文では JavaScript が実行されないため、  
-**リアルタイムに更新される時刻表示は確認できません。**
-
-以下の GitHub Pages では、  
-この記事のコードをそのまま使った **実行デモ** を公開しています。
-
-🔗 **World Clock Demo（リアルタイム表示）**  
-https://samizo-aitl.github.io/qiita-articles/articles/08_ga4_world_clock.html
-
-GA4 のリアルタイム画面を横に置いて見る用途を想定しています。
-
----
-
 ## ✅ まとめ
 
 - 📊 GA4 は「アクセス」を見る  

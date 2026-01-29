@@ -10,7 +10,7 @@ tags:
 private: false
 ---
 
-## はじめに 🎯
+## 🎯 はじめに
 
 画像生成AIでは、
 
@@ -35,7 +35,7 @@ private: false
 
 ---
 
-## 本記事の立ち位置 🧭
+## 🧭 本記事の立ち位置 
 
 本記事は、以下の実験シリーズの続編である。
 
@@ -57,7 +57,7 @@ private: false
 
 ---
 
-## 実験条件（固定ルール） 🔬
+## 🔬 実験条件（固定ルール）
 
 以下をすべて固定する。
 
@@ -74,7 +74,7 @@ private: false
 
 ---
 
-## ベースプロンプト（日英） ⚙️
+## ⚙️ ベースプロンプト（日英） 
 
 ### 🇯🇵 日本語ベース
 
@@ -104,7 +104,7 @@ no text, no logo
 
 ---
 
-## 生成結果の比較（日本語 vs 英語） 🔬
+## 🔬 生成結果の比較（日本語 vs 英語） 
 
 ![Japanese vs English prompt comparison](https://samizo-aitl.github.io/qiita-articles/assets/images/image_generation/japanese_vs_english_prompt_comparison.png)
 
@@ -113,7 +113,7 @@ no text, no logo
 
 ---
 
-## 観測された主な違い 🧠
+## 🧠 観測された主な違い 
 
 ### ① 構造の安定性
 
@@ -155,7 +155,7 @@ no text, no logo
 
 ---
 
-### ④ 時代指定の差 ⚠️
+### ⚠️ ④ 時代指定の差 
 
 #### 日本語
 ```text
@@ -179,7 +179,7 @@ Edo period Japanese temple architecture
 
 ---
 
-## なぜこの差が生まれるのか 🧠
+## 🧠 なぜこの差が生まれるのか 
 
 ### ① 学習データ量の差
 
@@ -210,7 +210,7 @@ Edo period Japanese temple architecture
 
 ---
 
-## 使い分け指針（重要） ⚙️
+## ⚙️ 使い分け指針（重要）
 
 | 目的 | 推奨言語 |
 |---|---|
@@ -224,7 +224,7 @@ Edo period Japanese temple architecture
 
 ---
 
-## 実運用への示唆 ⚙️
+## ⚙️ 実運用への示唆 
 
 - 🔬 分析・検証用途  
   → 英語プロンプトを基準にする
@@ -235,7 +235,7 @@ Edo period Japanese temple architecture
 
 ---
 
-## まとめ ✅
+## ✅ まとめ 
 
 - 同じ意味でも、言語が違えば結果は変わる
 - 日本語は **「情緒制御」**

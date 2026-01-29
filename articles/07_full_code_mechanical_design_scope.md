@@ -1,15 +1,11 @@
 ---
-title: "07. FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造"
-tags:
-  - 機械設計
-  - CAD
-  - FreeCAD
-  - LaTeX
-  - Klayout
-  - RTL
-  - Git
-qiita: true
-published_at: 2026-01-23
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
+# 07. FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造
+tags: 機械設計 CAD FreeCAD LaTeX Klayout RTL Git
+
 ---
 
 ## 🏁 はじめに（最終回）

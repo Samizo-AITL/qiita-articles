@@ -124,6 +124,15 @@ qiita-articles/
 - **20**  
   [日本語豆腐（□）はなぜ設定で直らないのか｜PPTXとフォントの構造【Marp】](articles/20_marp_japanese_tofu_not_fixable_by_settings.md)
 
+- **21**  
+  [【生成AI実験】同じ「京都」でもここまで変わる｜画像生成プロンプト指示語10パターン比較](articles/21_image-generation_kyoto_10patterns.md)
+
+- **22**  
+  [【生成AI実験】寺院建築で検証する｜画像生成プロンプト指示語10パターン比較](articles/22_image-generation_temple-architecture_10patterns.md)
+
+- **23**  
+  [【生成AI実験】日本語 vs 英語｜画像生成プロンプトは同じ意味でも同じ結果にならない](articles/23_image-generation_japanese-vs-english_prompt.md)
+
 - **901**  
   [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "LLMのからくりを構造で見る ― なぜ分かった気になるのか"
+title: "24. LLMのからくりを構造で見る ― なぜ分かった気になるのか"
 tags: [LLM, AI, 設計, Mermaid]
 ---
 
@@ -65,7 +65,7 @@ flowchart TD
 ### なぜ理解しているように見えるのか
 
 ```mermaid
-flowchart LR
+flowchart TD
     T1[トークン1] --> SA[Self-Attention]
     T2[トークン2] --> SA
     T3[トークン3] --> SA
@@ -124,7 +124,7 @@ LLMの内部では、次のようなことが起きている。
 ## 🧍 人間とLLMの決定的な違い
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Human[人間]
         H1[世界] --> H2[認識]
         H2 --> H3[状態]

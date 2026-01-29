@@ -9,7 +9,7 @@ tags:
 private: false
 ---
 
-## はじめに 🎯
+## 🎯 はじめに
 
 画像生成AIを使っていると、
 
@@ -33,7 +33,7 @@ private: false
 
 ---
 
-## なぜ「京都」を選んだか 🧠
+## 🧠 なぜ「京都」を選んだか
 
 「京都」は、画像生成の挙動を観測する題材として非常に扱いやすい。
 
@@ -52,7 +52,7 @@ private: false
 
 ---
 
-## 実験条件（固定ルール） 🔬
+## 🔬 実験条件（固定ルール）
 
 以下の条件をすべて固定する。
 
@@ -69,7 +69,7 @@ private: false
 
 ---
 
-## ベースプロンプト（共通） ⚙️
+## ⚙️ ベースプロンプト（共通） 
 
 以下を**共通ベース**とし、  
 各実験では差分のみを変更する。
@@ -103,7 +103,7 @@ no text, no logo, no watermark
 
 ---
 
-## 生成結果の比較（10パターン） 🔬
+## 🔬 生成結果の比較（10パターン） 
 
 ![Kyoto 10 patterns experiment](https://samizo-aitl.github.io/qiita-articles/assets/images/image_generation/kyoto_10patterns_experiment.png)
 
@@ -112,7 +112,7 @@ no text, no logo, no watermark
 
 ---
 
-## 観測結果の整理 🧠
+## 🧠 観測結果の整理
 
 ### ① 最初の名詞が世界観を決める
 
@@ -157,7 +157,7 @@ no text, no logo, no watermark
 
 ---
 
-### ④ 時代指定は最強パラメータ ⚠️
+### ⚠️ ④ 時代指定は最強パラメータ 
 
 - Edo period
 - modern
@@ -188,7 +188,7 @@ no text, no logo, no watermark
 
 ---
 
-## 実運用への示唆 ⚙️
+## ⚙️ 実運用への示唆
 
 - 🎯 アイキャッチ画像  
   → 名詞＋感情語を最初に置く
@@ -201,7 +201,7 @@ no text, no logo, no watermark
 
 ---
 
-## まとめ ✅
+## ✅ まとめ
 
 - プロンプトは呪文ではない  
 - プロンプトは **制御入力**  

@@ -1,5 +1,5 @@
 ---
-title: "LLMを外側に置くとなぜ安定するのか ― 壊れない構造の作り方"
+title: "26. LLMを外側に置くとなぜ安定するのか ― 壊れない構造の作り方"
 tags: [LLM, AI, 設計, Mermaid]
 ---
 
@@ -57,7 +57,7 @@ flowchart TD
 ### ① 役割が混ざらない
 
 ```mermaid
-flowchart LR
+flowchart TD
     L[LLM] -->|提案| C[制御]
     C -->|実行| A[出力]
 ```
@@ -74,7 +74,7 @@ flowchart LR
 ### ② 正しさの責任が明確
 
 ```mermaid
-flowchart LR
+flowchart TD
     L[LLM] --> P[案]
     P --> H[人間 or ルール]
     H --> D[決定]
@@ -94,7 +94,7 @@ flowchart LR
 ### ③ 時間軸が分離される
 
 ```mermaid
-flowchart LR
+flowchart TD
     Fast[高速ループ] --> C[制御]
     Slow[低速・非同期] --> L[LLM]
 ```
@@ -148,7 +148,7 @@ LLMを外側に置くと、
 ## 🧠 人間の位置づけ
 
 ```mermaid
-flowchart LR
+flowchart TD
     L[LLM] --> H[人間]
     H --> C[制御・決定]
 ```

@@ -89,7 +89,7 @@ no text, no logo
 
 ## 生成結果の比較（日本語 vs 英語）
 
-![Japanese vs English prompt comparison](assets/images/image_generation/japanese_vs_english_prompt_comparison.png)
+![Japanese vs English prompt comparison](https://samizo-aitl.github.io/qiita-articles/assets/images/image_generation/japanese_vs_english_prompt_comparison.png)
 
 *図1：同一テーマ・同一条件において、日本語プロンプトと英語プロンプトで
 生成結果がどのように変化するかを比較した図*

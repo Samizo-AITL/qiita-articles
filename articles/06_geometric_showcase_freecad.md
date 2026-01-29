@@ -1,11 +1,11 @@
 ---
-title: "06. FreeCAD: GUI操作ゼロでここまで作れる ― 関数定義だけで生成する幾何学ソリッド"
-tags:
-  - FreeCAD
-  - CAD
-  - Python
-  - 機械設計
-  - 数学
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
+# 06. FreeCAD: GUI操作ゼロでここまで作れる ― 関数定義だけで生成する幾何学ソリッド
+tags: FreeCAD CAD Python 機械設計 数学
+
 ---
 
 ## はじめに

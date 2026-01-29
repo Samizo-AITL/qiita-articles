@@ -133,6 +133,15 @@ qiita-articles/
 - **23**  
   [【生成AI実験】日本語 vs 英語｜画像生成プロンプトは同じ意味でも同じ結果にならない](articles/23_image-generation_japanese-vs-english_prompt.md)
 
+- **24**  
+  [【LLM基礎】LLMのからくりを構造で見る｜なぜ分かった気になるのか](articles/24_llm_structure_overview.md)
+
+- **25**  
+  [【LLM設計】LLMを制御ループに入れるとどう壊れるか｜失敗パターンの構造分析](articles/25_llm_in_control_loop_breaks.md)
+
+- **26**  
+  [【LLM設計】LLMを外側に置くとなぜ安定するのか｜壊れない配置の作り方](articles/26_llm_outer_layer_stability.md)
+
 - **901**  
   [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

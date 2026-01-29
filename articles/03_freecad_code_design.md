@@ -1,13 +1,10 @@
 ---
-title: 03. GUI CADとコード設計をどう併用するか ― FreeCADで始める最小コード設計
-tags:
-  - 機械設計
-  - CAD
-  - FreeCAD
-  - Python
-qiita: true
-published_at: 2026-01-23
+title: "qiita-articles"
+description: "qiita-articles"
 ---
+
+# 03. GUI CADとコード設計をどう併用するか ― FreeCADで始める最小コード設計
+tags: 機械設計 CAD FreeCAD Python
 
 ## はじめに
 

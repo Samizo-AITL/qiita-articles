@@ -1,5 +1,5 @@
 ---
-title: "LLMを制御ループに入れるとどう壊れるか ― 構造で見る失敗パターン"
+title: "25. LLMを制御ループに入れるとどう壊れるか ― 構造で見る失敗パターン"
 tags: [LLM, AI, 設計, Mermaid]
 ---
 
@@ -30,7 +30,7 @@ LLMの正体が **「文脈 → 確率 → 生成」の変換器**であるこ�
 まずは、ありがちな構成から。
 
 ```mermaid
-flowchart LR
+flowchart TD
     S[センサ / 入力] --> L[LLM]
     L --> C[制御・判断]
     C --> A[アクチュエータ / 出力]
@@ -54,7 +54,7 @@ flowchart LR
 ### ① 状態を保持できない
 
 ```mermaid
-flowchart LR
+flowchart TD
     X[現在の入力] --> L[LLM]
     L --> Y[出力]
 ```
@@ -96,7 +96,7 @@ LLM自身は埋められない。
 ### ③ 時間を扱えない
 
 ```mermaid
-flowchart LR
+flowchart TD
     T1[時刻 t] --> L1[LLM]
     T2[時刻 t+1] --> L2[LLM]
 ```

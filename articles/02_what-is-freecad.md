@@ -1,14 +1,10 @@
 ---
-title: 02. FreeCADとは何か ― 設計をコードで記述するためのCAD
-tags:
-  - CAD
-  - FreeCAD
-  - 機械設計
-  - Python
-  - 設計思想
-qiita: true
-published_at: 2026-01-23
+title: "qiita-articles"
+description: "qiita-articles"
 ---
+
+# 02. FreeCADとは何か ― 設計をコードで記述するためのCAD
+tags: CAD FreeCAD 機械設計 Python 設計思想
 
 # FreeCADとは何か  
 ## ― 設計をコードで記述するためのCAD

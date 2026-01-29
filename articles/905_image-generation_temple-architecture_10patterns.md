@@ -102,6 +102,7 @@ no text, no logo, no watermark
 
 ```markdown
 ![Temple architecture 10 patterns experiment](assets/images/image_generation/temple_10patterns_experiment.png)
+![Temple architecture 10 patterns experiment](assets/images/image_generation/temple_10patterns_experiment.png)
 ```
 
 *図1：寺院建築をテーマに、指示語のみを変更した10パターンの生成結果*

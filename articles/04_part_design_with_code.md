@@ -1,12 +1,11 @@
 ---
-title: 04. Part Designを捨てずにコード設計を導入する ― FreeCADでの現実解
-tags:
-  - 機械設計
-  - CAD
-  - FreeCAD
-  - Python
-qiita: true
-published_at: 2026-01-23
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
+# 04. Part Designを捨てずにコード設計を導入する ― FreeCADでの現実解
+tags: 機械設計 CAD FreeCAD Python
+
 ---
 
 ## はじめに

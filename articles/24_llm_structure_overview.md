@@ -124,7 +124,7 @@ LLMの内部では、次のようなことが起きている。
 ## 🧍 人間とLLMの決定的な違い
 
 ```mermaid
-flowchart TD
+flowchart LR
     subgraph Human[人間]
         H1[世界] --> H2[認識]
         H2 --> H3[状態]

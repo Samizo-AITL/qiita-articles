@@ -1,13 +1,11 @@
 ---
-title: 05. 設計をコード化すると「差分」が意味を持つ ― GUI CADとの決定的な違い
-tags:
-  - 機械設計
-  - CAD
-  - Git
-  - FreeCAD
-  - Python
-qiita: true
-published_at: 2026-01-23
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
+# 05. 設計をコード化すると「差分」が意味を持つ ― GUI CADとの決定的な違い
+tags: 機械設計 CAD Git FreeCAD Python
+
 ---
 
 ## はじめに

@@ -65,64 +65,64 @@ qiita-articles/
 ## Articles
 
 - **01**  
-  [GUI CADから脱却して設計をコード化するという考え方](articles/01_gui-cad-to-code.md)
+  [【機械設計】GUI CADから脱却して設計をコード化するという考え方](articles/01_gui-cad-to-code.md)
 
 - **02**  
-  [FreeCADとは何か（GUIとコードの位置づけ）](articles/02_what-is-freecad.md)
+  [【機械設計】FreeCADとは何か（GUIとコードの位置づけ）](articles/02_what-is-freecad.md)
 
 - **03**  
-  [FreeCADをコード設計ツールとして使う](articles/03_freecad_code_design.md)
+  [【機械設計】FreeCADをコード設計ツールとして使う](articles/03_freecad_code_design.md)
 
 - **04**  
-  [コードで行うパーツ設計の実例](articles/04_part_design_with_code.md)
+  [【機械設計】コードで行うパーツ設計の実例](articles/04_part_design_with_code.md)
 
 - **05**  
-  [CAD設計をGit diffでレビューする](articles/05_git_diff_code_design.md)
+  [【機械設計】CAD設計をGit diffでレビューする](articles/05_git_diff_code_design.md)
 
 - **06**  
-  [FreeCAD幾何モデルのショーケース](articles/06_geometric_showcase_freecad.md)
+  [【機械設計】FreeCAD幾何モデルのショーケース](articles/06_geometric_showcase_freecad.md)
 
 - **07**  
-  [FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造](articles/07_full_code_mechanical_design_scope.md)
+  [【機械設計】FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造](articles/07_full_code_mechanical_design_scope.md)
 
 - **08**  
-  [GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる](articles/08_ga4_world_clock.md)
+  [【GA4】GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる](articles/08_ga4_world_clock.md)
 
 - **09**  
-  [SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/09_svg_shooter_with_dom.md)
+  [【ゲーム】SVG(DOM)だけでシューティングを完成させた（Canvas不要）](articles/09_svg_shooter_with_dom.md)
 
 - **10**  
-  [SVGシューティングをFSMで整理する（DOMゲームを壊さない設計）](articles/10_svg_shooter_with_fsm.md)
+  [【ゲーム】SVGシューティングをFSMで整理する（DOMゲームを壊さない設計）](articles/10_svg_shooter_with_fsm.md)
 
 - **11**  
-  [FSMで難易度と敵AIを制御する（SVGシューティング設計拡張）](articles/11_svg_shooter_fsm_difficulty_ai.md)
+  [【ゲーム】FSMで難易度と敵AIを制御する（SVGシューティング設計拡張）](articles/11_svg_shooter_fsm_difficulty_ai.md)
 
 - **12**  
-  [SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/12_svg_shooter_complete_game.md)
+  [【ゲーム】SVGシューティング完成版（FSM設計でちゃんと遊べるゲーム）](articles/12_svg_shooter_complete_game.md)
 
 - **13**  
-  [Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）](articles/13_canvas_shooter_qiita.md)
+  [【ゲーム】Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）](articles/13_canvas_shooter_qiita.md)
 
 - **14**  
-  [SVGとCanvas、同じシューティングを作ってみたら体験が全然違った](articles/14_svg_vs_canvas_same_game.md)
+  [【ゲーム】SVGとCanvas、同じシューティングを作ってみたら体験が全然違った](articles/14_svg_vs_canvas_same_game.md)
 
 - **15**  
-  [AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/15_ai_template_rekiden_kawanakajima.md)
+  [【Rekiden】AIにテンプレを貼るだけで戦国SLGが始まる｜Rekiden 川中島シナリオ](articles/15_ai_template_rekiden_kawanakajima.md)
 
 - **16**  
-  [AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす](articles/16_ai_game_fsm_design_rekiden.md)
+  [【Rekiden】AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす](articles/16_ai_game_fsm_design_rekiden.md)
 
 - **17**  
-  [AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/17_ai_vs_ai_auto_history_rekiden.md)
+  [【Rekiden】AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く](articles/17_ai_vs_ai_auto_history_rekiden.md)
 
 - **18**  
-  [VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法【Marp】](articles/18_vscode_md_to_html_pptx_marp.md)
+  [【Marp】VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法](articles/18_vscode_md_to_html_pptx_marp.md)
 
 - **19**  
-  [GitHub ActionsでMarkdownからプレゼン資料を自動生成しようとして、日本語豆腐で止まった話【Marp】](articles/19_marp_github_actions_japanese_tofu.md)
+  [【Marp】GitHub ActionsでMarkdownからプレゼン資料を自動生成しようとして、日本語豆腐で止まった話](articles/19_marp_github_actions_japanese_tofu.md)
 
 - **20**  
-  [日本語豆腐（□）はなぜ設定で直らないのか｜PPTXとフォントの構造【Marp】](articles/20_marp_japanese_tofu_not_fixable_by_settings.md)
+  [【Marp】日本語豆腐（□）はなぜ設定で直らないのか｜PPTXとフォントの構造](articles/20_marp_japanese_tofu_not_fixable_by_settings.md)
 
 - **21**  
   [【生成AI実験】同じ「京都」でもここまで変わる｜画像生成プロンプト指示語10パターン比較](articles/21_image-generation_kyoto_10patterns.md)
@@ -143,13 +143,13 @@ qiita-articles/
   [【LLM設計】LLMを外側に置くとなぜ安定するのか｜壊れない配置の作り方](articles/26_llm_outer_layer_stability.md)
 
 - **901**  
-  [送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
+  [【送電線・鉄塔点検ドローンSkyEdge】差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 
 - **902**  
-  [送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る](articles/902_skyedge_powerline_vi_budget.md)
+  [【送電線・鉄塔点検ドローンSkyEdge】1フライトV–I予算を切る](articles/902_skyedge_powerline_vi_budget.md)
 
 - **903**  
-  [送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ](articles/903_skyedge_cmos_lens_distance_tradeoff.md)
+  [【送電線・鉄塔点検ドローンSkyEdge】CMOS×レンズ×撮影距離のトレードオフ](articles/903_skyedge_cmos_lens_distance_tradeoff.md)
   
 （必要に応じて番号順に追記）
 

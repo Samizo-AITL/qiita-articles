@@ -6,6 +6,8 @@ description: "qiita-articles"
 # 01. GUI CADから脱却して設計をコード化するという考え方
 tags: 機械設計 CAD Python
 
+---
+
 ## はじめに
 
 機械設計の多くは GUI CAD を使って行われていますが、

@@ -1,3 +1,8 @@
+---
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
 # 10.【JS】SVGシューティングをFSMで整理する｜DOMゲームを壊さないための中間設計
 tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 

@@ -30,7 +30,7 @@ pn接合のバンド図は、教科書ではたいてい次の形で示されま
 そこで、pn接合のバンド構造を  
 **位置 × バイアス × エネルギー** の 3D で可視化しました。
 
-![pn band energy surface](https://raw.githubusercontent.com/Samizo-AITL/qiita-articles/main/demos/gif_anim/pn_band_energy_surface.gif)
+![pn band energy surface](https://samizo-aitl.github.io/qiita-articles/demos/gif_anim/pn_band_energy_surface.gif)
 
 ### 軸の意味
 - x軸：位置（p → n）  

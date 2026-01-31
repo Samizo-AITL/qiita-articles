@@ -137,6 +137,15 @@ qiita-articles/
 - **26**  
   [【LLM設計】LLMを外側に置くとなぜ安定するのか｜壊れない配置の作り方](articles/26_llm_outer_layer_stability.md)
 
+- **27**  
+  [【可視化の試み】難しい半導体物理・制御理論をアニメーションで理解する](articles/27_gif_animation_visualization_intro.md)
+
+- **28**  
+  [【可視化】pn接合バンド構造を3Dアニメーションで見てみる](articles/28_gif_anim_pn_junction_band.md)
+
+- **29**  
+  [【可視化】P制御のゲイン調整をアニメーションで理解する](articles/29_gif_anim_p_control.md)
+
 - **901**  
   [【送電線・鉄塔点検ドローンSkyEdge】差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

@@ -21,7 +21,7 @@ P制御の説明では、教科書にだいたい次のように書かれてい�
 そこで、P制御のステップ応答を  
 **Kpだけ変えて、同時にアニメ表示**してみました。
 
-![P control step response](https://raw.githubusercontent.com/Samizo-AITL/qiita-articles/main/demos/gif_anim/p_step_only.gif)
+![P control step response](https://samizo-aitl.github.io/qiita-articles/demos/gif_anim/p_step_only.gif)
 
 ### 見てほしいポイント
 - 同一プラント  

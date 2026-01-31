@@ -1,3 +1,8 @@
+---
+title: "qiita-articles"
+description: "qiita-articles"
+---
+
 # 09.【JS】SVG(DOM)だけでシューティングを完成させた（Canvas不要） 
 tags: [JavaScript, SVG, Web, 初心者]
 

@@ -161,6 +161,24 @@ tags: ["音声生成AI", "FSM", "割り込み", "設計思想", "制御構造"]
 
 ---
 
+## ✋ 割り込みデモ
+
+Speaking 中に割り込みが発生した場合の挙動を、  
+FSMとして確認できる音声デモを用意しました。
+
+▶ デモ  
+https://samizo-aitl.github.io/qiita-articles/demos/audio-fsm-interrupt/
+
+本デモでは、
+
+- 音声の即時停止  
+- Speaking → Interrupted の遷移  
+- FSM主導の制御  
+
+を確認できます。
+
+---
+
 ## 📌 まとめ
 
 - ✋ 割り込みは通常動作  

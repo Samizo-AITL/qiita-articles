@@ -161,6 +161,18 @@ qiita-articles/
 - **34**  
   [【音声生成AI設計】LLMを安全に接続する｜Thinking状態にだけ置く理由](articles/34_audio_ai_llm_safe_connection.md)
 
+- **35**  
+  [【フィジカルAI設計】🤖⚙️ フィジカルAIとは何か｜なぜAIは現実世界に出ると壊れるのか](articles/35_physical_ai_definition.md)
+
+- **36**  
+  [【フィジカルAI設計】💥 なぜLLM直結は失敗するのか｜遅延・非決定性・制御不能](articles/36_llm_direct_connection_failure.md)
+
+- **37**  
+  [【フィジカルAI設計】🏗️ 壊れない作り方｜PID×FSM×LLMの三層構造](articles/37_physical_ai_three_layer_architecture.md)
+
+- **38**  
+  [【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる](articles/38_aitl_demo_pid_vs_fsm.md)
+
 - **901**  
   [【送電線・鉄塔点検ドローンSkyEdge】差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

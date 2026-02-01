@@ -1,0 +1,23 @@
+<button id="start">START</button>
+
+<script>
+let state = "Idle";
+
+function transition(next) {
+  console.log(state + " -> " + next);
+  state = next;
+}
+
+function speak(text) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.onend = () => transition("Idle");
+  speechSynthesis.speak(utterance);
+}
+
+document.getElementById("start").onclick = () => {
+  if (state !== "Idle") return;
+
+  transition("Speaking");
+  speak("システム、起動しました。");
+};
+</script>

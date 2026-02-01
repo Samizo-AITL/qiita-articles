@@ -151,6 +151,21 @@ qiita-articles/
 - **29**  
   [【可視化】P制御のゲイン調整をアニメーションで理解する](articles/29_gif_anim_p_control.md)
 
+- **30**  
+  [【音声生成AI設計】音声AIはなぜすぐ壊れるのか｜LLMを直接つなぐと破綻する理由](articles/30_audio_ai_breaks_by_design.md)
+
+- **31**  
+  [【音声生成AI設計】音声AIをFSMで分解する｜発話・無音・割り込みはすべて状態だった](articles/31_audio_ai_fsm_decomposition.md)
+
+- **32**  
+  [【音声生成AI設計】FSMに最小の音声を接続する｜自然さを捨てた壊れない第一声](articles/32_audio_ai_minimal_speaking.md)
+
+- **33**  
+  [【音声生成AI設計】割り込みで音声AIは壊れる｜Speaking中に人が喋ったら何が起きるか](articles/33_audio_ai_interrupt_handling.md)
+
+- **34**  
+  [【音声生成AI設計】LLMを安全に接続する｜Thinking状態にだけ置く理由](articles/34_audio_ai_llm_safe_connection.md)
+
 - **901**  
   [【送電線・鉄塔点検ドローンSkyEdge】差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

@@ -6,6 +6,7 @@
   <style>
     body {
       font-family: sans-serif;
+      line-height: 1.6;
     }
     .state {
       padding: 10px;
@@ -20,43 +21,72 @@
       margin-right: 5px;
       margin-top: 10px;
     }
+    #log {
+      margin-top: 15px;
+      padding-left: 20px;
+      background: #f7f7f7;
+    }
   </style>
 </head>
 <body>
 
 <h2>🎧 Audio FSM Visual Demo</h2>
 
+<p>
+このデモは <strong>音声を出しません</strong>。<br>
+音声AIを <strong>FSM（有限状態機械）として分解すると何が起きているか</strong> を、
+状態と遷移として可視化するためのデモです。
+</p>
+
+<h3>🧩 状態（States）</h3>
 <div id="states">
-  <div class="state" data-state="Idle">Idle</div>
-  <div class="state" data-state="Listening">Listening</div>
-  <div class="state" data-state="Thinking">Thinking</div>
-  <div class="state" data-state="Speaking">Speaking</div>
-  <div class="state" data-state="Interrupted">Interrupted</div>
+  <div class="state" data-state="Idle">Idle（待機）</div>
+  <div class="state" data-state="Listening">Listening（入力中）</div>
+  <div class="state" data-state="Thinking">Thinking（生成準備）</div>
+  <div class="state" data-state="Speaking">Speaking（発話中）</div>
+  <div class="state" data-state="Interrupted">Interrupted（割り込み）</div>
 </div>
 
+<h3>🔄 操作（Events）</h3>
 <div>
-  <button onclick="transition('Listening')">音声入力開始</button>
-  <button onclick="transition('Thinking')">入力終了</button>
-  <button onclick="transition('Speaking')">発話開始</button>
-  <button onclick="transition('Interrupted')">割り込み</button>
-  <button onclick="transition('Idle')">リセット</button>
+  <button onclick="transition('Listening','音声入力開始')">音声入力開始</button>
+  <button onclick="transition('Thinking','入力終了')">入力終了</button>
+  <button onclick="transition('Speaking','発話開始')">発話開始</button>
+  <button onclick="transition('Interrupted','外部割り込み')">割り込み</button>
+  <button onclick="transition('Idle','リセット')">リセット</button>
 </div>
+
+<h3>📜 遷移ログ</h3>
+<ul id="log"></ul>
 
 <script>
+/* ===== FSM 状態 ===== */
 let state = "Idle";
 
-function transition(next) {
+/* ===== ログ表示 ===== */
+function log(message) {
+  const li = document.createElement("li");
+  li.textContent = message;
+  document.getElementById("log").appendChild(li);
+}
+
+/* ===== 状態遷移 ===== */
+function transition(next, reason) {
+  log(`[遷移] ${state} → ${next}（${reason}）`);
   state = next;
   updateView();
 }
 
+/* ===== 表示更新 ===== */
 function updateView() {
   document.querySelectorAll(".state").forEach(el => {
     el.classList.toggle("active", el.dataset.state === state);
   });
 }
 
+/* 初期表示 */
 updateView();
+log("初期状態：Idle");
 </script>
 
 </body>

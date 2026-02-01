@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Audio FSM Interrupt Demo</title>
   <style>
-    body { font-family: sans-serif; }
+    body { font-family: sans-serif; line-height: 1.6; }
     .state {
       padding: 10px;
       margin: 5px 0;
@@ -18,32 +18,53 @@
       margin-right: 5px;
       margin-top: 10px;
     }
+    #log {
+      margin-top: 15px;
+      background: #f7f7f7;
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
 
 <h2>✋ Audio FSM Interrupt Demo</h2>
 
+<p>
+このデモは <strong>Speaking 中の割り込み</strong> を FSM として可視化します。<br>
+割り込みは例外ではなく、<strong>通常の状態遷移</strong>です。
+</p>
+
+<h3>🧩 状態</h3>
 <div id="states">
-  <div class="state" data-state="Idle">Idle</div>
-  <div class="state" data-state="Speaking">Speaking</div>
-  <div class="state" data-state="Interrupted">Interrupted</div>
+  <div class="state" data-state="Idle">Idle（待機）</div>
+  <div class="state" data-state="Speaking">Speaking（発話中）</div>
+  <div class="state" data-state="Interrupted">Interrupted（割り込み）</div>
 </div>
 
+<h3>🔄 操作</h3>
 <div>
   <button id="start">START</button>
   <button id="interrupt">INTERRUPT</button>
   <button id="reset">RESET</button>
 </div>
 
+<h3>📜 遷移ログ</h3>
+<ul id="log"></ul>
+
 <script>
 let state = "Idle";
 let utterance = null;
 
-function transition(next) {
+function log(message) {
+  const li = document.createElement("li");
+  li.textContent = message;
+  document.getElementById("log").appendChild(li);
+}
+
+function transition(next, reason) {
+  log(`[遷移] ${state} → ${next}（${reason}）`);
   state = next;
   updateView();
-  console.log("state ->", state);
 }
 
 function updateView() {
@@ -53,7 +74,10 @@ function updateView() {
 }
 
 function startSpeaking() {
-  if (state !== "Idle") return;
+  if (state !== "Idle") {
+    log("⚠ Idle 以外では発話できません");
+    return;
+  }
 
   utterance = new SpeechSynthesisUtterance(
     "これは割り込み可能な音声デモです。途中で止めてください。"
@@ -61,26 +85,31 @@ function startSpeaking() {
 
   utterance.onend = () => {
     if (state === "Speaking") {
-      transition("Idle");
+      transition("Idle", "発話完了イベント");
     }
   };
 
-  transition("Speaking");
+  transition("Speaking", "STARTボタン押下");
   speechSynthesis.speak(utterance);
 }
 
 function interruptSpeaking() {
-  if (state !== "Speaking") return;
+  if (state !== "Speaking") {
+    log("⚠ Speaking 中のみ割り込み可能です");
+    return;
+  }
 
-  speechSynthesis.cancel();   // 即停止
-  transition("Interrupted");
+  speechSynthesis.cancel();
+  transition("Interrupted", "外部割り込み検出");
 }
 
 document.getElementById("start").onclick = startSpeaking;
 document.getElementById("interrupt").onclick = interruptSpeaking;
-document.getElementById("reset").onclick = () => transition("Idle");
+document.getElementById("reset").onclick = () =>
+  transition("Idle", "手動リセット");
 
 updateView();
+log("初期状態：Idle");
 </script>
 
 </body>

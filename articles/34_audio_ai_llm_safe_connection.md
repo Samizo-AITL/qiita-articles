@@ -196,8 +196,3 @@ if state == "Thinking":
 必要になったときに、別シリーズでやればいい。
 
 （GitHub上のMarkdownを正本とし、Qiitaには抜粋・調整して投稿）
-
-
----
-
-（GitHub上のMarkdownを正本とし、Qiitaには抜粋・調整して投稿）

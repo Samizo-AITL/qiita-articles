@@ -154,6 +154,24 @@ def on_event(event):
 
 ---
 
+## 🔊 最小デモ
+
+FSMが許可したときにのみ音声が出る、  
+最小構成の音声デモを用意しました。
+
+▶ デモ  
+https://samizo-aitl.github.io/qiita-articles/demos/audio-fsm-minimal/
+
+本デモは、
+
+- Speaking 状態でのみ音声が出る  
+- 発話終了は明示イベントで検出する  
+- 無限発話・無音フリーズが起きない  
+
+ことを確認するためのものです。
+
+---
+
 ## 🔜 次の記事（33）
 
 - ✋ Speaking 中に人が喋ったらどうする？

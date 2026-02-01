@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio FSM Interrupt Demo</title>
+  <style>
+    body { font-family: sans-serif; }
+    .state {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+    }
+    .active {
+      background: #ffd6cc;
+      font-weight: bold;
+    }
+    button {
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>✋ Audio FSM Interrupt Demo</h2>
+
+<div id="states">
+  <div class="state" data-state="Idle">Idle</div>
+  <div class="state" data-state="Speaking">Speaking</div>
+  <div class="state" data-state="Interrupted">Interrupted</div>
+</div>
+
+<div>
+  <button id="start">START</button>
+  <button id="interrupt">INTERRUPT</button>
+  <button id="reset">RESET</button>
+</div>
+
+<script>
+let state = "Idle";
+let utterance = null;
+
+function transition(next) {
+  state = next;
+  updateView();
+  console.log("state ->", state);
+}
+
+function updateView() {
+  document.querySelectorAll(".state").forEach(el => {
+    el.classList.toggle("active", el.dataset.state === state);
+  });
+}
+
+function startSpeaking() {
+  if (state !== "Idle") return;
+
+  utterance = new SpeechSynthesisUtterance(
+    "これは割り込み可能な音声デモです。途中で止めてください。"
+  );
+
+  utterance.onend = () => {
+    if (state === "Speaking") {
+      transition("Idle");
+    }
+  };
+
+  transition("Speaking");
+  speechSynthesis.speak(utterance);
+}
+
+function interruptSpeaking() {
+  if (state !== "Speaking") return;
+
+  speechSynthesis.cancel();   // 即停止
+  transition("Interrupted");
+}
+
+document.getElementById("start").onclick = startSpeaking;
+document.getElementById("interrupt").onclick = interruptSpeaking;
+document.getElementById("reset").onclick = () => transition("Idle");
+
+updateView();
+</script>
+
+</body>
+</html>

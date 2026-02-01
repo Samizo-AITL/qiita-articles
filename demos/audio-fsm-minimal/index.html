@@ -1,23 +1,42 @@
 <button id="start">START</button>
+<div id="state">State: Idle</div>
+<ul id="log"></ul>
 
 <script>
+/* ===== FSM ===== */
 let state = "Idle";
 
-function transition(next) {
-  console.log(state + " -> " + next);
-  state = next;
+function log(message) {
+  const li = document.createElement("li");
+  li.textContent = message;
+  document.getElementById("log").appendChild(li);
 }
 
+function transition(next, reason) {
+  log(`[遷移] ${state} → ${next}（${reason}）`);
+  state = next;
+  document.getElementById("state").textContent = "State: " + state;
+}
+
+/* ===== 音声出力（FSMの従属物） ===== */
 function speak(text) {
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.onend = () => transition("Idle");
+
+  utterance.onend = () => {
+    transition("Idle", "発話完了イベント");
+  };
+
   speechSynthesis.speak(utterance);
 }
 
+/* ===== UI ===== */
 document.getElementById("start").onclick = () => {
-  if (state !== "Idle") return;
+  if (state !== "Idle") {
+    log("⚠ Idle 以外では発話できません");
+    return;
+  }
 
-  transition("Speaking");
+  transition("Speaking", "STARTボタン押下");
   speak("システム、起動しました。");
 };
 </script>

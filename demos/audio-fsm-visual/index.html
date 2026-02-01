@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio FSM Visual Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .state {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+    }
+    .active {
+      background: #cce5ff;
+      font-weight: bold;
+    }
+    button {
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🎧 Audio FSM Visual Demo</h2>
+
+<div id="states">
+  <div class="state" data-state="Idle">Idle</div>
+  <div class="state" data-state="Listening">Listening</div>
+  <div class="state" data-state="Thinking">Thinking</div>
+  <div class="state" data-state="Speaking">Speaking</div>
+  <div class="state" data-state="Interrupted">Interrupted</div>
+</div>
+
+<div>
+  <button onclick="transition('Listening')">音声入力開始</button>
+  <button onclick="transition('Thinking')">入力終了</button>
+  <button onclick="transition('Speaking')">発話開始</button>
+  <button onclick="transition('Interrupted')">割り込み</button>
+  <button onclick="transition('Idle')">リセット</button>
+</div>
+
+<script>
+let state = "Idle";
+
+function transition(next) {
+  state = next;
+  updateView();
+}
+
+function updateView() {
+  document.querySelectorAll(".state").forEach(el => {
+    el.classList.toggle("active", el.dataset.state === state);
+  });
+}
+
+updateView();
+</script>
+
+</body>
+</html>

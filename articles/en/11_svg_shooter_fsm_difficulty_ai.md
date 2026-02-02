@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 11. [JavaScript] Adding Difficulty and Enemy AI to an SVG Shooter  
+# 11. 【JavaScript】 Adding Difficulty and Enemy AI to an SVG Shooter  
 ## — When FSM Changes How the Game *Feels*
 tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 

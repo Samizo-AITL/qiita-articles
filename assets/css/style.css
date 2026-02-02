@@ -1,0 +1,91 @@
+/* ===== Base ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+  color: #222;
+  background: #fafafa;
+}
+
+main {
+  max-width: 960px;
+  margin: 2.5rem auto;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+/* ===== Headings ===== */
+h1 {
+  border-bottom: 3px solid #222;
+  padding-bottom: 0.4em;
+}
+
+h2 {
+  border-left: 6px solid #3b82f6;
+  padding-left: 0.6em;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #1f2937;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Tables ===== */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #d1d5db;
+  padding: 0.6em 0.8em;
+}
+
+th {
+  background: #f3f4f6;
+  text-align: left;
+}
+
+/* ===== Code ===== */
+code {
+  background: #f3f4f6;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* ===== Lists ===== */
+ul {
+  margin-left: 1.2rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+/* ===== Mermaid ===== */
+.mermaid {
+  margin: 2rem 0;
+  text-align: center;
+}

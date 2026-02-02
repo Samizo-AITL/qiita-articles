@@ -3,12 +3,12 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "14.【JS】SVGとCanvas、同じシューティングを作ってみたら体験が全然違った"
 tags: ["JavaScript", "SVG", "Canvas", "GameDev", "Web"]
+
 ---
 
-# 🎮 SVGとCanvas、同じシューティングを作ってみたら体験が全然違った
+## 🎮 SVGとCanvas、同じシューティングを作ってみたら体験が全然違った
 
 同じ題材のシューティングゲームを、  
 **SVG版**と**Canvas版**の2通りで作ってみました。

@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "34.【音声生成AI設計】LLMを安全に接続する｜Thinking状態にだけ置く理由"
+# 34.【音声生成AI設計】LLMを安全に接続する｜Thinking状態にだけ置く理由
 tags: ["音声生成AI", "LLM", "FSM", "制御構造", "生成AI設計"]
 
 ---

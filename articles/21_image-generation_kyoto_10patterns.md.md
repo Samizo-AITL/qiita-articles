@@ -3,7 +3,6 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "21.【生成AI実験】同じ「京都」でもここまで変わる｜画像生成プロンプト指示語10パターン比較"
 tags:
   - 生成AI
@@ -11,7 +10,7 @@ tags:
   - プロンプト
   - 実験
   - Kyoto
-private: false
+
 ---
 
 ## 🎯 はじめに

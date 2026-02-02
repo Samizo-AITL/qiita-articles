@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "41.【物理の世界観】🔥 熱とエネルギー｜fJから恒星まで全部つながっている"
 tags:
   - 物理

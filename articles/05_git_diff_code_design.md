@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 05. 設計をコード化すると「差分」が意味を持つ ― GUI CADとの決定的な違い

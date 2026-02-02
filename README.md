@@ -173,6 +173,15 @@ qiita-articles/
 - **38**  
   [【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる](articles/38_aitl_demo_pid_vs_fsm.md)
 
+- **39**  
+  [【物理の世界観】🌌 距離と時間｜Å・nm・km・光年を同じ軸で踏み抜く](articles/39_physics_scale_distance_time.md)
+
+- **40**  
+  [【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない](articles/40_physics_scale_resistance_current.md)
+
+- **41**  
+  [【物理の世界観】🔥 熱とエネルギー｜fJから恒星まで全部つながっている](articles/41_physics_scale_heat_energy.md)
+
 - **901**  
   [【送電線・鉄塔点検ドローンSkyEdge】差別化を仕様で固定する](articles/901_skyedge_powerline_inspection_spec.md)
 

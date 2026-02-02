@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "35.【フィジカルAI設計】🤖⚙️ フィジカルAIとは何か｜なぜAIは現実世界に出ると壊れるのか"
+# 35.【フィジカルAI設計】🤖⚙️ フィジカルAIとは何か｜なぜAIは現実世界に出ると壊れるのか
 tags:
   - フィジカルAI
   - PhysicalAI

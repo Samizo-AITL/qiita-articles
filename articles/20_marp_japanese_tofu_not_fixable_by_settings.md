@@ -3,7 +3,6 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "20.【Marp】日本語豆腐（□）はなぜ設定で直らないのか｜PPTXとフォントの構造"
 tags:
   - Markdown
@@ -11,7 +10,7 @@ tags:
   - PowerPoint
   - フォント
   - GitHubActions
-private: false
+
 ---
 
 ## 🎯 この記事でやること

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: Qiita Articles 
 ---
 
 # 12.【JS】SVGシューティング完成版｜FSMは裏側、遊ぶのが主役

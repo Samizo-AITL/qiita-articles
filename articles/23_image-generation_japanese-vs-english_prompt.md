@@ -3,7 +3,6 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "23.【生成AI実験】日本語 vs 英語｜画像生成プロンプトは同じ意味でも同じ結果にならない"
 tags:
   - 生成AI
@@ -12,7 +11,7 @@ tags:
   - 実験
   - 日本語
   - English
-private: false
+
 ---
 
 ## 🎯 はじめに

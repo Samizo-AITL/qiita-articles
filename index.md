@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# qiita-articles
+# 🧩📚　qiita-articles
 
 このリポジトリは、Qiitaに投稿した技術記事を  
 **「原稿（一次情報）」としてGitHubで管理するためのリポジトリ**です。
@@ -22,16 +22,16 @@ GitHubは **記事の正本・編集履歴・構造管理の場**
 
 ---
 
-## Purpose
+🎯 Purpose
 
-- Qiita記事本文を Markdown で管理する
-- 改稿・追記・構成変更を履歴として残す
-- 図・補足資料・参考リンクを記事と一体で管理する
-- 単発記事を将来的にシリーズ・体系へ発展させられる状態を保つ
+- 📝 Qiita記事本文を Markdown で管理する
+- 🧭 改稿・追記・構成変更を履歴として残す
+- 🖼️ 図・補足資料・参考リンクを記事と一体で管理する
+- 🧱 単発記事を将来的にシリーズ・体系へ発展させられる状態を保つ
 
 ---
 
-## Repository Structure
+## 🗂 Repository Structure
 
 ```
 qiita-articles/
@@ -43,26 +43,26 @@ qiita-articles/
 └─ references/
 ```
 
-### 各ディレクトリの役割
-- `articles/`  
+### 📁 各ディレクトリの役割
+- ✍️ `articles/`  
   Qiita記事の本文（原稿・正本）
-- `assets/images/`  
+- 🖼️ `assets/images/`  
   記事で使用する画像・図・スクリーンショット
-- `references/`  
+- 📎 `references/`  
   補足説明、参考リンク、検討メモなど（Qiita未掲載情報を含む）
 
 ---
 
-## Writing Policy
+## 🧪 Writing Policy
 
-- GitHub上のMarkdownを**正本**とする
-- Qiitaには公開用として抜粋・調整した内容を投稿する
-- 構成変更・加筆はGitHub側で先に行う
-- 記事は「読み物」ではなく**技術資産**として扱う
+- 🏛 GitHub上のMarkdownを**正本**とする
+- 📣 Qiitaには公開用として抜粋・調整した内容を投稿する
+- 🔁 構成変更・加筆はGitHub側で先に行う
+- 🧠 記事は「読み物」ではなく**技術資産**として扱う
 
 ---
 
-## Articles
+## 📚 Articles
 
 - **01**  
   [【機械設計】GUI CADから脱却して設計をコード化するという考え方](articles/01_gui-cad-to-code.md)

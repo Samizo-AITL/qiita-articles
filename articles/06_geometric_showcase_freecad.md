@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 06. FreeCAD: GUI操作ゼロでここまで作れる ― 関数定義だけで生成する幾何学ソリッド

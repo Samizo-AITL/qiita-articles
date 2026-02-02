@@ -223,7 +223,8 @@ It is not intended for direct production use or redistribution.
 Actual design code and licensing policies are managed here:
 
 - Full Code Mechanical Design  
-  https://samizo-aitl.github.io/full-code-mechanical-design/
+  [https://samizo-aitl.github.io/full-code-mechanical-design/](https://samizo-aitl.github.io/full-code-mechanical-design/)
+
 
 *Note: FreeCAD’s API may change in the future.  
 This article focuses on explaining the underlying concept.*

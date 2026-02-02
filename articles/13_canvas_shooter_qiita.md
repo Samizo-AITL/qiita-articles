@@ -3,12 +3,12 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "13.【JS】Canvasで弾幕を撃ったら気持ちよすぎた（設計？今回は置いとく）"
 tags: ["JavaScript", "Canvas", "GameDev", "Web"]
+
 ---
 
-# 💥 Canvasで弾幕を撃ったら気持ちよすぎた
+## 💥 Canvasで弾幕を撃ったら気持ちよすぎた
 
 👉 **今回は説明少なめです**  
 👉 **まずは触ってみてください**

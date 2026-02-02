@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "37.【フィジカルAI設計】🏗️ 壊れない作り方｜PID×FSM×LLMの三層構造"
 description: "フィジカルAIで壊れないための三層アーキテクチャを示す"
 tags:

@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 12.【JS】SVG Shooting Game (Final)｜FSM Stays Behind the Scenes, Playing Comes First
+# 12.【JavaScript】SVG Shooting Game (Final)｜FSM Stays Behind the Scenes, Playing Comes First
 tags: ["JavaScript", "SVG", "GameDev", "FSM"]
 
 ---

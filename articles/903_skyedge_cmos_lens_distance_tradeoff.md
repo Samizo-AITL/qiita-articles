@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "903.【設計】送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ"
+# 903.【設計】送電線・鉄塔点検ドローンSkyEdge：CMOS×レンズ×撮影距離のトレードオフ
 tags:
   - ドローン
   - 送電線

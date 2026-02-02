@@ -67,7 +67,7 @@ qiita-articles/
 ## 📚 Articles
 
 - **01**  
-  [【Mechanical Design】From GUI CAD to Code-Based Design](articles/01_gui-cad-to-code.md)
+  [【Mechanical Design】From GUI CAD to Code-Based Design](./articles/01_gui-cad-to-code.md)
 
 - **02**  
   [【Mechanical Design】What Is FreeCAD? — The Roles of GUI and Code](articles/02_what-is-freecad.md)

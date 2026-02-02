@@ -34,14 +34,14 @@ while GitHub serves as the **canonical store for content, structure, and revisio
 
 ```
 qiita-articles/
-├─ README.md
-├─ index.md
+├─ README.md    Japanese
+├─ index.md     Japanese
 ├─ en/
-│ └─ index.md
+│ └─ index.md    English
 ├─ articles/
-│ └─ 01_gui-cad-to-code.md
-├─ articles/en/
-│ └─ 01_gui-cad-to-code.md
+│ └─ 01_gui-cad-to-code.md    Japanese
+├ └─en/
+│   └─ 01_gui-cad-to-code.md    English
 ├─ assets/
 │ └─ images/
 └─ references/

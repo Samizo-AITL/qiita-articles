@@ -21,7 +21,7 @@ tags: ["JavaScript", "SVG", "GameDev", "FSM"]
 **A fully playable finished game**
 
 👇 Click to start  
-https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/
+[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/)
 
 - 💻 PC supported  
 - 📱 Mobile supported  

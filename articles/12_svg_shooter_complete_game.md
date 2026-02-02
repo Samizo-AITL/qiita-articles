@@ -21,7 +21,8 @@ tags: ["JavaScript", "SVG", "GameDev", "FSM"]
 **そのまま遊べる完成ゲーム**
 
 👇 クリックして開始  
-https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/
+[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter-fsm/)
+
 
 - 💻 PC対応
 - 📱 スマホ対応

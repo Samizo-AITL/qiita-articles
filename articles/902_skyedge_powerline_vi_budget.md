@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "902.【設計】送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る"
+# 902.【設計】送電線・鉄塔点検ドローンSkyEdge：1フライトV–I予算を切る
 tags:
   - ドローン
   - 送電線

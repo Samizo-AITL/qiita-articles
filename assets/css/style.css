@@ -1,64 +1,87 @@
 /* =====================================================
-   Base (Technical / Minimal)
+   Base
 ===================================================== */
+:root {
+  --fg-main: #0f172a;
+  --fg-sub:  #334155;
+  --fg-muted:#64748b;
+
+  --bg-page: #f8fafc;
+  --bg-main: #ffffff;
+  --bg-soft: #f1f5f9;
+
+  --border-main: #e5e7eb;
+  --border-soft: #cbd5f5;
+
+  --accent: #2563eb;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Inter, Roboto, "Helvetica Neue",
                Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.55;
   letter-spacing: 0.01em;
-  color: #111827;
-  background: #f9fafb;
-}
-
-main {
-  max-width: 920px;
-  margin: 2.5rem auto;
-  padding: 2.2rem 2.4rem;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  color: var(--fg-main);
+  background: var(--bg-page);
 }
 
 /* =====================================================
-   Headings (Structure-first)
+   Layout
+===================================================== */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.4rem 2.6rem;
+  background: var(--bg-main);
+  border: 1px solid var(--border-main);
+}
+
+/* =====================================================
+   Headings
 ===================================================== */
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   font-weight: 700;
-  margin-bottom: 1.4rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid #111827;
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--fg-main);
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  padding-left: 0.6em;
-  border-left: 4px solid #2563eb;
+  margin-top: 3.2rem;
+  margin-bottom: 1.1rem;
+  padding-left: 0.7em;
+  border-left: 4px solid var(--accent);
 }
 
 h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   margin-bottom: 0.6rem;
-  color: #1f2937;
+  color: var(--fg-sub);
 }
 
 /* =====================================================
-   Paragraph
+   Text
 ===================================================== */
 p {
-  margin: 0.8rem 0 1.1rem 0;
+  margin: 0.7rem 0 1.05rem 0;
+  color: var(--fg-main);
+}
+
+small {
+  color: var(--fg-muted);
 }
 
 /* =====================================================
    Links
 ===================================================== */
 a {
-  color: #2563eb;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -67,57 +90,58 @@ a:hover {
 }
 
 /* =====================================================
-   Horizontal Rule
+   Divider
 ===================================================== */
 hr {
   border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 3rem 0;
+  border-top: 1px solid var(--border-main);
+  margin: 3.2rem 0;
 }
 
 /* =====================================================
-   Tables (Spec-like)
+   Tables (Spec / Reference)
 ===================================================== */
 table {
   border-collapse: collapse;
-  margin: 1.6rem 0;
+  margin: 1.8rem 0;
   width: 100%;
   font-size: 0.9rem;
 }
 
 th,
 td {
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-main);
   padding: 0.55em 0.75em;
 }
 
 th {
-  background: #f3f4f6;
+  background: var(--bg-soft);
   font-weight: 600;
+  color: var(--fg-sub);
   text-align: left;
 }
 
 /* =====================================================
-   Code (Readable / Engineering)
+   Code (Engineering-grade)
 ===================================================== */
 code {
-  background: #f1f5f9;
-  color: #0f172a;
+  background: var(--bg-soft);
+  color: var(--fg-main);
   padding: 0.15em 0.35em;
   border-radius: 3px;
-  font-size: 0.9em;
+  font-size: 0.88em;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas,
                "Liberation Mono", monospace;
 }
 
 pre {
-  background: #f8fafc;
-  color: #0f172a;
+  background: var(--bg-soft);
+  color: var(--fg-main);
   padding: 1rem 1.2rem;
   border-radius: 4px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-main);
   overflow-x: auto;
-  margin: 1.4rem 0;
+  margin: 1.5rem 0;
 }
 
 pre code {
@@ -131,22 +155,22 @@ pre code {
 ===================================================== */
 ul {
   margin-left: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
 }
 
 li {
-  margin: 0.35rem 0;
+  margin: 0.3rem 0;
 }
 
 /* =====================================================
-   Blockquote (Note / Memo)
+   Blockquote (Technical Note)
 ===================================================== */
 blockquote {
-  border-left: 3px solid #c7d2fe;
-  background: #f8fafc;
+  border-left: 3px solid var(--border-soft);
+  background: var(--bg-soft);
   padding: 0.7rem 1rem;
-  margin: 1.4rem 0;
-  color: #374151;
+  margin: 1.6rem 0;
+  color: var(--fg-sub);
   font-size: 0.95rem;
 }
 
@@ -154,6 +178,6 @@ blockquote {
    Mermaid
 ===================================================== */
 .mermaid {
-  margin: 2.2rem 0;
+  margin: 2rem 0;
   text-align: center;
 }

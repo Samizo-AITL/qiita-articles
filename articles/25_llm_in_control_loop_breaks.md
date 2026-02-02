@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "25. LLMを制御ループに入れるとどう壊れるか ― 構造で見る失敗パターン"
 tags: [LLM, AI, 設計, Mermaid]
 ---

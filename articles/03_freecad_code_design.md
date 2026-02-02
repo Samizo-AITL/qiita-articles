@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 03. GUI CADとコード設計をどう併用するか ― FreeCADで始める最小コード設計

@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 01. GUI CADから脱却して設計をコード化するという考え方

@@ -3,7 +3,6 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "22.【生成AI実験】寺院建築で検証する｜画像生成プロンプト指示語10パターン比較"
 tags:
   - 生成AI
@@ -12,7 +11,7 @@ tags:
   - 実験
   - 建築
   - 寺院
-private: false
+
 ---
 
 ## 🎯 はじめに

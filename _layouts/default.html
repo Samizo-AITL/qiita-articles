@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
 
   <!-- =================================================
@@ -11,7 +12,7 @@
 
   <!-- =================================================
        KaTeX (Math Rendering)
-       - 表の中 / インライン / 別行すべて対応
+       - インライン / 別行 / 表内すべて対応
   ================================================== -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -24,10 +25,11 @@
 
   <!-- =================================================
        Mermaid
-       - Jekyllが生成する <code class="language-mermaid">
-         を確実に拾って描画する
+       - Jekyll + Rouge が生成する
+         <code class="language-mermaid"> を描画
   ================================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 
   <!-- =================================================
        JS Initializers
-       ※ DOM生成後に明示的に実行する
+       ※ DOM生成後に明示的に実行
   ================================================== -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -54,7 +56,10 @@
       /* ---------- Mermaid ---------- */
       mermaid.initialize({
         startOnLoad: false,
-        theme: "default"
+        theme: "default",
+        themeVariables: {
+          background: "#ffffff"
+        }
       });
 
       mermaid.run({

@@ -3,18 +3,17 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "37.【フィジカルAI設計】🏗️ 壊れない作り方｜PID×FSM×LLMの三層構造"
-description: "フィジカルAIで壊れないための三層アーキテクチャを示す"
 tags:
   - フィジカルAI
   - AITL
   - PID制御
   - FSM
   - アーキテクチャ設計
+
 ---
 
-# 🏗️ 壊れないフィジカルAIの作り方  
+## 🏗️ 壊れないフィジカルAIの作り方  
 ## PID × FSM × LLM の三層構造
 
 前回の記事では、  

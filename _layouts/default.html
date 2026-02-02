@@ -4,22 +4,63 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
 
-  <!-- CSS -->
+  <!-- =================================================
+       CSS
+  ================================================== -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <!-- KaTeX -->
+  <!-- =================================================
+       KaTeX (Math Rendering)
+       - 表の中 / インライン / 別行すべて対応
+  ================================================== -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
-  <!-- Mermaid -->
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- =================================================
+       Mermaid
+       - Jekyllが生成する <code class="language-mermaid">
+         を確実に拾って描画する
+  ================================================== -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script>
-    mermaid.initialize({ startOnLoad: true });
-  </script>
 </head>
+
 <body>
   <main>
     {{ content }}
   </main>
+
+  <!-- =================================================
+       JS Initializers
+       ※ DOM生成後に明示的に実行する
+  ================================================== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      /* ---------- KaTeX ---------- */
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$",  right: "$",  display: false }
+        ],
+        throwOnError: false
+      });
+
+      /* ---------- Mermaid ---------- */
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "default"
+      });
+
+      mermaid.run({
+        querySelector: "code.language-mermaid"
+      });
+    });
+  </script>
 </body>
 </html>

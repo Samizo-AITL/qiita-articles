@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "33.【音声生成AI設計】割り込みで音声AIは壊れる｜Speaking中に人が喋ったら何が起きるか"
 description: "音声生成AI最大の破綻点である割り込みを、FSM拡張として構造的に整理する"
 tags: ["音声生成AI", "FSM", "割り込み", "設計思想", "制御構造"]

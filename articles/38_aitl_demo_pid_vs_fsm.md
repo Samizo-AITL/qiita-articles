@@ -3,18 +3,17 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "38.【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる"
-description: "AITL（PID+FSM）が実際に効いていることをデモで示す"
 tags:
   - フィジカルAI
   - AITL
   - デモ
   - 制御工学
   - 可視化
+
 ---
 
-# 🧪 AITLは本当に壊れないのか  
+## 🧪 AITLは本当に壊れないのか  
 ## PIDのみ vs AITL を並べて見せる
 
 ここまでの記事では、

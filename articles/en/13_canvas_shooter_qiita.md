@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 13.【JS】Firing Bullet Hell in Canvas Felt Way Too Good (Design? Let’s Ignore It This Time)
+# 13.【JavaScript】Firing Bullet Hell in Canvas Felt Way Too Good (Design? Let’s Ignore It This Time)
 tags: ["JavaScript", "Canvas", "GameDev", "Web"]
 
 ---

@@ -3,7 +3,6 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "19.【Marp】GitHub ActionsでMarkdownからプレゼン資料を自動生成しようとして、日本語豆腐で止まった話"
 tags:
   - Markdown
@@ -11,7 +10,7 @@ tags:
   - GitHubActions
   - GitHubPages
   - PowerPoint
-private: false
+
 ---
 
 ## 🎯 この記事でやること

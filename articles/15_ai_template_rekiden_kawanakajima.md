@@ -3,9 +3,9 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "15.【Rekiden】AIにテンプレを貼るだけで戦国SLGが始まる｜1561年 川中島シナリオ"
 tags: [AI, ChatGPT, ゲーム設計, 戦国, シミュレーション]
+
 ---
 
 ## 🏁 はじめに

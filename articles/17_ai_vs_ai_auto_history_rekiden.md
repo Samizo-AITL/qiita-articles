@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "17.【Rekiden】AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く"
+# 17.【Rekiden】AI vs AIで歴史を自動進行させる｜評価関数を与えると戦国は勝手に動く
 tags: [AI, ChatGPT, ゲーム設計, 自動化, 戦国, シミュレーション]
 
 ---

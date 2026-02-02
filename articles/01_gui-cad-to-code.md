@@ -146,7 +146,8 @@ GUI CAD を否定するのではなく、
 Qiita向けに要約・解説したものです。
 
 - Full Code Mechanical Design  
-  https://samizo-aitl.github.io/full-code-mechanical-design/
+  [https://samizo-aitl.github.io/full-code-mechanical-design/](https://samizo-aitl.github.io/full-code-mechanical-design/)
+
 
 本記事本文は「考え方の共有」を目的としています。
 具体的なコードや資料の利用条件については、

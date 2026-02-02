@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "29.【可視化】P制御のゲイン調整をアニメーションで理解する"
+# 29.【可視化】P制御のゲイン調整をアニメーションで理解する
 tags: ["制御理論", "PID制御", "P制御", "可視化", "Python"]
 
 ---

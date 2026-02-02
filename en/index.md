@@ -11,6 +11,8 @@ with **GitHub as the single source of truth (SSOT)** for the original manuscript
 Qiita is used as a **public publishing and distribution platform**,  
 while GitHub serves as the **canonical store for content, structure, and revision history**.
 
+[![Back to Portal (EN)](https://img.shields.io/badge/Back%20to%20Portal-0B5FFF?style=for-the-badge&logo=homeassistant&logoColor=white)](https://samizo-aitl.github.io/portal/en/)
+
 ---
 
 ## 🔗 Links

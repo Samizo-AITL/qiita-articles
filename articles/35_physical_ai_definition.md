@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "35.【フィジカルAI設計】🤖⚙️ フィジカルAIとは何か｜なぜAIは現実世界に出ると壊れるのか"
 description: "フィジカルAIの本質を、時間・連続状態・物理制約の観点から定義する"
 tags:

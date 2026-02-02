@@ -157,10 +157,10 @@ The Python code used to generate the shapes in this article
 is published in the following repository:
 
 - Function-defined loft + twisted solid  
-  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py
+  [https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py](https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py)
 
 - Branched spiral solid  
-  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py
+  [https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py](https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py)
 
 ---
 

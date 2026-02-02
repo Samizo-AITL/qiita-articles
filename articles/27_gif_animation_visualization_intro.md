@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "27.【可視化の試み】難しい半導体物理・制御理論をアニメーションで理解する"
 tags: ["可視化", "Python", "matplotlib", "教育", "技術解説"]
 author: Samizo-AITL

@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "30.【音声生成AI設計】音声AIはなぜすぐ壊れるのか｜LLMを直接つなぐと破綻する理由"
+# 30.【音声生成AI設計】音声AIはなぜすぐ壊れるのか｜LLMを直接つなぐと破綻する理由
 tags: ["音声生成AI", "LLM", "FSM", "設計思想", "生成AI"]
 
 ---

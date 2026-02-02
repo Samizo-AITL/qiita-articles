@@ -142,7 +142,8 @@ your freedom as a mechanical designer.
 This article is a Qiita-oriented summary of ideas organized in the following resource:
 
 - Full Code Mechanical Design  
-  https://samizo-aitl.github.io/full-code-mechanical-design/
+  [https://samizo-aitl.github.io/full-code-mechanical-design/](https://samizo-aitl.github.io/full-code-mechanical-design/)
+
 
 This article focuses on sharing the **conceptual framework**.  
 For concrete code examples and usage conditions,  

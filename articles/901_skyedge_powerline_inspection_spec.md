@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "901.【設計】送電線・鉄塔点検ドローンSkyEdge：差別化を仕様で固定する"
 tags:
   - ドローン

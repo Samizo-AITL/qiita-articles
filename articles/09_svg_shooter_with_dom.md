@@ -75,7 +75,7 @@ bullet.setAttribute("cy", y - 5);
 ## ▶️ 完成版デモ（そのまま遊べます）
 
 👇 **こちらをクリック**  
-https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/
+[https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/](https://samizo-aitl.github.io/qiita-articles/demos/svg-shooter/)
 
 ※ 別タブで開きます
 

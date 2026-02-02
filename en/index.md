@@ -195,27 +195,3 @@ qiita-articles/
 
 ---
 
-## 👤 Author
-
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **Expertise** | Semiconductor devices (logic, memory, high-voltage mixed-signal)<br>Thin-film piezo actuators for inkjet systems<br>Printhead productization, BOM management, ISO training |
-| **GitHub** | [Samizo-AITL](https://github.com/Samizo-AITL) |
-
----
-
-## 📄 License
-
-| 📌 Item | License | Description |
-|--------|---------|-------------|
-| **Source Code** | MIT License | Free to use, modify, and redistribute |
-| **Text Materials** | CC BY 4.0 / CC BY-SA 4.0 | Attribution required (share-alike for BY-SA) |
-| **Figures & Diagrams** | CC BY-NC 4.0 | Non-commercial use only |
-| **External References** | Original license applies | Proper attribution required |
-
----
-
-## 💬 Feedback
-
-Suggestions, improvements, and discussions are welcome via **GitHub Discussions**.

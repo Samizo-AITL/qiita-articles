@@ -12,6 +12,8 @@ Qiitaは公開・拡散の場、
 GitHubは **記事の正本・編集履歴・構造管理の場**  
 という役割分担を前提にしています。
 
+[![Back to Portal (JP)](https://img.shields.io/badge/Back%20to%20Portal-0B5FFF?style=for-the-badge&logo=homeassistant&logoColor=white)](https://samizo-aitl.github.io/portal/)
+
 ---
 
 ## 🔗 Links

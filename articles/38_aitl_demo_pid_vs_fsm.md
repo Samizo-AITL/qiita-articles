@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "38.【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる"
+# 38.【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる
 tags:
   - フィジカルAI
   - AITL

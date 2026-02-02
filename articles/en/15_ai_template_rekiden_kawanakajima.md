@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: Qiita Articles 
 ---
 
 # 15.【Rekiden】Start a Sengoku SLG Just by Pasting a Template into AI  

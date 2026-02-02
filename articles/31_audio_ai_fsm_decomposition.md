@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "31.【音声生成AI設計】音声AIをFSMで分解する｜発話・無音・割り込みはすべて状態だった"
+# 31.【音声生成AI設計】音声AIをFSMで分解する｜発話・無音・割り込みはすべて状態だった
 tags: ["音声生成AI", "FSM", "設計思想", "制御構造", "生成AI"]
 
 ---

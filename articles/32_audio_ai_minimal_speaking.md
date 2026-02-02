@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "32.【音声生成AI設計】FSMに最小の音声を接続する｜自然さを捨てた壊れない第一声"
+# 32.【音声生成AI設計】FSMに最小の音声を接続する｜自然さを捨てた壊れない第一声
 tags: ["音声生成AI", "FSM", "TTS", "設計思想", "生成AI"]
 
 ---

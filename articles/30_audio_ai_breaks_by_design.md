@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Qiita Articles
+---
+
+---
 title: "30.【音声生成AI設計】音声AIはなぜすぐ壊れるのか｜LLMを直接つなぐと破綻する理由"
 description: "音声生成AIが不安定になる理由を、時系列・状態遷移・制御構造の観点から整理する"
 tags: ["音声生成AI", "LLM", "FSM", "設計思想", "生成AI"]

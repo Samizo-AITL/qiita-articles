@@ -35,7 +35,12 @@ while GitHub serves as the **canonical store for content, structure, and revisio
 ```
 qiita-articles/
 ├─ README.md
+├─ index.md
+├─ en/
+│ └─ index.md
 ├─ articles/
+│ └─ 01_gui-cad-to-code.md
+├─ articles/en/
 │ └─ 01_gui-cad-to-code.md
 ├─ assets/
 │ └─ images/

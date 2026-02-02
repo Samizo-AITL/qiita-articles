@@ -67,127 +67,127 @@ qiita-articles/
 ## 📚 Articles
 
 - **01**  
-  [【Mechanical Design】From GUI CAD to Code-Based Design](../articles/01_gui-cad-to-code.md)
+  [【Mechanical Design】From GUI CAD to Code-Based Design](../articles/en/01_gui-cad-to-code.md)
 
 - **02**  
-  [【Mechanical Design】What Is FreeCAD? — The Roles of GUI and Code](articles/02_what-is-freecad.md)
+  [【Mechanical Design】What Is FreeCAD? — The Roles of GUI and Code](../articles/en/02_what-is-freecad.md)
 
 - **03**  
-  [【Mechanical Design】Using FreeCAD as a Code-Driven Design Tool](articles/03_freecad_code_design.md)
+  [【Mechanical Design】Using FreeCAD as a Code-Driven Design Tool](../articles/en/03_freecad_code_design.md)
 
 - **04**  
-  [【Mechanical Design】Practical Examples of Code-Based Part Design](articles/04_part_design_with_code.md)
+  [【Mechanical Design】Practical Examples of Code-Based Part Design](../articles/en/04_part_design_with_code.md)
 
 - **05**  
-  [【Mechanical Design】Reviewing CAD Designs with Git Diff](articles/05_git_diff_code_design.md)
+  [【Mechanical Design】Reviewing CAD Designs with Git Diff](../articles/en/05_git_diff_code_design.md)
 
 - **06**  
-  [【Mechanical Design】FreeCAD Geometric Model Showcase](articles/06_geometric_showcase_freecad.md)
+  [【Mechanical Design】FreeCAD Geometric Model Showcase](../articles/en/06_geometric_showcase_freecad.md)
 
 - **07**  
-  [【Mechanical Design】FreeCAD, LaTeX, and Klayout Are the Same — The Common Structure of Full-Code Design](articles/07_full_code_mechanical_design_scope.md)
+  [【Mechanical Design】FreeCAD, LaTeX, and Klayout Are the Same — The Common Structure of Full-Code Design](../articles/en/07_full_code_mechanical_design_scope.md)
 
 - **08**  
-  [【GA4】Visualizing Overseas Access in GA4 with Local Time Zones](articles/08_ga4_world_clock.md)
+  [【GA4】Visualizing Overseas Access in GA4 with Local Time Zones](../articles/en/08_ga4_world_clock.md)
 
 - **09**  
-  [【Game Dev】Building a Shooting Game Using Only SVG (No Canvas)](articles/09_svg_shooter_with_dom.md)
+  [【Game Dev】Building a Shooting Game Using Only SVG (No Canvas)](../articles/en/09_svg_shooter_with_dom.md)
 
 - **10**  
-  [【Game Dev】Structuring an SVG Shooter with FSM (Without Breaking the DOM)](articles/10_svg_shooter_with_fsm.md)
+  [【Game Dev】Structuring an SVG Shooter with FSM (Without Breaking the DOM)](../articles/en/10_svg_shooter_with_fsm.md)
 
 - **11**  
-  [【Game Dev】Controlling Difficulty and Enemy AI with FSM](articles/11_svg_shooter_fsm_difficulty_ai.md)
+  [【Game Dev】Controlling Difficulty and Enemy AI with FSM](../articles/en/11_svg_shooter_fsm_difficulty_ai.md)
 
 - **12**  
-  [【Game Dev】Complete SVG Shooter — A Fully Playable FSM-Based Game](articles/12_svg_shooter_complete_game.md)
+  [【Game Dev】Complete SVG Shooter — A Fully Playable FSM-Based Game](../articles/en/12_svg_shooter_complete_game.md)
 
 - **13**  
-  [【Game Dev】Canvas Bullet Hell Is Too Fun (Design Discussion Skipped This Time)](articles/13_canvas_shooter_qiita.md)
+  [【Game Dev】Canvas Bullet Hell Is Too Fun (Design Discussion Skipped This Time)](../articles/en/13_canvas_shooter_qiita.md)
 
 - **14**  
-  [【Game Dev】SVG vs Canvas — Same Shooter, Totally Different Experience](articles/14_svg_vs_canvas_same_game.md)
+  [【Game Dev】SVG vs Canvas — Same Shooter, Totally Different Experience](../articles/en/14_svg_vs_canvas_same_game.md)
 
 - **15**  
-  [【Rekiden】Start a Sengoku Strategy Game by Pasting an AI Template](articles/15_ai_template_rekiden_kawanakajima.md)
+  [【Rekiden】Start a Sengoku Strategy Game by Pasting an AI Template](../articles/en/15_ai_template_rekiden_kawanakajima.md)
 
 - **16**  
-  [【Rekiden】Using AI as an FSM — State Transitions Drive Historical Simulation](articles/16_ai_game_fsm_design_rekiden.md)
+  [【Rekiden】Using AI as an FSM — State Transitions Drive Historical Simulation](../articles/en/16_ai_game_fsm_design_rekiden.md)
 
 - **17**  
-  [【Rekiden】AI vs AI Auto-Progressing History with Evaluation Functions](articles/17_ai_vs_ai_auto_history_rekiden.md)
+  [【Rekiden】AI vs AI Auto-Progressing History with Evaluation Functions](../articles/en/17_ai_vs_ai_auto_history_rekiden.md)
 
 - **18**  
-  [【Marp】Creating Presentations from Markdown in VS Code (HTML / PPTX)](articles/18_vscode_md_to_html_pptx_marp.md)
+  [【Marp】Creating Presentations from Markdown in VS Code (HTML / PPTX)](../articles/en/18_vscode_md_to_html_pptx_marp.md)
 
 - **19**  
-  [【Marp】Automating Markdown-to-Presentation with GitHub Actions — Stuck on Japanese Tofu](articles/19_marp_github_actions_japanese_tofu.md)
+  [【Marp】Automating Markdown-to-Presentation with GitHub Actions — Stuck on Japanese Tofu](../articles/en/19_marp_github_actions_japanese_tofu.md)
 
 - **20**  
-  [【Marp】Why Japanese Tofu (□) Cannot Be Fixed by Settings — PPTX and Font Internals](articles/20_marp_japanese_tofu_not_fixable_by_settings.md)
+  [【Marp】Why Japanese Tofu (□) Cannot Be Fixed by Settings — PPTX and Font Internals](../articles/en/20_marp_japanese_tofu_not_fixable_by_settings.md)
 
 - **21**  
-  [【Generative AI Experiments】“Kyoto” Generates 10 Completely Different Images Depending on Prompt Instructions](articles/21_image-generation_kyoto_10patterns.md)
+  [【Generative AI Experiments】“Kyoto” Generates 10 Completely Different Images Depending on Prompt Instructions](../articles/en/21_image-generation_kyoto_10patterns.md)
 
 - **22**  
-  [【Generative AI Experiments】Temple Architecture Prompt Comparison — 10 Instruction Patterns](articles/22_image-generation_temple-architecture_10patterns.md)
+  [【Generative AI Experiments】Temple Architecture Prompt Comparison — 10 Instruction Patterns](../articles/en/22_image-generation_temple-architecture_10patterns.md)
 
 - **23**  
-  [【Generative AI Experiments】Japanese vs English Prompts — Same Meaning, Different Results](articles/23_image-generation_japanese-vs-english_prompt.md)
+  [【Generative AI Experiments】Japanese vs English Prompts — Same Meaning, Different Results](../articles/en/23_image-generation_japanese-vs-english_prompt.md)
 
 - **24**  
-  [【LLM Basics】Understanding LLMs Through Structure — Why We Feel Like We Understand](articles/24_llm_structure_overview.md)
+  [【LLM Basics】Understanding LLMs Through Structure — Why We Feel Like We Understand](../articles/en/24_llm_structure_overview.md)
 
 - **25**  
-  [【LLM Design】How LLMs Break Inside Control Loops — Failure Pattern Analysis](articles/25_llm_in_control_loop_breaks.md)
+  [【LLM Design】How LLMs Break Inside Control Loops — Failure Pattern Analysis](../articles/en/25_llm_in_control_loop_breaks.md)
 
 - **26**  
-  [【LLM Design】Why Placing LLMs Outside the Loop Stabilizes Systems](articles/26_llm_outer_layer_stability.md)
+  [【LLM Design】Why Placing LLMs Outside the Loop Stabilizes Systems](../articles/en/26_llm_outer_layer_stability.md)
 
 - **27**  
-  [【Visualization】Animating Semiconductor Physics and Control Theory for Intuition](articles/27_gif_animation_visualization_intro.md)
+  [【Visualization】Animating Semiconductor Physics and Control Theory for Intuition](../articles/en/27_gif_animation_visualization_intro.md)
 
 - **28**  
-  [【Visualization】3D Animation of PN Junction Band Structures](articles/28_gif_anim_pn_junction_band.md)
+  [【Visualization】3D Animation of PN Junction Band Structures](../articles/en/28_gif_anim_pn_junction_band.md)
 
 - **29**  
-  [【Visualization】Understanding P-Control Gain Tuning via Animation](articles/29_gif_anim_p_control.md)
+  [【Visualization】Understanding P-Control Gain Tuning via Animation](../articles/en/29_gif_anim_p_control.md)
 
 - **30**  
-  [【Audio AI Design】Why Voice AI Breaks Easily — Structural Failure of Direct LLM Connections](articles/30_audio_ai_breaks_by_design.md)
+  [【Audio AI Design】Why Voice AI Breaks Easily — Structural Failure of Direct LLM Connections](../articles/en/30_audio_ai_breaks_by_design.md)
 
 - **31**  
-  [【Audio AI Design】Decomposing Voice AI with FSM — Speaking, Silence, and Interrupts](articles/31_audio_ai_fsm_decomposition.md)
+  [【Audio AI Design】Decomposing Voice AI with FSM — Speaking, Silence, and Interrupts](../articles/en/31_audio_ai_fsm_decomposition.md)
 
 - **32**  
-  [【Audio AI Design】Connecting Minimal Audio to FSM — The First Unbreakable Utterance](articles/32_audio_ai_minimal_speaking.md)
+  [【Audio AI Design】Connecting Minimal Audio to FSM — The First Unbreakable Utterance](../articles/en/32_audio_ai_minimal_speaking.md)
 
 - **33**  
-  [【Audio AI Design】Interruptions Break Voice AI — What Happens When Humans Talk Mid-Speech](articles/33_audio_ai_interrupt_handling.md)
+  [【Audio AI Design】Interruptions Break Voice AI — What Happens When Humans Talk Mid-Speech](../articles/en/33_audio_ai_interrupt_handling.md)
 
 - **34**  
-  [【Audio AI Design】Safely Connecting LLMs — Why They Belong Only in the Thinking State](articles/34_audio_ai_llm_safe_connection.md)
+  [【Audio AI Design】Safely Connecting LLMs — Why They Belong Only in the Thinking State](../articles/en/34_audio_ai_llm_safe_connection.md)
 
 - **35**  
-  [【Physical AI Design】🤖⚙️ What Is Physical AI? — Why AI Breaks in the Real World](articles/35_physical_ai_definition.md)
+  [【Physical AI Design】🤖⚙️ What Is Physical AI? — Why AI Breaks in the Real World](../articles/en/35_physical_ai_definition.md)
 
 - **36**  
-  [【Physical AI Design】💥 Why Direct LLM Connections Fail — Latency, Non-Determinism, Loss of Control](articles/36_llm_direct_connection_failure.md)
+  [【Physical AI Design】💥 Why Direct LLM Connections Fail — Latency, Non-Determinism, Loss of Control](../articles/en/36_llm_direct_connection_failure.md)
 
 - **37**  
-  [【Physical AI Design】🏗️ Building Unbreakable Systems — PID × FSM × LLM Architecture](articles/37_physical_ai_three_layer_architecture.md)
+  [【Physical AI Design】🏗️ Building Unbreakable Systems — PID × FSM × LLM Architecture](../articles/en/37_physical_ai_three_layer_architecture.md)
 
 - **38**  
-  [【Physical AI Design】🧪 Does AITL Really Work? — Side-by-Side PID vs AITL Demo](articles/38_aitl_demo_pid_vs_fsm.md)
+  [【Physical AI Design】🧪 Does AITL Really Work? — Side-by-Side PID vs AITL Demo](../articles/en/38_aitl_demo_pid_vs_fsm.md)
 
 - **39**  
-  [【Physics Worldview】🌌 Distance and Time — From Ångström to Light-Years](articles/39_physics_scale_distance_time.md)
+  [【Physics Worldview】🌌 Distance and Time — From Ångström to Light-Years](../articles/en/39_physics_scale_distance_time.md)
 
 - **40**  
-  [【Physics Worldview】⚡ Resistance and Current — nA, A, and kA Are Not the Same](articles/40_physics_scale_resistance_current.md)
+  [【Physics Worldview】⚡ Resistance and Current — nA, A, and kA Are Not the Same](../articles/en/40_physics_scale_resistance_current.md)
 
 - **41**  
-  [【Physics Worldview】🔥 Heat and Energy — From fJ to Stars](articles/41_physics_scale_heat_energy.md)
+  [【Physics Worldview】🔥 Heat and Energy — From fJ to Stars](../articles/en/41_physics_scale_heat_energy.md)
 
 - **901–903**  
   SkyEdge Powerline Inspection Drone Design Series  

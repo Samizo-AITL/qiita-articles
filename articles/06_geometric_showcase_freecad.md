@@ -160,10 +160,12 @@ CAD の使い方は大きく広がります。
 本記事で生成した形状のコードは、以下のリポジトリで公開しています。
 
 - 関数定義ロフト＋ねじりソリッド  
-  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py
+  [https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py](https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/loft_twist_solid.py)
+
 
 - 分岐スパイラル形状  
-  https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py
+  [https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py](https://github.com/Samizo-AITL/qiita-articles/tree/main/codes/06_geometric_showcase_freecad/branched_spiral_sweep.py)
+
 
 ---
 

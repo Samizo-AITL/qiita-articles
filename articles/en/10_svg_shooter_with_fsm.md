@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 10. [JavaScript] Structuring an SVG Shooter with FSM  
+# 10. 【JavaScript】 Structuring an SVG Shooter with FSM  
 ## — An Intermediate Design to Keep DOM Games from Breaking
 tags: ["JavaScript", "SVG", "FSM", "GameDev"]
 

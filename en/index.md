@@ -200,10 +200,10 @@ qiita-articles/
   [[SkyEdge Power Line & Transmission Tower Inspection Drone] Locking Differentiation Through Fixed Specifications](https://samizo-aitl.github.io/qiita-articles/articles/en/901_skyedge_powerline_inspection_spec.html)
 
 - **902**  
-  [[SkyEdge Power Line & Transmission Tower Inspection Drone] Defining the Per-Flight V–I Budget](articles/902_skyedge_powerline_vi_budget.md)
+  [[SkyEdge Power Line & Transmission Tower Inspection Drone] Defining the Per-Flight V–I Budget](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html)
 
 - **903**  
-  [[SkyEdge Power Line & Transmission Tower Inspection Drone] Trade-offs Among CMOS Sensor, Lens, and Shooting Distance](articles/903_skyedge_cmos_lens_distance_tradeoff.md)
+  [[SkyEdge Power Line & Transmission Tower Inspection Drone] Trade-offs Among CMOS Sensor, Lens, and Shooting Distance](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html)
 
 （Add subsequent entries in numerical order as needed）
 

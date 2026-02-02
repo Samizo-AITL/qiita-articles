@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 04. Part Designを捨てずにコード設計を導入する ― FreeCADでの現実解

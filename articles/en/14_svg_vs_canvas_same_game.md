@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 14.【JS】SVG vs Canvas: Building the Same Shooter Resulted in Totally Different Experiences
+# 14.【JavaScript】SVG vs Canvas: Building the Same Shooter Resulted in Totally Different Experiences
 tags: ["JavaScript", "SVG", "Canvas", "GameDev", "Web"]
 
 ---

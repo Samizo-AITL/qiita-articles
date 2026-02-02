@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 09.【JS】SVG(DOM)だけでシューティングを完成させた（Canvas不要） 

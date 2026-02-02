@@ -30,11 +30,16 @@ GitHubは **記事の正本・編集履歴・構造管理の場**
 
 ```
 qiita-articles/
-├─ README.md
+├─ README.md    Japanese
+├─ index.md     Japanese
+├─ en/
+│ └─ index.md    English
 ├─ articles/
-│  └─ 01_gui-cad-to-code.md
+│ └─ 01_gui-cad-to-code.md    Japanese
+├ └─en/
+│   └─ 01_gui-cad-to-code.md    English
 ├─ assets/
-│  └─ images/
+│ └─ images/
 └─ references/
 ```
 

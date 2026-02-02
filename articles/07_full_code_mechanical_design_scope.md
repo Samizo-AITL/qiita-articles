@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 07. FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造

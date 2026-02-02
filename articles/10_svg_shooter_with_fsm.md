@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 10.【JS】SVGシューティングをFSMで整理する｜DOMゲームを壊さないための中間設計

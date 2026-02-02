@@ -3,14 +3,13 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "39.【物理の世界観】🌌 距離と時間｜Å・nm・km・光年を同じ軸で踏み抜く"
 tags:
   - 物理
   - 科学
   - スケール
   - 宇宙
-description: "f,p,n,μ,m,k,M,G,T。距離と時間を接頭語で並べると、人間の直感がどこで壊れるかが見える"
+
 ---
 
 # 🌌 距離 × ⏳ 時間  

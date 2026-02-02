@@ -3,14 +3,13 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "40.【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない"
 tags:
   - 物理
   - 電気電子
   - 科学
   - スケール
-description: "f,p,n,μ,m,k,M,G。抵抗と電流を接頭語で踏み抜くと、『流れる／流れない』が嘘だと分かる"
+
 ---
 
 # ⚡ 抵抗 × 🔌 電流  

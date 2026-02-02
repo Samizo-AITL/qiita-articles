@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 08. [GA4] When Watching Overseas Traffic in Real Time, Line Up the Local Times Too
+# 08. 【GA4】 When Watching Overseas Traffic in Real Time, Line Up the Local Times Too
 
 When you look at **GA4’s Realtime view**, you can immediately see:
 

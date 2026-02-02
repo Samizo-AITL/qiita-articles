@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-title: "16.【Rekiden】AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす"
+# 16.【Rekiden】AIをFSMとして使うとゲーム設計になる｜状態遷移で歴史シミュレーションを動かす
 tags: [AI, ChatGPT, FSM, ゲーム設計, 戦国, シミュレーション]
 
 ---

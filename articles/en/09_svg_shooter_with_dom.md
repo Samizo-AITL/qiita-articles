@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 09. [JavaScript] I Built a Complete Shooting Game Using Only SVG (No Canvas)
+# 09. 【JavaScript】 I Built a Complete Shooting Game Using Only SVG (No Canvas)
 tags: [JavaScript, SVG, Web, Beginner]
 
 ---

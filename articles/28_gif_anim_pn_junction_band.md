@@ -3,10 +3,9 @@ layout: default
 title: Qiita Articles
 ---
 
----
 title: "28.【可視化】pn接合バンド構造を3Dアニメーションで見てみる"
 tags: ["半導体", "pn接合", "可視化", "Python", "matplotlib"]
-author: Samizo-AITL
+
 ---
 
 ## 静止図だと、何が分かりづらい？ 🤔

@@ -1,6 +1,6 @@
 ---
-title: "qiita-articles"
-description: "qiita-articles"
+layout: default
+title: Qiita Articles
 ---
 
 # 08.【GA4】リアルタイムで海外アクセスを見るなら、主要都市の現在時刻も並べる

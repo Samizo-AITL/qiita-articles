@@ -20,7 +20,7 @@ GitHubは **記事の正本・編集履歴・構造管理の場**
 
 | Language | GitHub Pages 🌐 | GitHub 💻 |
 |----------|----------------|-----------|
-| JP Japanese | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-Japanese-brightgreen?logo=github)](https://samizo-aitl.github.io/qiita-articles/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-Japanese-blue?logo=github)](https://github.com/Samizo-AITL/qiita-articles/tree/main) |
+| JP 日本語 | [![GitHub Pages JP](https://img.shields.io/badge/GitHub%20Pages-日本語-brightgreen?logo=github)](https://samizo-aitl.github.io/qiita-articles/) | [![GitHub Repo JP](https://img.shields.io/badge/GitHub-日本語-blue?logo=github)](https://github.com/Samizo-AITL/qiita-articles/tree/main) |
 | EN English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/qiita-articles/en/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/qiita-articles/tree/main/en) |
 
 ---

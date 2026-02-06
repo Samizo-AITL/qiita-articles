@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 05. When Design Becomes Code, “Diff” Gains Meaning  
+# 05.【FCMD】 When Design Becomes Code, “Diff” Gains Meaning  
 ## — The Decisive Difference from GUI CAD
 tags: Mechanical Design, CAD, Git, FreeCAD, Python
 

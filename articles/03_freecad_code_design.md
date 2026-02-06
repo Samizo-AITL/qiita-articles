@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 03. GUI CADとコード設計をどう併用するか ― FreeCADで始める最小コード設計
+# 03.【FCMD】 GUI CADとコード設計をどう併用するか ― FreeCADで始める最小コード設計
 tags: 機械設計 CAD FreeCAD Python
 
 ---

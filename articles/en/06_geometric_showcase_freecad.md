@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 06. FreeCAD Without GUI Operations  
+# 06.【FCMD】 FreeCAD Without GUI Operations  
 ## — Generating Geometric Solids Using Only Function Definitions
 tags: FreeCAD, CAD, Python, Mechanical Design, Mathematics
 

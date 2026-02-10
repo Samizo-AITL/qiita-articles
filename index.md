@@ -183,18 +183,6 @@ qiita-articles/
 
 ---
 
-### 🌏 物理の世界観・スケール理解
-> スケール感の破綻が思考を壊す、という前提から再構成する物理の見方。
-
-- **39**  
-  [【物理の世界観】🌌 距離と時間｜Å・nm・km・光年を同じ軸で踏み抜く](https://samizo-aitl.github.io/qiita-articles/articles/39_physics_scale_distance_time.html)
-- **40**  
-  [【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない](https://samizo-aitl.github.io/qiita-articles/articles/40_physics_scale_resistance_current.html)
-- **41**  
-  [【物理の世界観】🔥 熱とエネルギー｜fJから恒星まで全部つながっている](https://samizo-aitl.github.io/qiita-articles/articles/41_physics_scale_heat_energy.html)
-
----
-
 ### 🚁 実案件・設計仕様（900番台）
 > 実プロジェクトを前提に、差別化・仕様・V–I制約を明文化する設計記録。
 
@@ -205,6 +193,18 @@ qiita-articles/
 - **903**  
   [【送電線・鉄塔点検ドローンSkyEdge】CMOS×レンズ×撮影距離のトレードオフ](https://samizo-aitl.github.io/qiita-articles/articles/903_skyedge_cmos_lens_distance_tradeoff.html)
 
+---
+
+### 🌏 物理の世界観・スケール理解（900番台）
+> スケール感の破綻が思考を壊す、という前提から再構成する物理の見方。
+
+- **904**  
+  [【物理の世界観】🌌 距離と時間｜Å・nm・km・光年を同じ軸で踏み抜く](https://samizo-aitl.github.io/qiita-articles/articles/904_physics_scale_distance_time.html)
+- **905**  
+  [【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない](https://samizo-aitl.github.io/qiita-articles/articles/905_physics_scale_resistance_current.html)
+- **906**  
+  [【物理の世界観】🔥 熱とエネルギー｜fJから恒星まで全部つながっている](https://samizo-aitl.github.io/qiita-articles/articles/906_physics_scale_heat_energy.html)
+  
 ---
 
 ## 👤 Author

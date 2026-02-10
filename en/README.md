@@ -156,6 +156,13 @@ qiita-articles/
 ### 🧠 LLM / AI Design (Control, Audio & Physical AI)
 > Treating LLMs not as “smart boxes” but as components within controllable system architectures.
 
+- **24**  
+  [【LLM Architecture】An Overview of LLM Structure｜Where Prompts, Reasoning, and Outputs Break](https://samizo-aitl.github.io/qiita-articles/articles/en/24_llm_structure_overview.html)
+- **25**  
+  [【LLM Architecture】Why LLMs Break Control Loops｜Structural Failure of Feedback](https://samizo-aitl.github.io/qiita-articles/articles/en/25_llm_in_control_loop_breaks.html)
+- **26**  
+  [【LLM Architecture】Stabilizing with an Outer Layer｜Do Not Control LLMs, Isolate Them](https://samizo-aitl.github.io/qiita-articles/articles/en/26_llm_outer_layer_stability.html)
+
 #### 🎙 Audio AI Design
 - **30**  
   [【Audio AI Design】Why Voice AI Breaks Easily — Structural Failure of Direct LLM Connections](https://samizo-aitl.github.io/qiita-articles/articles/en/30_audio_ai_breaks_by_design.html)

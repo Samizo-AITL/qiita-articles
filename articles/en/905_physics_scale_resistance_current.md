@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 40.【A Physical Worldview】⚡ Resistance and Current  
+# 905.【A Physical Worldview】⚡ Resistance and Current  
 ## nA, A, and kA Are *Not* the Same Current
 
 ---

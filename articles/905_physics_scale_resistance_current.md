@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 40.【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない
+# 905.【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない
 tags:
   - 物理
   - 電気電子

@@ -159,6 +159,13 @@ qiita-articles/
 ### 🧠 LLM / AI設計（制御・音声・フィジカルAI）
 > LLMを「賢い箱」ではなく、制御系の一構成要素として安全に使うための設計論。
 
+- **24**  
+  [【LLM設計】LLM構造を俯瞰する｜プロンプト・推論・出力はどこで壊れるか](https://samizo-aitl.github.io/qiita-articles/articles/24_llm_structure_overview.html)
+- **25**  
+  [【LLM設計】制御ループにLLMを入れると何が壊れるのか｜フィードバック破綻の構造](https://samizo-aitl.github.io/qiita-articles/articles/25_llm_in_control_loop_breaks.html)
+- **26**  
+  [【LLM設計】外側レイヤで安定させる｜LLMは制御しない、隔離する](https://samizo-aitl.github.io/qiita-articles/articles/26_llm_outer_layer_stability.html)
+
 #### 🎙 音声生成AI設計
 - **30**  
   [【音声生成AI設計】音声AIはなぜすぐ壊れるのか｜LLMを直接つなぐと破綻する理由](https://samizo-aitl.github.io/qiita-articles/articles/30_audio_ai_breaks_by_design.html)

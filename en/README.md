@@ -180,18 +180,6 @@ qiita-articles/
 
 ---
 
-### 🌏 Physics Worldview & Scale Intuition
-> Rebuilding intuition by aligning physical quantities across extreme scales.
-
-- **39**  
-  [【Physics Worldview】🌌 Distance and Time — From Ångström to Light-Years](https://samizo-aitl.github.io/qiita-articles/articles/en/39_physics_scale_distance_time.html)
-- **40**  
-  [【Physics Worldview】⚡ Resistance and Current — nA, A, and kA Are Not the Same](https://samizo-aitl.github.io/qiita-articles/articles/en/40_physics_scale_resistance_current.html)
-- **41**  
-  [【Physics Worldview】🔥 Heat and Energy — From fJ to Stars](https://samizo-aitl.github.io/qiita-articles/articles/en/41_physics_scale_heat_energy.html)
-
----
-
 ### 🚁 Real-World Case Studies & Specifications (900 Series)
 > Fixing differentiation, constraints, and V–I budgets in real engineering projects.
 

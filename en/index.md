@@ -185,18 +185,6 @@ qiita-articles/
 
 ---
 
-### 🌏 Physics Worldview & Scale Intuition
-> Rebuilding intuition by aligning physical quantities across extreme scales.
-
-- **39**  
-  [【Physics Worldview】🌌 Distance and Time — From Ångström to Light-Years](https://samizo-aitl.github.io/qiita-articles/articles/en/39_physics_scale_distance_time.html)
-- **40**  
-  [【Physics Worldview】⚡ Resistance and Current — nA, A, and kA Are Not the Same](https://samizo-aitl.github.io/qiita-articles/articles/en/40_physics_scale_resistance_current.html)
-- **41**  
-  [【Physics Worldview】🔥 Heat and Energy — From fJ to Stars](https://samizo-aitl.github.io/qiita-articles/articles/en/41_physics_scale_heat_energy.html)
-
----
-
 ### 🚁 Real-World Case Studies & Specifications (900 Series)
 > Fixing differentiation, constraints, and V–I budgets in real engineering projects.
 
@@ -206,6 +194,18 @@ qiita-articles/
   [【SkyEdge Power Line & Transmission Tower Inspection Drone】Defining the Per-Flight V–I Budget](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html)
 - **903**  
   [【SkyEdge Power Line & Transmission Tower Inspection Drone】Trade-offs Among CMOS Sensor, Lens, and Shooting Distance](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html)
+
+---
+
+### 🌏 Physics Worldview & Scale Intuition  (900 Series)
+> Rebuilding intuition by aligning physical quantities across extreme scales.
+
+- **904**  
+  [【Physics Worldview】🌌 Distance and Time — From Ångström to Light-Years](https://samizo-aitl.github.io/qiita-articles/articles/en/904_physics_scale_distance_time.html)
+- **905**  
+  [【Physics Worldview】⚡ Resistance and Current — nA, A, and kA Are Not the Same](https://samizo-aitl.github.io/qiita-articles/articles/en/905_physics_scale_resistance_current.html)
+- **906**  
+  [【Physics Worldview】🔥 Heat and Energy — From fJ to Stars](https://samizo-aitl.github.io/qiita-articles/articles/en/906_physics_scale_heat_energy.html)
 
 ---
 

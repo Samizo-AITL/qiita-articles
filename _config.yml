@@ -1,6 +1,25 @@
-theme: minima
+title: "qiita-articles" 
+description: "qiita-articles"
+lang: ja
 
+url: "https://samizo-aitl.github.io"
+baseurl: "/qiita-articles"
+
+# テーマは使わない（完全自作）
+theme: null
+remote_theme: null
+
+# Markdown / Math
 markdown: kramdown
 kramdown:
-  math_engine: katex
+  input: GFM
   syntax_highlighter: rouge
+  math_engine: mathjax
+
+# 明示的に公開対象を指定
+include:
+  - assets
+  - _layouts
+  - _includes
+
+exclude: []

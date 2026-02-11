@@ -3,8 +3,8 @@ layout: default
 title: Qiita Articles
 ---
 
-# 40. 【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）
-tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
+# 40. [IEEE Paper] A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)
+tags: LaTeX, IEEE, ControlSystems, PaperWriting, IEEEtran
 
 ---
 
@@ -77,8 +77,6 @@ Key points:
 
 ## 🧩 Minimal `main.tex` skeleton
 
-The following is the core of this PoC.
-
 ```latex
 \documentclass[journal]{IEEEtran}
 
@@ -120,12 +118,7 @@ Humanoid Robots, Fault-Tolerant Control, FSM, PID, State-Space Methods, LLM
 \end{document}
 ```
 
-At this stage:
-
-- The content can be dummy  
-- Figures are not required  
-
-The only thing that matters is:
+At this stage, the only thing that matters is:
 
 > **Does this structure compile cleanly all the way to the end?**
 
@@ -133,18 +126,14 @@ The only thing that matters is:
 
 ## 🧠 Why `\input{}`-based modularization is essential
 
-Control Systems papers inevitably grow later with:
+Control Systems papers inevitably grow later with equations, figures, tables,  
+and appendices.
 
-- Equations  
-- Figures  
-- Tables  
-- Appendices  
+Keeping everything in a single file makes:
 
-If everything is written in a single file:
-
-- Git diffs become unreadable  
-- Modifications feel risky  
-- It becomes hard to locate breakage  
+- Git diffs unreadable  
+- Refactoring risky  
+- Debugging painful  
 
 `main.tex` should remain:
 
@@ -159,21 +148,20 @@ In IEEE papers, the following are common pitfalls:
 - Appendix table numbering  
 - Biography placement  
 
-Therefore, this PoC assumes from the beginning that:
+This PoC assumes from the start that:
 
 - `\appendices`
 - `\begin{IEEEbiographynophoto}{...}`
 
-will be included.
+will be used.
 
-👉  
-**Do not add them later.**
+👉 **Do not add them later.**
 
 ---
 
-## 🧨 Preventing BibTeX failures when references are empty
+## 🧨 Preventing BibTeX failures during early drafts
 
-During early drafts, the reference list may be empty and cause build failures.
+When references are empty, BibTeX may fail.
 
 A temporary workaround is:
 
@@ -181,34 +169,27 @@ A temporary workaround is:
 \nocite{*}
 ```
 
-This ensures that:
-
-- BibTeX is not empty  
-- CI pipelines do not fail  
-
-※ Remove this before submission.
+Remove it before submission.
 
 ---
 
 ## 🚀 What this structure enables
 
-With this minimal structure:
-
-- Figures, equations, and FSMs can be added safely  
-- Appendices can grow without breaking layout  
-- The paper can be completed including biography  
+- Safe addition of figures, equations, and FSMs  
+- Appendices that grow without breaking layout  
+- A paper that can be completed including biography  
 
 In short:
 
-> **At this point, only the content remains to be written.**
+> **Only the content remains to be written.**
 
 ---
 
 ## ✅ Summary
 
-- IEEE Control Systems papers are **80% structure design**  
+- IEEE Control Systems papers are **mostly structure design**  
 - Creating a LaTeX PoC first is highly effective  
-- `main.tex` should remain **minimal and fixed**
+- `main.tex` should stay **minimal and fixed**
 
 ---
 

@@ -1,12 +1,11 @@
 ---
-title: "【IEEE論文】Control Systems 論文 LaTeX PoCの最終到達点｜完成PDFを公開する"
-tags:
-  - LaTeX
-  - IEEE
-  - 制御工学
-  - 論文執筆
-  - IEEEtran
-private: false
+layout: default
+title: Qiita Articles
+---
+
+# 41. 【IEEE論文】Control Systems 論文 LaTeX PoCの最終到達点｜完成PDFを公開する
+tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
+
 ---
 
 ## この記事の位置づけ

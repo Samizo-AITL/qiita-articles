@@ -1,71 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-
-  <!-- =================================================
-       CSS
-  ================================================== -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  <!-- =================================================
-       KaTeX (Math Rendering)
-       - インライン / 別行 / 表内すべて対応
-  ================================================== -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-
-  <script defer
-          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-
-  <script defer
-          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
-  <!-- =================================================
-       Mermaid
-       - Jekyll + Rouge が生成する
-         <code class="language-mermaid"> を描画
-  ================================================== -->
-  <script defer
-          src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  {% include head.html %}
 </head>
 
-<body>
-  <main>
-    {{ content }}
+<body class="aitl-root">
+
+  <main class="wrapper main-container">
+    <article class="markdown-body">
+      {{ content }}
+    </article>
   </main>
 
-  <!-- =================================================
-       JS Initializers
-       ※ DOM生成後に明示的に実行
-  ================================================== -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-      /* ---------- KaTeX ---------- */
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$",  right: "$",  display: false }
-        ],
-        throwOnError: false
-      });
-
-      /* ---------- Mermaid ---------- */
-      mermaid.initialize({
-        startOnLoad: false,
-        theme: "default",
-        themeVariables: {
-          background: "#ffffff"
-        }
-      });
-
-      mermaid.run({
-        querySelector: "code.language-mermaid"
-      });
-    });
-  </script>
 </body>
 </html>

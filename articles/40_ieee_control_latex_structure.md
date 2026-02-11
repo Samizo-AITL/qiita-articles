@@ -1,12 +1,11 @@
 ---
-title: "【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）"
-tags:
-  - LaTeX
-  - IEEE
-  - 制御工学
-  - 論文執筆
-  - IEEEtran
-private: false
+layout: default
+title: Qiita Articles
+---
+
+# 40. 【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）
+tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
+
 ---
 
 ## この記事でやること

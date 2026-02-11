@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 40. [IEEE Paper] A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)
+# 40. 【IEEE Paper】 A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)
 tags: LaTeX, IEEE, ControlSystems, PaperWriting, IEEEtran
 
 ---

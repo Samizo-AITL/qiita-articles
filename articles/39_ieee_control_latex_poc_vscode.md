@@ -1,12 +1,11 @@
 ---
-title: "【論文執筆】IEEE Control Systems 向け論文を LaTeX で書く前に、まず環境を固めた話"
-tags:
-  - LaTeX
-  - IEEE
-  - 制御工学
-  - 論文執筆
-  - VSCode
-private: false
+layout: default
+title: Qiita Articles
+---
+
+# 39. 【論文執筆】IEEE Control Systems 向け論文を LaTeX で書く前に、まず環境を固めた話"
+tags: LaTeX,IEEE,制御工学,論文執筆,VSCode
+
 ---
 
 ## はじめに

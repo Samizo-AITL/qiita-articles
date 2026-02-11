@@ -18,11 +18,19 @@
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 <!-- Mermaid -->
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-<script defer>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
   document.addEventListener("DOMContentLoaded", () => {
-    if (window.mermaid) {
-      mermaid.initialize({ startOnLoad: true, theme: "default" });
-    }
+    if (!window.mermaid) return;
+
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "default"
+    });
+
+    mermaid.run({
+      querySelector: 'code.language-mermaid'
+    });
   });
 </script>
+

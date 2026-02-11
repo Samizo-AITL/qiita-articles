@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 41. [IEEE Paper] Final Destination of the Control Systems LaTeX PoC: Published PDF
+# 41. 【IEEE Paper】 Final Destination of the Control Systems LaTeX PoC: Published PDF
 tags: LaTeX, IEEE, ControlSystems, PaperWriting, IEEEtran
 
 ---

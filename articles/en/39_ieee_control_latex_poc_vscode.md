@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 39. 【Paper Writing】 Preparing the LaTeX Environment for an IEEE Control Systems Paper
+# 39. 【IEEE Paper】 Preparing the LaTeX Environment for an IEEE Control Systems Paper
 tags: LaTeX,IEEE,ControlEngineering,PaperWriting,VSCode
 
 ---

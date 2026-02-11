@@ -8,7 +8,7 @@ tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
 
 ---
 
-## この記事でやること
+## 🎯 この記事でやること
 
 前回（記事39）では、  
 **IEEE Control Systems 向け論文を LaTeX で書くために、まず環境と作業の枠を固めた**  
@@ -25,11 +25,11 @@ tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
 - 論文の中身は解説しません  
 - 制御理論も説明しません  
 
-**LaTeX 構造だけ**に集中します。
+**🧱 LaTeX 構造だけ**に集中します。
 
 ---
 
-## 前提条件（Control Systems 論文の現実）
+## 📌 前提条件（Control Systems 論文の現実）
 
 IEEE Control Systems 系（TCST 等）の論文では、以下が同時に要求されます。
 
@@ -54,7 +54,7 @@ IEEE Control Systems 系（TCST 等）の論文では、以下が同時に要求
 
 ---
 
-## 全体構成（まずは俯瞰）
+## 🗂 全体構成（まずは俯瞰）
 
 ```
 2025_HUMANOID_TCST/
@@ -71,7 +71,7 @@ IEEE Control Systems 系（TCST 等）の論文では、以下が同時に要求
 └─ appendices/
 ```
 
-ポイントは：
+ポイントは次のとおりです。
 
 - **main.tex を最小・固定**
 - 本文はすべて `\input{}` で分離
@@ -79,7 +79,7 @@ IEEE Control Systems 系（TCST 等）の論文では、以下が同時に要求
 
 ---
 
-## main.tex の最小骨格
+## 🧩 main.tex の最小骨格
 
 以下が、今回の PoC の中核です。
 
@@ -137,9 +137,9 @@ Humanoid Robots, Fault-Tolerant Control, FSM, PID, State-Space Methods, LLM
 
 ---
 
-## なぜ `\input{}` 分割が必須なのか
+## 🧠 なぜ `\input{}` 分割が必須なのか
 
-Control Systems 論文は、後から必ず以下が増えます。
+Control Systems 論文は、後から必ず次が増えます。
 
 - 数式
 - 図
@@ -162,7 +162,7 @@ Control Systems 論文は、後から必ず以下が増えます。
 
 ---
 
-## Appendix と Biography を最初から想定する
+## ⚠️ Appendix と Biography を最初から想定する
 
 IEEE 論文では、次が地味に鬼門です。
 
@@ -181,7 +181,7 @@ IEEE 論文では、次が地味に鬼門です。
 
 ---
 
-## Reference が空で落ちる問題への対処
+## 🧨 Reference が空で落ちる問題への対処
 
 ドラフト段階では、Reference が空で落ちることがあります。
 
@@ -193,8 +193,8 @@ IEEE 論文では、次が地味に鬼門です。
 
 を一時的に入れておくと、
 
-- BibTeX が空にならない
-- CI で落ちない
+- BibTeX が空にならない  
+- CI で落ちない  
 
 というメリットがあります。
 
@@ -202,7 +202,7 @@ IEEE 論文では、次が地味に鬼門です。
 
 ---
 
-## この構成でできること
+## 🚀 この構成でできること
 
 この最小構成ができると：
 
@@ -218,21 +218,14 @@ IEEE 論文では、次が地味に鬼門です。
 
 ---
 
-## まとめ
+## ✅ まとめ
 
-- IEEE Control Systems 論文は「構造設計」が8割  
+- IEEE Control Systems 論文は **「構造設計」が8割**  
 - LaTeX 構成を先に PoC するのは有効  
-- `main.tex` は最小・固定が正解  
-
-次回（記事41）では、
-
-> **この構成で最後まで書いた結果（完成 PDF）**
-
-を、そのまま出します。
+- `main.tex` は **最小・固定** が正解  
 
 ---
 
-## 次回予告
+## 🔜 次回予告
 
 👉 **IEEE Control Systems 論文 LaTeX PoC の最終到達点（完成PDFリンク）**
-

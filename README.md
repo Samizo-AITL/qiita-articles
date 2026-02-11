@@ -188,6 +188,19 @@ qiita-articles/
 
 ---
 
+### 🧪 IEEE Control Systems 論文 × LaTeX（構成PoCシリーズ）
+> IEEE Control Systems（TCST）向け論文を、**内容ではなく「LaTeX構造」から完走させるための実験的記録。  
+> VS Code 上の作業ログ → 構成確定 → 完成PDF までを3本で整理。
+
+- **39**  
+  [【論文執筆】IEEE Control Systems 向け論文を LaTeX で書く前に、まず環境を固めた話](https://samizo-aitl.github.io/qiita-articles/articles/39_ieee_control_latex_poc_vscode.html)
+- **40**  
+  [【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）](https://samizo-aitl.github.io/qiita-articles/articles/40_ieee_control_latex_structure.html)
+- **41**  
+  [【IEEE論文】Control Systems 論文 LaTeX PoCの最終到達点｜完成PDFを公開する](https://samizo-aitl.github.io/qiita-articles/articles/41_ieee_control_latex_final_pdf.html)
+
+---
+
 ### 🚁 実案件・設計仕様（900番台）
 > 実プロジェクトを前提に、差別化・仕様・V–I制約を明文化する設計記録。
 

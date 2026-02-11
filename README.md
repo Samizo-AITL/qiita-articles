@@ -193,7 +193,7 @@ qiita-articles/
 > VS Code 上の作業ログ → 構成確定 → 完成PDF までを3本で整理。
 
 - **39**  
-  [【論文執筆】IEEE Control Systems 向け論文を LaTeX で書く前に、まず環境を固めた話](https://samizo-aitl.github.io/qiita-articles/articles/39_ieee_control_latex_poc_vscode.html)
+  [【IEEE論文】IEEE Control Systems 向け論文を LaTeX で書く前に、まず環境を固めた話](https://samizo-aitl.github.io/qiita-articles/articles/39_ieee_control_latex_poc_vscode.html)
 - **40**  
   [【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）](https://samizo-aitl.github.io/qiita-articles/articles/40_ieee_control_latex_structure.html)
 - **41**  

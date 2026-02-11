@@ -3,58 +3,62 @@ layout: default
 title: Qiita Articles
 ---
 
-# 40. [IEEE Paper] A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)
-tags: LaTeX, IEEE, ControlSystems, PaperWriting, IEEEtran
+# 40. 【IEEE論文】Control Systems 論文を LaTeX で最後まで壊さず書く最小構成（IEEEtran PoC）
+tags: LaTeX,IEEE,制御工学,論文執筆,IEEEtran
 
 ---
 
-## 🎯 What this article covers
+## 🎯 この記事でやること
 
-In the previous article (39),  
-I described how I first fixed the environment and workflow  
-before writing an IEEE Control Systems paper in LaTeX.
+前回（記事39）では、  
+**IEEE Control Systems 向け論文を LaTeX で書くために、まず環境と作業の枠を固めた**  
+という話を書きました。
 
-This article is the continuation.
+今回はその続きです。
 
-Here, I directly present:
+この記事では、
 
-> **A minimal LaTeX structure that can survive all the way to the end  
-> of an IEEE Control Systems paper.**
+> **IEEE Control Systems 論文を「最後まで完走できる」LaTeX の最小構成**
 
-- I do not explain the paper’s technical content  
-- I do not explain control theory  
+を、そのまま出します。
 
-I focus **only on the LaTeX structure**.
+- 論文の中身は解説しません  
+- 制御理論も説明しません  
 
----
-
-## 📌 Assumptions (the reality of Control Systems papers)
-
-IEEE Control Systems papers (e.g., TCST) usually require all of the following:
-
-- IEEEtran two-column format  
-- Equations (PID, state-space)  
-- Figures (block diagrams, FSMs)  
-- Tables (experimental conditions, KPIs)  
-- Appendices  
-- Author biography  
-
-In other words:
-
-> **If you add these elements later, the structure will almost certainly break.**
-
-Therefore, in this PoC:
-
-> **The LaTeX structure is designed from the beginning  
-> with a “finish-ready” state in mind.**
+**🧱 LaTeX 構造だけ**に集中します。
 
 ---
 
-## 🗂 Overall structure (overview)
+## 📌 前提条件（Control Systems 論文の現実）
+
+IEEE Control Systems 系（TCST 等）の論文では、以下が同時に要求されます。
+
+- IEEEtran（2 カラム）
+- 数式（PID・状態空間）
+- 図（ブロック図・FSM）
+- Table（実験条件・KPI）
+- Appendix
+- Author Biography
+
+つまり、
+
+> **途中で足す設計は、ほぼ確実に破綻する**
+
+分野です。
+
+そこで今回は、
+
+> **最初から「完走状態」を想定した LaTeX 構成**
+
+を PoC として組みました。
+
+---
+
+## 🗂 全体構成（まずは俯瞰）
 
 ```
 2025_HUMANOID_TCST/
-├─ main.tex            % control tower
+├─ main.tex            % 制御塔
 ├─ abstract.tex
 ├─ intro.tex
 ├─ related.tex
@@ -67,15 +71,17 @@ Therefore, in this PoC:
 └─ appendices/
 ```
 
-Key points:
+ポイントは次のとおりです。
 
-- **`main.tex` is minimal and fixed**
-- All content is separated using `\input{}`
-- Appendices and biography are assumed from the start
+- **main.tex を最小・固定**
+- 本文はすべて `\input{}` で分離
+- Appendix / Biography を最初から前提にする
 
 ---
 
-## 🧩 Minimal `main.tex` skeleton
+## 🧩 main.tex の最小骨格
+
+以下が、今回の PoC の中核です。
 
 ```latex
 \documentclass[journal]{IEEEtran}
@@ -118,81 +124,108 @@ Humanoid Robots, Fault-Tolerant Control, FSM, PID, State-Space Methods, LLM
 \end{document}
 ```
 
-At this stage, the only thing that matters is:
+この時点では、
 
-> **Does this structure compile cleanly all the way to the end?**
+- 内容はダミーで良い  
+- 図がなくても良い  
 
----
+重要なのは、
 
-## 🧠 Why `\input{}`-based modularization is essential
+> **この形で最後まで通るか**
 
-Control Systems papers inevitably grow later with equations, figures, tables,  
-and appendices.
-
-Keeping everything in a single file makes:
-
-- Git diffs unreadable  
-- Refactoring risky  
-- Debugging painful  
-
-`main.tex` should remain:
-
-> **A control tower that defines structure only.**
+です。
 
 ---
 
-## ⚠️ Planning appendices and biography from the beginning
+## 🧠 なぜ `\input{}` 分割が必須なのか
 
-In IEEE papers, the following are common pitfalls:
+Control Systems 論文は、後から必ず次が増えます。
 
-- Appendix table numbering  
-- Biography placement  
+- 数式
+- 図
+- Table
+- Appendix
 
-This PoC assumes from the start that:
+単一ファイルで書くと、
+
+- diff が読めない  
+- 修正が怖い  
+- 壊れた場所が分からない  
+
+という状態になります。
+
+`main.tex` は、
+
+> **構造だけを定義する制御塔**
+
+にしておくのが安全です。
+
+---
+
+## ⚠️ Appendix と Biography を最初から想定する
+
+IEEE 論文では、次が地味に鬼門です。
+
+- Appendix の table 番号
+- Biography の配置
+
+そのため、この PoC では最初から：
 
 - `\appendices`
 - `\begin{IEEEbiographynophoto}{...}`
 
-will be used.
+を入れる前提で構成しています。
 
-👉 **Do not add them later.**
+👉  
+**後付けしない**のが最大のコツです。
 
 ---
 
-## 🧨 Preventing BibTeX failures during early drafts
+## 🧨 Reference が空で落ちる問題への対処
 
-When references are empty, BibTeX may fail.
+ドラフト段階では、Reference が空で落ちることがあります。
 
-A temporary workaround is:
+対策として、
 
 ```latex
 \nocite{*}
 ```
 
-Remove it before submission.
+を一時的に入れておくと、
+
+- BibTeX が空にならない  
+- CI で落ちない  
+
+というメリットがあります。
+
+※提出前には削除します。
 
 ---
 
-## 🚀 What this structure enables
+## 🚀 この構成でできること
 
-- Safe addition of figures, equations, and FSMs  
-- Appendices that grow without breaking layout  
-- A paper that can be completed including biography  
+この最小構成ができると：
 
-In short:
+- 図・数式・FSM を追加しても壊れない  
+- Appendix を増やしても安全  
+- Biography を含めて完走できる  
 
-> **Only the content remains to be written.**
+つまり、
 
----
+> **あとは中身を書くしかない状態**
 
-## ✅ Summary
-
-- IEEE Control Systems papers are **mostly structure design**  
-- Creating a LaTeX PoC first is highly effective  
-- `main.tex` should stay **minimal and fixed**
+になります。
 
 ---
 
-## 🔜 Next article
+## ✅ まとめ
 
-👉 **The final destination of the IEEE Control Systems LaTeX PoC (completed PDF link)**
+- IEEE Control Systems 論文は **「構造設計」が8割**  
+- LaTeX 構成を先に PoC するのは有効  
+- `main.tex` は **最小・固定** が正解  
+
+---
+
+## 🔜 次回予告
+
+👉 **IEEE Control Systems 論文 LaTeX PoC の最終到達点（完成PDFリンク）**　これも英語版

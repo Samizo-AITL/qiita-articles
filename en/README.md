@@ -197,7 +197,7 @@ qiita-articles/
 > VS Code work log → structure finalization → completed PDF.
 
 - **39**  
-  [【Paper Writing】 Preparing the LaTeX Environment for an IEEE Control Systems Paper](https://samizo-aitl.github.io/qiita-articles/articles/en/39_ieee_control_latex_poc_vscode.html)
+  [【IEEE Paper】 Preparing the LaTeX Environment for an IEEE Control Systems Paper](https://samizo-aitl.github.io/qiita-articles/articles/en/39_ieee_control_latex_poc_vscode.html)
 - **40**  
   [【IEEE Paper】 A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)](https://samizo-aitl.github.io/qiita-articles/articles/en/40_ieee_control_latex_structure.html)
 - **41**  

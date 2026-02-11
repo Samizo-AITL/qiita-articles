@@ -148,3 +148,10 @@
 .markdown-body video {
   max-width: 100%;
 }
+
+/* Mermaid 図を中央配置 */
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+

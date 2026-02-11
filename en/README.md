@@ -190,6 +190,21 @@ qiita-articles/
 
 ---
 
+### 🧪 IEEE Control Systems Papers × LaTeX (Structure PoC Series)
+> An experimental record of completing an IEEE Control Systems (TCST) paper  
+> by focusing on **LaTeX structure rather than technical content**.  
+> The series is organized into three articles:  
+> VS Code work log → structure finalization → completed PDF.
+
+- **39**  
+  [【Paper Writing】 Preparing the LaTeX Environment for an IEEE Control Systems Paper](https://samizo-aitl.github.io/qiita-articles/articles/en/39_ieee_control_latex_poc_vscode.html)
+- **40**  
+  [【IEEE Paper】 A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage (IEEEtran PoC)](https://samizo-aitl.github.io/qiita-articles/articles/en/40_ieee_control_latex_structure.html)
+- **41**  
+  [【IEEE Paper】 Final Destination of the Control Systems LaTeX PoC: Published PDF](https://samizo-aitl.github.io/qiita-articles/articles/en/41_ieee_control_latex_final_pdf.html)
+
+---
+
 ### 🚁 Real-World Case Studies & Specifications (900 Series)
 > Fixing differentiation, constraints, and V–I budgets in real engineering projects.
 

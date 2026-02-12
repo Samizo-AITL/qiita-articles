@@ -1,10 +1,12 @@
 ---
-title: "43: GitHub Pages（Jekyll）でMermaid図を表示する方法"
-description: "```mermaid``` をGitHub Pagesで図として描画するための実装方法"
-topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
+layout: default
+title: Qiita Articles
 ---
 
-# 🧩 GitHub Pages（Jekyll）で Mermaid 図を表示する方法
+# 43. 【GitHub Page】🧩 GitHub Pages（Jekyll）で Mermaid 図を表示する方法
+topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
+
+---
 
 Qiita では、Markdown に  
 ` ```mermaid `  

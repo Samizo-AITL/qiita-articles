@@ -52,7 +52,8 @@ articles/*.md
 
 This is the minimal layout for rendering Markdown content.
 
-```
+{% raw %}
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -67,6 +68,7 @@ This is the minimal layout for rendering Markdown content.
 </body>
 </html>
 ```
+{% endraw %}
 
 📌 Notes
 

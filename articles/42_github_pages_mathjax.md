@@ -1,10 +1,12 @@
 ---
-title: "42: GitHub Pages（Jekyll）で数式（MathJax）を表示する方法"
-description: "GitHub PagesでLaTeX数式（$...$, $$...$$）を表示するための最小構成と実装手順"
-topics: ["GitHubPages", "Jekyll", "MathJax", "LaTeX", "Qiita"]
+layout: default
+title: Qiita Articles
 ---
 
-# 🧮 GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
+# 42. 【GitHub Pages】🧮 GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
+topics: ["GitHubPages", "Jekyll", "MathJax", "LaTeX", "Qiita"]
+
+---
 
 Qiita では、数式（LaTeX）をそのまま Markdown に書くだけで  
 きれいにレンダリングされます。

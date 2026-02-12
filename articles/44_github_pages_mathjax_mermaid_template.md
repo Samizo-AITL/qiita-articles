@@ -1,10 +1,12 @@
 ---
-title: "44: GitHub Pagesで数式とMermaidを同時に表示する最小テンプレ"
-description: "MathJax と Mermaid を同時に安定表示するための Jekyll 最小構成"
-topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
+layout: default
+title: Qiita Articles
 ---
 
-# 🧩 GitHub Pagesで数式とMermaidを同時に表示する最小テンプレ
+# 44. 【GitHub Page】🧩 GitHub Pagesで数式とMermaidを同時に表示する最小テンプレ
+topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
+
+---
 
 Qiita が求めるのは、  
 **「そのまま書けて、実際に動く構成」**です。

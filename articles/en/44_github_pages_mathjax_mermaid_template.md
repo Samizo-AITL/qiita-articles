@@ -1,10 +1,12 @@
 ---
 layout: default
-title: "44. 【GitHub Pages】🧩 Minimal Template to Render Math and Mermaid Together on GitHub Pages (Jekyll)"
-topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
+title: qiita-articles
 ---
 
 # 44. 【GitHub Pages】🧩 Minimal Template to Render Math and Mermaid Together on GitHub Pages (Jekyll)
+topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
+
+---
 
 What Qiita really expects is a setup that is:
 

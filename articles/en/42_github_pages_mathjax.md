@@ -131,8 +131,3 @@ using this real demo page:
 - ✅ GitHub Pages can render math using MathJax  
 - ✅ The same `$...$` / `$$...$$` syntax as Qiita can be reused  
 - ✅ **One Markdown source can serve both Qiita and GitHub Pages**
-
-This setup is the **simplest and most practical solution**  
-for writing math-heavy technical articles that you:
-
-> **Write on Qiita, and grow on GitHub Pages.**

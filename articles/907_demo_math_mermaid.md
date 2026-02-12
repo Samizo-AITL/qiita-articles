@@ -8,6 +8,8 @@ description: "GitHub Pages（Jekyll）での MathJax と Mermaid 表示デモ"
 本記事は、GitHub Pages（Jekyll + MathJax + Mermaid）環境において、  
 **Qiita互換 Markdown が正しく描画されるか**を確認するためのデモ記事です。
 
+[GitHub Page](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
+
 ---
 
 ## インライン数式

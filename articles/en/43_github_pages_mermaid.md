@@ -10,10 +10,9 @@ topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
 
 On Qiita, you can render flowcharts and state diagrams  
 simply by writing:
-
+```
 ```mermaid
 ```
-
 in Markdown.
 
 However, on GitHub Pages (Jekyll),  

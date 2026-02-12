@@ -167,6 +167,15 @@ qiita-articles/
 | 41 | 【IEEE論文】LaTeX PoCの最終到達点｜完成PDFを公開する | [link](https://samizo-aitl.github.io/qiita-articles/articles/41_ieee_control_latex_final_pdf.html) |
 
 
+## 🧩 GitHub Pages × Qiita 記事管理（MathJax / Mermaid）
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 42 | 【GitHub Pages】数式（MathJax）を表示する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/42_github_pages_mathjax.html) |
+| 43 | 【GitHub Pages】Mermaid 図を表示する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/43_github_pages_mermaid.html) |
+| 44 | 【GitHub Pages】数式＋Mermaidを同時に表示する最小テンプレ | [link](https://samizo-aitl.github.io/qiita-articles/articles/44_github_pages_mathjax_mermaid_template.html) |
+
+
 ## 🚁 実案件・設計仕様（V–I制約）
 
 | No. | タイトル | リンク |

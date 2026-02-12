@@ -10,7 +10,7 @@ topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
 
 Qiita では、Markdown に  
 ```
-` ```mermaid
+ ```mermaid
 ```
 と書くだけで、フローチャートや状態遷移図がそのまま描画されます。
 

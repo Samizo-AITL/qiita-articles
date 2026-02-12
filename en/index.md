@@ -181,6 +181,7 @@ qiita-articles/
 | 42 | 【GitHub Pages】How to Render Math (MathJax) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/42_github_pages_mathjax.html) |
 | 43 | 【GitHub Pages】How to Render Mermaid Diagrams | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/43_github_pages_mermaid.html) |
 | 44 | 【GitHub Pages】Minimal Template to Render Math and Mermaid Together | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/44_github_pages_mathjax_mermaid_template.html) |
+| 907 | 【GitHub Pages】Demo | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_demo_math_mermaid.md.html) |
 
 
 ## 🚁 Real-World Case Studies & Specifications (900 Series)

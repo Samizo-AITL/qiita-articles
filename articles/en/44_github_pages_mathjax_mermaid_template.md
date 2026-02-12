@@ -166,10 +166,4 @@ to prove that the setup actually works.
 - ✅ GitHub Pages can render math and diagrams together  
 - ✅ The same Markdown source can be reused for Qiita  
 - ✅ **“Write on Qiita, grow on GitHub Pages” becomes practical**
-
-With this template in place,  
-technical articles containing math and diagrams can be  
-**maintained seamlessly across Qiita and GitHub Pages**.
-
-The `907` article should be treated as  
-a **dedicated demo page for rendering verification**.
+- 

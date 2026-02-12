@@ -4,32 +4,44 @@ description: "GitHub PagesでLaTeX数式（$...$, $$...$$）を表示するた�
 topics: ["GitHubPages", "Jekyll", "MathJax", "LaTeX", "Qiita"]
 ---
 
-# GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
+# 🧮 GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
 
-Qiita では数式（LaTeX）を自然に書けますが、  
-GitHub Pages（Jekyll）は **標準では数式を描画しません**。
+Qiita では、数式（LaTeX）をそのまま Markdown に書くだけで  
+きれいにレンダリングされます。
 
-本記事では、**Qiita と同じ書き方で数式を表示する方法**を、  
-最小構成で整理します。
+一方で、GitHub Pages（Jekyll）は  
+**標準状態では数式を描画しません**。
+
+この記事では、  
+
+> **Qiita と同じ書き方（`$...$`, `$$...$$`）を維持したまま**  
+> GitHub Pages 上で数式を表示する方法  
+
+を、**最小構成・コピペ前提**で整理します。
 
 ---
 
-## 目的
+## 🎯 目的
 
-- `$...$` / `$$...$$` を Markdown に書く  
-- GitHub Pages 上で MathJax により数式を描画する  
+以下を満たす構成を作ります。
+
+- ✍️ Markdown に `$...$` / `$$...$$` をそのまま書く  
+- 🌐 GitHub Pages 上で MathJax により数式を描画する  
+- 🔁 Qiita と GitHub Pages で **同一原稿を再利用**する  
 
 ---
 
-## 前提構成
+## 🧩 前提構成
 
-- GitHub Pages（Project Pages）
+- GitHub Pages（**Project Pages**）
 - Jekyll 使用
-- `baseurl` あり
+- `baseurl` が設定されている構成
 
 ---
 
-## _config.yml 設定
+## ⚙️ _config.yml の設定
+
+まず、Jekyll 側で MathJax を使う前提を設定します。
 
 ```yml
 markdown: kramdown
@@ -39,9 +51,17 @@ kramdown:
   math_engine: mathjax
 ```
 
+📌 ポイント  
+
+- `math_engine: mathjax` は  
+  **「MathJax を使う前提で Markdown を解釈する」ための指定**です  
+- 実際の描画は、次の手順で **ブラウザ側**が行います
+
 ---
 
-## head.html に MathJax を追加
+## 🧠 head.html に MathJax を追加
+
+次に、`_includes/head.html` に MathJax を読み込みます。
 
 ```html
 <script>
@@ -55,39 +75,64 @@ kramdown:
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 ```
 
+📌 ポイント  
+
+- `defer` を付けて、DOM 構築後に安全に読み込む  
+- `$...$` / `$$...$$` の **Qiita互換記法**を明示的に指定
+
 ---
 
-## Markdown での数式記述例
+## ✏️ Markdown での数式記述例
 
-インライン数式：
+### インライン数式
+
+オームの法則は次式で表されます。
 
 $V = IR$
 
-ブロック数式：
+（電圧–電流、すなわち **V–I 特性**の基本式です）
+
+---
+
+### ブロック数式
+
+2次遅れ系の代表的な伝達関数は次のとおりです。
 
 $$
 G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
 $$
 
+Qiita と同じ感覚で、そのまま書けます。
+
 ---
 
-## 実際の表示デモ
+## 🔍 実際の表示デモ
 
-以下のページで、**数式が実際に描画されている状態**を確認できます。
+この構成を使って **実際に数式が描画されているページ**はこちらです。
 
 - [907 デモページ（MathJax 表示例）](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
 
----
-
-## 注意点
-
-- MathJax は **Jekyll ではなくブラウザ側で描画**されます  
-- `head.html` がレイアウトから読み込まれていないと動作しません  
+📌  
+**「本当に動いているか」**を確認できる実デモを  
+記事内に置くと、再現性が一気に上がります。
 
 ---
 
-## まとめ
+## ⚠️ 注意点（よくあるハマりどころ）
 
-- GitHub Pages でも MathJax を使えば数式は表示可能  
-- Qiita と同じ `$...$ / $$...$$` 記法を維持できる  
-- デモページを併記すると再現性が高まります  
+- MathJax は **Jekyll が描画するわけではありません**  
+  → ブラウザ側で JavaScript が描画します
+- `head.html` が  
+  `_layouts/default.html` から読み込まれていないと動作しません
+
+---
+
+## 📝 まとめ
+
+- ✅ GitHub Pages でも MathJax を使えば数式は表示できる  
+- ✅ Qiita と同じ `$...$ / $$...$$` 記法をそのまま使える  
+- ✅ **1つの Markdown 原稿を Qiita / GitHub Pages 両方で使い回せる**  
+
+数式を含む技術記事を  
+**「Qiitaで書いて、GitHubで育てる」**ための  
+最小・実用構成として、この方法が最もシンプルです。

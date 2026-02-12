@@ -169,6 +169,15 @@ qiita-articles/
 | 41 | 【IEEE Paper】Final Destination of the Control Systems LaTeX PoC: Published PDF | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/41_ieee_control_latex_final_pdf.html) |
 
 
+## 🧩 GitHub Pages × Qiita Article Management (MathJax / Mermaid)
+
+| No. | Title | Link |
+|---:|---|---|
+| 42 | 【GitHub Pages】How to Render Math (MathJax) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/42_github_pages_mathjax.html) |
+| 43 | 【GitHub Pages】How to Render Mermaid Diagrams | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/43_github_pages_mermaid.html) |
+| 44 | 【GitHub Pages】Minimal Template to Render Math and Mermaid Together | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/44_github_pages_mathjax_mermaid_template.html) |
+
+
 ## 🚁 Real-World Case Studies & Specifications (900 Series)
 
 | No. | Title | Link |

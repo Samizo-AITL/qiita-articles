@@ -120,11 +120,11 @@ The following works **exactly the same as on Qiita**.
 Inline math: $V = IR$
 
 $$
-\mathbf{A}=
-\begin{bmatrix}
-0 & 1 \\
-- \omega_n^2 & -2 \zeta \omega_n
-\end{bmatrix}
+ \mathbf{A}=
+ \begin{bmatrix}
+ 0 & 1 \\
+ - \omega_n^2 & -2 \zeta \omega_n
+ \end{bmatrix}
 $$
 
 ```mermaid

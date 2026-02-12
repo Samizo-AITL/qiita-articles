@@ -117,7 +117,6 @@ This is the **core of the entire setup**.
 
 The following works **exactly the same as on Qiita**.
 
-```markdown
 Inline math: $V = IR$
 
 $$
@@ -127,7 +126,7 @@ $$
 - \omega_n^2 & -2 \zeta \omega_n
 \end{bmatrix}
 $$
-```
+
 ```mermaid
 flowchart TD
   A[Input V] --> B[Controller]

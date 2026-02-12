@@ -127,13 +127,12 @@ $$
 - \omega_n^2 & -2 \zeta \omega_n
 \end{bmatrix}
 $$
-
+```
 ```mermaid
 flowchart TD
   A[Input V] --> B[Controller]
   B --> C[Plant]
   C --> D[Output I]
-```
 ```
 
 👉 Math, matrices, and Mermaid diagrams  
@@ -145,7 +144,7 @@ are **all rendered correctly on a single page**.
 
 You can see the actual rendered result here:
 
-- [907 Demo Page (Math + Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
+- [907 Demo Page (Math + Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/907_demo_math_mermaid.html)
 
 📌  
 Always include a **real, working demo link**  

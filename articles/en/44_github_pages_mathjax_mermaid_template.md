@@ -52,7 +52,7 @@ articles/*.md
 
 This is the minimal layout for rendering Markdown content.
 
-```html
+```
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -79,7 +79,7 @@ This is the minimal layout for rendering Markdown content.
 
 This is the **core of the entire setup**.
 
-```html
+```
 <script>
   window.MathJax = {
     tex: {

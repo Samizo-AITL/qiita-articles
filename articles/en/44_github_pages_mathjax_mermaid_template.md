@@ -56,7 +56,9 @@ This is the minimal layout for rendering Markdown content.
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+```
   {% include head.html %}
+```
 </head>
 <body>
   <main>

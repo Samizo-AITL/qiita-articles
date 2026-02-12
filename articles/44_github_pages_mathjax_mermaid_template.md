@@ -54,6 +54,11 @@ articles/*.md
 Markdown 本文を表示するための  
 最小のレイアウトです。
 
+{% raw %}
+<!-- NOTE:
+  This code block contains Liquid syntax.
+  Wrapped with raw/endraw to prevent Jekyll evaluation.
+-->
 ```html
 <!DOCTYPE html>
 <html lang="ja">
@@ -61,7 +66,7 @@ Markdown 本文を表示するための
   {% include head.html %}
 </head>
 <body>
-  <main>
+  <main class="page-content">
     <article>
       {{ content }}
     </article>
@@ -69,6 +74,7 @@ Markdown 本文を表示するための
 </body>
 </html>
 ```
+{% endraw %}
 
 📌 ポイント  
 
@@ -135,7 +141,6 @@ flowchart TD
   A[入力 V] --> B[制御器]
   B --> C[プラント]
   C --> D[出力 I]
-```
 ```
 
 👉 数式・行列・Mermaid 図が  

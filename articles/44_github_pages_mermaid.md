@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 43. 【GitHub Page】🧩 GitHub Pages（Jekyll）で Mermaid 図を表示する方法
+# 44. 【GitHub Page】🧩 GitHub Pages（Jekyll）で Mermaid 図を表示する方法
 topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
 
 ---

@@ -75,7 +75,7 @@ qiita-articles/
 
 ---
 
-## 📚 Articles
+## 🧭 Fundamental Articles (No.001–)
 
 ---
 
@@ -96,6 +96,10 @@ qiita-articles/
 | 004 | 【Python Basics】Calculate and See the Result | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/004_python_basic_calculation.html) |
 | 005 | 【Python Basics】Calculate in Bulk | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/005_python_basic_array.html) |
 | 006 | 【Python Basics】Check Results with a Graph | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/006_python_basic_visualize_vscode.html) |
+
+---
+
+## 📘 Qiita-Published Articles (No.01–)
 
 ---
 
@@ -226,6 +230,10 @@ qiita-articles/
 | 44 | 【GitHub Pages】How to Render Mermaid Diagrams | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/44_github_pages_mermaid.html) |
 | 45 | 【GitHub Pages】Minimal Template to Render Math and Mermaid Together | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/45_github_pages_mathjax_mermaid_template.html) |
 | demo | 【GitHub Pages】Math, Matrix, and Mermaid Rendering Demo | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/demo_math_mermaid.html) |
+
+---
+
+## 🧪 Independent Articles (No.901–)
 
 ---
 

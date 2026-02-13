@@ -179,7 +179,7 @@ qiita-articles/
 | 42 | 【GitHub Pages】数式（MathJax）を表示する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/42_github_pages_mathjax.html) |
 | 43 | 【GitHub Pages】Mermaid 図を表示する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/43_github_pages_mermaid.html) |
 | 44 | 【GitHub Pages】数式＋Mermaidを同時に表示する最小テンプレ | [link](https://samizo-aitl.github.io/qiita-articles/articles/44_github_pages_mathjax_mermaid_template.html) |
-| demo | 【GitHub Pages】demo | [link](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html) |
+| demo | 【GitHub Pages】数式・行列・Mermaidの表示デモ | [link](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html) |
 
 
 ## 🚁 実案件・設計仕様（V–I制約）

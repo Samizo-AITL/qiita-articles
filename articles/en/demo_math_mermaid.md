@@ -16,8 +16,8 @@ and Mermaid diagrams — all in a single page.
 
 ## 🔗 Demo Links
 
-- 🌐 [GitHub Pages View](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)  
-- 📄 [Markdown Source (GitHub)](./907_demo_math_mermaid.md)
+- 🌐 [GitHub Pages View](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html)  
+- 📄 [Markdown Source (GitHub)](./demo_math_mermaid.md)
 
 ---
 

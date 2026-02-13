@@ -124,7 +124,7 @@ qiita-articles/
 
 ---
 
-## 🖼️ Presentation Tools
+## 🖼️ Presentation Creation (Marp)
 
 | No. | Title | Link |
 |---:|---|---|
@@ -154,7 +154,7 @@ qiita-articles/
 
 ---
 
-## 👀 Anim, Visualization
+## 👀 Animated Visualization
 
 | No. | Title | Link |
 |---:|---|---|

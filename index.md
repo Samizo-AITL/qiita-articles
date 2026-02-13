@@ -77,6 +77,16 @@ qiita-articles/
 
 ---
 
+## 🌏 物理の世界観・スケール理解
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 001 | 【物理の世界観】距離と時間 | [link](https://samizo-aitl.github.io/qiita-articles/articles/001_physics_scale_distance_time.html) |
+| 002 | 【物理の世界観】抵抗と電流 | [link](https://samizo-aitl.github.io/qiita-articles/articles/002_physics_scale_resistance_current.html) |
+| 003 | 【物理の世界観】熱とエネルギー | [link](https://samizo-aitl.github.io/qiita-articles/articles/003_physics_scale_heat_energy.html) |
+
+---
+
 ## 🛠 機械設計 × フルコード設計（Full Code Design）
 
 | No. | タイトル | リンク |
@@ -214,16 +224,6 @@ qiita-articles/
 | 901 | 【SkyEdge】差別化を仕様で固定する | [link](https://samizo-aitl.github.io/qiita-articles/articles/901_skyedge_powerline_inspection_spec.html) |
 | 902 | 【SkyEdge】1フライトV–I予算を切る | [link](https://samizo-aitl.github.io/qiita-articles/articles/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】CMOS×レンズ×撮影距離のトレードオフ | [link](https://samizo-aitl.github.io/qiita-articles/articles/903_skyedge_cmos_lens_distance_tradeoff.html) |
-
----
-
-## 🌏 物理の世界観・スケール理解
-
-| No. | タイトル | リンク |
-|---:|---|---|
-| 904 | 【物理の世界観】距離と時間 | [link](https://samizo-aitl.github.io/qiita-articles/articles/904_physics_scale_distance_time.html) |
-| 905 | 【物理の世界観】抵抗と電流 | [link](https://samizo-aitl.github.io/qiita-articles/articles/905_physics_scale_resistance_current.html) |
-| 906 | 【物理の世界観】熱とエネルギー | [link](https://samizo-aitl.github.io/qiita-articles/articles/906_physics_scale_heat_energy.html) |
 
 ---
 

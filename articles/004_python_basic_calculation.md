@@ -42,7 +42,7 @@ print("V =", V, "V")
 
 ## ▶ 実行の様子（VS Code）
 
-![python_basic_01](assets/images/python_basic_01.png)
+![python_basic_01](https://samizo-aitl.github.io/qiita-articles/assets/images/python_basic_01.png)
 
 ---
 

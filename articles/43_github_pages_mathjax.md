@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 42. 【GitHub Pages】🧮 GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
+# 43. 【GitHub Pages】🧮 GitHub Pages（Jekyll）で数式（MathJax）を表示する方法
 topics: ["GitHubPages", "Jekyll", "MathJax", "LaTeX", "Qiita"]
 
 ---

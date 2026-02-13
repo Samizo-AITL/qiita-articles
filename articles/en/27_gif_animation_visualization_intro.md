@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 27.【Visualization Experiment】Understanding Difficult Semiconductor Physics and Control Theory Through Animation
+# 27.【Visualization】Understanding Difficult Semiconductor Physics and Control Theory Through Animation
 tags: ["Visualization", "Python", "matplotlib", "Education", "Technical Explanation"]
 
 ---

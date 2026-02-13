@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 44. 【GitHub Pages】🧩 Minimal Template to Render Math and Mermaid Together on GitHub Pages (Jekyll)
+# 45. 【GitHub Pages】🧩 Minimal Template to Render Math and Mermaid Together on GitHub Pages (Jekyll)
 topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
 
 ---

@@ -44,7 +44,7 @@ plt.show()
 
 ## ▶ 実行の様子
 
-![python_basic_02](assets/images/python_basic_02.png)
+![python_basic_02](https://samizo-aitl.github.io/qiita-articles/assets/images/python_basic_02.png)
 
 ---
 
@@ -57,7 +57,7 @@ plt.show()
 
 だけを書いています。
 
-![python_basic_03](assets/images/python_basic_03.png)
+![python_basic_03](https://samizo-aitl.github.io/qiita-articles/assets/images/python_basic_03.png)
 
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 43. 【GitHub Pages】🧩 How to Render Mermaid Diagrams on GitHub Pages (Jekyll)
+# 44. 【GitHub Pages】🧩 How to Render Mermaid Diagrams on GitHub Pages (Jekyll)
 topics: ["GitHubPages", "Jekyll", "Mermaid", "JavaScript", "Qiita"]
 
 ---

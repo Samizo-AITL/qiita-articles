@@ -156,7 +156,7 @@ qiita-articles/
 
 | No. | タイトル | リンク |
 |---:|---|---|
-| 27 | 【可視化の試み】難しい半導体物理・制御理論をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/27_gif_animation_visualization_intro.html) |
+| 27 | 【可視化】難しい半導体物理・制御理論をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/27_gif_animation_visualization_intro.html) |
 | 28 | 【可視化】pn接合バンド構造を3Dアニメーションで見てみる | [link](https://samizo-aitl.github.io/qiita-articles/articles/28_gif_anim_pn_junction_band.html) |
 | 29 | 【可視化】P制御のゲイン調整をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/29_gif_anim_p_control.html) |
 

@@ -172,7 +172,7 @@ qiita-articles/
 | 39 | 【IEEE Paper】Preparing the LaTeX Environment for an IEEE Control Systems Paper | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/39_ieee_control_latex_poc_vscode.html) |
 | 40 | 【IEEE Paper】A Minimal LaTeX Structure for Finishing Control Systems Papers Without Breakage | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/40_ieee_control_latex_structure.html) |
 | 41 | 【IEEE Paper】Final Destination of the Control Systems LaTeX PoC: Published PDF | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/41_ieee_control_latex_final_pdf.html) |
-| 42 | [IEEE Paper] Running a Control Systems LaTeX PoC to the End with CI (GitHub Actions) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/42_ieee_controlsystems_latex_ci_github_actions.html) |
+| 42 | 【IEEE Paper】Running a Control Systems LaTeX PoC to the End with CI (GitHub Actions) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/42_ieee_controlsystems_latex_ci_github_actions.html) |
 
 
 ## 🧩 GitHub Pages × Qiita Article Management (MathJax / Mermaid)

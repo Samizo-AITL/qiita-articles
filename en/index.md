@@ -89,6 +89,16 @@ qiita-articles/
 
 ---
 
+## 🐍 Python Basics — Calculation and Visualization
+
+| No. | Title | Link |
+|---:|---|---|
+| 004 | 【Python Basics】Calculate and See the Result | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/004_python_basic_calculation.html) |
+| 005 | 【Python Basics】Calculate in Bulk | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/005_python_basic_array.html) |
+| 006 | 【Python Basics】Check Results with a Graph | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/006_python_basic_visualize_vscode.html) |
+
+---
+
 ## 🛠 Mechanical Design × Full Code Design
 
 | No. | Title | Link |

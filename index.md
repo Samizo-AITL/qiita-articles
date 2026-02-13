@@ -73,7 +73,7 @@ qiita-articles/
 
 ---
 
-## 📚 Articles
+## 📚　基礎知識記事一覧
 
 ---
 
@@ -94,6 +94,10 @@ qiita-articles/
 | 004 | 【Python基礎】計算して実行結果を見る | [link](https://samizo-aitl.github.io/qiita-articles/articles/004_python_basic_calculation.html) |
 | 005 | 【Python基礎】まとめて計算する | [link](https://samizo-aitl.github.io/qiita-articles/articles/005_python_basic_array.html) |
 | 006 | 【Python基礎】結果をグラフで確認する | [link](https://samizo-aitl.github.io/qiita-articles/articles/006_python_basic_visualize_vscode.html) |
+
+---
+
+## 📚　Qiita投稿記事
 
 ---
 
@@ -224,6 +228,10 @@ qiita-articles/
 | 44 | 【GitHub Pages】Mermaid 図を表示する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/44_github_pages_mermaid.html) |
 | 45 | 【GitHub Pages】数式＋Mermaidを同時に表示する最小テンプレ | [link](https://samizo-aitl.github.io/qiita-articles/articles/45_github_pages_mathjax_mermaid_template.html) |
 | demo | 【GitHub Pages】数式・行列・Mermaidの表示デモ | [link](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html) |
+
+---
+
+## 📚　自由記事
 
 ---
 

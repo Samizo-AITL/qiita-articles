@@ -147,7 +147,7 @@ are **all rendered correctly on a single page**.
 
 You can see the actual rendered result here:
 
-- [907 Demo Page (Math + Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/907_demo_math_mermaid.html)
+- [Demo Page (Math + Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/demo_math_mermaid.html)
 
 📌  
 Always include a **real, working demo link**  

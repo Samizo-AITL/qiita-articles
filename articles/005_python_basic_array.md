@@ -1,8 +1,11 @@
 ---
-title: "【00】Python基礎 005：まとめて計算する"
+layout: default
+title: Qiita Articles
 ---
 
-# 📊 Pythonで「まとめて計算できる」
+# 005.【Python基礎】 まとめて計算する
+
+## 📊 Pythonで「まとめて計算できる」
 
 Pythonは、  
 **たくさんの数を一気に扱う**のが得意です。

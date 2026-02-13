@@ -112,5 +112,3 @@ We are just **ignoring $10^{-12}$ A**.
 
 Physics is one.  
 What’s discontinuous is **human scale intuition**.
-
----

@@ -1,8 +1,11 @@
 ---
-title: "【00】Python基礎 004：計算して実行結果を見る"
+layout: default
+title: Qiita Articles
 ---
 
-# 🧮 Pythonで「計算できる」
+# 004.【Python基礎】 計算して実行結果を見る
+
+## 🧮 Pythonで「計算できる」
 
 Pythonを使うと、  
 **数式を書いて ▶ を押すだけで計算結果が得られます。**

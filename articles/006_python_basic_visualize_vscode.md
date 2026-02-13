@@ -1,8 +1,11 @@
 ---
-title: "【00】Python基礎 006：結果をグラフで確認する"
+layout: default
+title: Qiita Articles
 ---
 
-# 📈 Pythonで「結果を見て確認する」
+# 006.【Python基礎】 結果をグラフで確認する
+
+## 📈 Pythonで「結果を見て確認する」
 
 計算結果は、  
 **グラフにすると一目で分かります。**

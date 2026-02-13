@@ -15,8 +15,8 @@ description: "GitHub Pages（Jekyll）における MathJax・行列数式・Merm
 
 ## 🔗 確認用リンク
 
-- 🌐 [GitHub Pages 表示](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)  
-- 📄 [Markdown 原稿（GitHub）](./907_demo_math_mermaid.md)
+- 🌐 [GitHub Pages 表示](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html)  
+- 📄 [Markdown 原稿（GitHub）](./demo_math_mermaid.md)
 
 ---
 

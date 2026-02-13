@@ -112,7 +112,7 @@ Qiita と同じ感覚で、そのまま書けます。
 
 この構成を使って **実際に数式が描画されているページ**はこちらです。
 
-- [907 デモページ（MathJax 表示例）](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
+- [デモページ（MathJax 表示例）](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html)
 
 📌  
 **「本当に動いているか」**を確認できる実デモを  

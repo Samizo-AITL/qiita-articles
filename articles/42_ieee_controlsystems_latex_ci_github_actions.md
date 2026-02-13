@@ -1,15 +1,12 @@
 ---
-title: "【IEEE論文】Control Systems 論文 LaTeX PoCをCIで完走させる｜GitHub Actions 編"
-tags:
-  - LaTeX
-  - IEEE
-  - 制御工学
-  - 論文執筆
-  - GitHubActions
-  - CI
+layout: default
+title: Qiita Articles
 ---
 
 # 42. 【IEEE論文】Control Systems 論文 LaTeX PoCをCIで完走させる｜GitHub Actions 編
+tags:LaTeX,IEEE,制御工学,論文執筆,GitHubActions,CI
+
+---
 
 ## 📌 この記事の位置づけ
 

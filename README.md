@@ -165,6 +165,7 @@ qiita-articles/
 | 39 | 【IEEE論文】LaTeXで書く前に、まず環境を固めた話 | [link](https://samizo-aitl.github.io/qiita-articles/articles/39_ieee_control_latex_poc_vscode.html) |
 | 40 | 【IEEE論文】Control Systems 論文を壊さず書く最小構成 | [link](https://samizo-aitl.github.io/qiita-articles/articles/40_ieee_control_latex_structure.html) |
 | 41 | 【IEEE論文】LaTeX PoCの最終到達点｜完成PDFを公開する | [link](https://samizo-aitl.github.io/qiita-articles/articles/41_ieee_control_latex_final_pdf.html) |
+| 42 | 【IEEE論文】Control Systems 論文 LaTeX PoCをCIで完走させる｜GitHub Actions 編 | [link](https://samizo-aitl.github.io/qiita-articles/articles/42_ieee_controlsystems_latex_ci_github_actions.html) |
 
 
 ## 🧩 GitHub Pages × Qiita 記事管理（MathJax / Mermaid）

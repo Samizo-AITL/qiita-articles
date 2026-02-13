@@ -87,6 +87,16 @@ qiita-articles/
 
 ---
 
+## 🐍 Python基礎・計算と可視化の入口
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 004 | 【Python基礎】計算して実行結果を見る | [link](https://samizo-aitl.github.io/qiita-articles/articles/004_python_basic_calculation.html) |
+| 005 | 【Python基礎】まとめて計算する | [link](https://samizo-aitl.github.io/qiita-articles/articles/005_python_basic_array.html) |
+| 006 | 【Python基礎】結果をグラフで確認する | [link](https://samizo-aitl.github.io/qiita-articles/articles/006_python_basic_visualize_vscode.html) |
+
+---
+
 ## 🛠 機械設計 × フルコード設計（Full Code Design）
 
 | No. | タイトル | リンク |

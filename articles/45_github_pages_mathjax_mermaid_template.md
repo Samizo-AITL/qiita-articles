@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 44. 【GitHub Page】🧩 GitHub Pagesで数式とMermaidを同時に表示する最小テンプレ
+# 45. 【GitHub Page】🧩 GitHub Pagesで数式とMermaidを同時に表示する最小テンプレ
 topics: ["GitHubPages", "Jekyll", "MathJax", "Mermaid", "Qiita"]
 
 ---

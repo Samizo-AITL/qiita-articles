@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 906.【A Physical Worldview】🔥 Heat and Energy  
+# 003.【A Physical Worldview】🔥 Heat and Energy  
 ## From fJ to Stars — Everything Is Connected
 
 ---
@@ -115,5 +115,3 @@ That’s why it slips past intuition.
 
 Physics is one.  
 **From femtojoules to stars, everything is connected by the same equations.**
-
----

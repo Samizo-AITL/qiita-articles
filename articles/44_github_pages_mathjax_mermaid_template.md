@@ -152,7 +152,7 @@ flowchart TD
 このテンプレ構成で  
 **実際に表示されているページ**はこちらです。
 
-- [907 デモページ（数式＋Mermaid 実表示）](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
+- [デモページ（数式＋Mermaid 実表示）](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html)
 
 📌  
 「本当に動いているか」を  

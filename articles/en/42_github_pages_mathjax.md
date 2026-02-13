@@ -113,7 +113,7 @@ You can write it exactly the same way as on Qiita.
 You can verify that math expressions are **actually rendered**  
 using this real demo page:
 
-- [907 Demo Page (MathJax Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/907_demo_math_mermaid.html)
+- [Demo Page (MathJax Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/demo_math_mermaid.html)
 
 ---
 

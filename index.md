@@ -89,19 +89,15 @@ qiita-articles/
 | 06 | 【機械設計】FreeCAD幾何モデルのショーケース | [link](https://samizo-aitl.github.io/qiita-articles/articles/06_geometric_showcase_freecad.html) |
 | 07 | 【機械設計】FreeCADもLaTeXもKlayoutも同じだった ― Full Code設計の共通構造 | [link](https://samizo-aitl.github.io/qiita-articles/articles/07_full_code_mechanical_design_scope.html) |
 
+---
 
 ## 📊 分析・可視化・ツール
 
 | No. | タイトル | リンク |
 |---:|---|---|
 | 08 | 【GA4】GA4で海外アクセスを見るなら、主要都市の現在時刻も並べる | [link](https://samizo-aitl.github.io/qiita-articles/articles/08_ga4_world_clock.html) |
-| 18 | 【Marp】VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/18_vscode_md_to_html_pptx_marp.html) |
-| 19 | 【Marp】GitHub Actionsで自動生成しようとして、日本語豆腐で止まった話 | [link](https://samizo-aitl.github.io/qiita-articles/articles/19_marp_github_actions_japanese_tofu.html) |
-| 20 | 【Marp】日本語豆腐はなぜ設定で直らないのか｜PPTXとフォントの構造 | [link](https://samizo-aitl.github.io/qiita-articles/articles/20_marp_japanese_tofu_not_fixable_by_settings.html) |
-| 27 | 【可視化の試み】難しい半導体物理・制御理論をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/27_gif_animation_visualization_intro.html) |
-| 28 | 【可視化】pn接合バンド構造を3Dアニメーションで見てみる | [link](https://samizo-aitl.github.io/qiita-articles/articles/28_gif_anim_pn_junction_band.html) |
-| 29 | 【可視化】P制御のゲイン調整をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/29_gif_anim_p_control.html) |
 
+---
 
 ## 🎮 ゲーム設計（SVG / Canvas / FSM）
 
@@ -114,6 +110,7 @@ qiita-articles/
 | 13 | 【ゲーム】Canvasで弾幕を撃ったら気持ちよすぎた | [link](https://samizo-aitl.github.io/qiita-articles/articles/13_canvas_shooter_qiita.html) |
 | 14 | 【ゲーム】SVGとCanvas、同じシューティングを作ってみたら体験が全然違った | [link](https://samizo-aitl.github.io/qiita-articles/articles/14_svg_vs_canvas_same_game.html) |
 
+---
 
 ## 🏯 Rekiden（歴史シミュレーション × AI）
 
@@ -123,6 +120,17 @@ qiita-articles/
 | 16 | 【Rekiden】AIをFSMとして使うとゲーム設計になる | [link](https://samizo-aitl.github.io/qiita-articles/articles/16_ai_game_fsm_design_rekiden.html) |
 | 17 | 【Rekiden】AI vs AIで歴史を自動進行させる | [link](https://samizo-aitl.github.io/qiita-articles/articles/17_ai_vs_ai_auto_history_rekiden.html) |
 
+---
+
+## 📊 プレゼン資料作成
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 18 | 【Marp】VS CodeでMarkdownからプレゼン資料（HTML / PPTX）を作成する方法 | [link](https://samizo-aitl.github.io/qiita-articles/articles/18_vscode_md_to_html_pptx_marp.html) |
+| 19 | 【Marp】GitHub Actionsで自動生成しようとして、日本語豆腐で止まった話 | [link](https://samizo-aitl.github.io/qiita-articles/articles/19_marp_github_actions_japanese_tofu.html) |
+| 20 | 【Marp】日本語豆腐はなぜ設定で直らないのか｜PPTXとフォントの構造 | [link](https://samizo-aitl.github.io/qiita-articles/articles/20_marp_japanese_tofu_not_fixable_by_settings.html) |
+
+---
 
 ## 🧪 生成AI 実験・比較
 
@@ -132,6 +140,7 @@ qiita-articles/
 | 22 | 【生成AI実験】寺院建築で検証する | [link](https://samizo-aitl.github.io/qiita-articles/articles/22_image-generation_temple-architecture_10patterns.html) |
 | 23 | 【生成AI実験】日本語 vs 英語｜同じ意味でも同じ結果にならない | [link](https://samizo-aitl.github.io/qiita-articles/articles/23_image-generation_japanese-vs-english_prompt.html) |
 
+---
 
 ## 🧠 LLM / AI設計
 
@@ -141,6 +150,17 @@ qiita-articles/
 | 25 | 【LLM設計】制御ループにLLMを入れると何が壊れるのか | [link](https://samizo-aitl.github.io/qiita-articles/articles/25_llm_in_control_loop_breaks.html) |
 | 26 | 【LLM設計】外側レイヤで安定させる | [link](https://samizo-aitl.github.io/qiita-articles/articles/26_llm_outer_layer_stability.html) |
 
+---
+
+## 📊 アニメ可視化
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 27 | 【可視化の試み】難しい半導体物理・制御理論をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/27_gif_animation_visualization_intro.html) |
+| 28 | 【可視化】pn接合バンド構造を3Dアニメーションで見てみる | [link](https://samizo-aitl.github.io/qiita-articles/articles/28_gif_anim_pn_junction_band.html) |
+| 29 | 【可視化】P制御のゲイン調整をアニメーションで理解する | [link](https://samizo-aitl.github.io/qiita-articles/articles/29_gif_anim_p_control.html) |
+
+---
 
 ## 🎙 音声生成AI設計（FSM × LLM）
 
@@ -152,6 +172,7 @@ qiita-articles/
 | 33 | 【音声生成AI設計】割り込みで音声AIは壊れる | [link](https://samizo-aitl.github.io/qiita-articles/articles/33_audio_ai_interrupt_handling.html) |
 | 34 | 【音声生成AI設計】LLMを安全に接続する | [link](https://samizo-aitl.github.io/qiita-articles/articles/34_audio_ai_llm_safe_connection.html) |
 
+---
 
 ## 🤖 フィジカルAI設計（PID × FSM × LLM）
 
@@ -162,6 +183,7 @@ qiita-articles/
 | 37 | 【フィジカルAI設計】壊れない作り方｜PID×FSM×LLM | [link](https://samizo-aitl.github.io/qiita-articles/articles/37_physical_ai_three_layer_architecture.html) |
 | 38 | 【フィジカルAI設計】AITLは本当に壊れないのか | [link](https://samizo-aitl.github.io/qiita-articles/articles/38_aitl_demo_pid_vs_fsm.html) |
 
+---
 
 ## 🧪 IEEE Control Systems 論文 × LaTeX
 
@@ -172,6 +194,8 @@ qiita-articles/
 | 41 | 【IEEE論文】LaTeX PoCの最終到達点｜完成PDFを公開する | [link](https://samizo-aitl.github.io/qiita-articles/articles/41_ieee_control_latex_final_pdf.html) |
 | 42 | 【IEEE論文】Control Systems 論文 LaTeX PoCをCIで完走させる｜GitHub Actions 編 | [link](https://samizo-aitl.github.io/qiita-articles/articles/42_ieee_controlsystems_latex_ci_github_actions.html) |
 
+---
+
 ## 🧩 GitHub Pages × Qiita 記事管理（MathJax / Mermaid）
 
 | No. | タイトル | リンク |
@@ -181,6 +205,7 @@ qiita-articles/
 | 45 | 【GitHub Pages】数式＋Mermaidを同時に表示する最小テンプレ | [link](https://samizo-aitl.github.io/qiita-articles/articles/45_github_pages_mathjax_mermaid_template.html) |
 | demo | 【GitHub Pages】数式・行列・Mermaidの表示デモ | [link](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html) |
 
+---
 
 ## 🚁 実案件・設計仕様（V–I制約）
 
@@ -190,6 +215,7 @@ qiita-articles/
 | 902 | 【SkyEdge】1フライトV–I予算を切る | [link](https://samizo-aitl.github.io/qiita-articles/articles/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】CMOS×レンズ×撮影距離のトレードオフ | [link](https://samizo-aitl.github.io/qiita-articles/articles/903_skyedge_cmos_lens_distance_tradeoff.html) |
 
+---
 
 ## 🌏 物理の世界観・スケール理解
 

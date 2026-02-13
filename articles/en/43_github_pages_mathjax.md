@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 42. 【GitHub Pages】🧮 How to Render Math (MathJax) on GitHub Pages (Jekyll)
+# 43. 【GitHub Pages】🧮 How to Render Math (MathJax) on GitHub Pages (Jekyll)
 topics: ["GitHubPages", "Jekyll", "MathJax", "LaTeX", "Qiita"]
 
 ---

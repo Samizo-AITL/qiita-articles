@@ -1,6 +1,9 @@
+---
+layout: default
+title: Qiita Articles
+---
 
-
-# 42. [IEEE Paper] Running a Control Systems LaTeX PoC to the End with CI | GitHub Actions
+# 42. 【IEEE Paper】 Running a Control Systems LaTeX PoC to the End with CI | GitHub Actions
 tags:LaTeX,IEEE,ControlSystems,AcademicWriting,GitHubActions,CI
 
 ---

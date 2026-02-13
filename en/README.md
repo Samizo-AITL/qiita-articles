@@ -84,7 +84,7 @@ qiita-articles/
 
 ---
 
-## 🐍 Python Basics — Calculation and Visualization
+## 🐍 Python Basics — Calculation and Visualization   
 
 | No. | Title | Link |
 |---:|---|---|

@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 904.【A Physical Worldview】🌌 Distance and Time  
+# 001.【A Physical Worldview】🌌 Distance and Time  
 ## Breaking Through Å, nm, km, and Light-Years on a Single Axis
 
 ---
@@ -98,5 +98,3 @@ it **feels like different physics**.
 - Physics is continuous  
 - Human understanding is **segmented by f, p, n, μ, m, k, M, G, T**
 - Misunderstanding comes not from ignorance, but from **scale**
-
----

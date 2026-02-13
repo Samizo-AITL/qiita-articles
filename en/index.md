@@ -79,6 +79,16 @@ qiita-articles/
 
 ---
 
+## 🌏 Physics Worldview & Scale Intuition
+
+| No. | Title | Link |
+|---:|---|---|
+| 001 | 【Physics Worldview】Distance and Time — From Ångström to Light-Years | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/001_physics_scale_distance_time.html) |
+| 002 | 【Physics Worldview】Resistance and Current — nA, A, and kA Are Not the Same | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/002_physics_scale_resistance_current.html) |
+| 003 | 【Physics Worldview】Heat and Energy — From fJ to Stars | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/003_physics_scale_heat_energy.html) |
+
+---
+
 ## 🛠 Mechanical Design × Full Code Design
 
 | No. | Title | Link |
@@ -216,16 +226,6 @@ qiita-articles/
 | 901 | 【SkyEdge】Locking Differentiation Through Fixed Specifications | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/901_skyedge_powerline_inspection_spec.html) |
 | 902 | 【SkyEdge】Defining the Per-Flight V–I Budget | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】Trade-offs Among CMOS Sensor, Lens, and Shooting Distance | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html) |
-
----
-
-## 🌏 Physics Worldview & Scale Intuition
-
-| No. | Title | Link |
-|---:|---|---|
-| 904 | 【Physics Worldview】Distance and Time — From Ångström to Light-Years | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/904_physics_scale_distance_time.html) |
-| 905 | 【Physics Worldview】Resistance and Current — nA, A, and kA Are Not the Same | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/905_physics_scale_resistance_current.html) |
-| 906 | 【Physics Worldview】Heat and Energy — From fJ to Stars | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/906_physics_scale_heat_energy.html) |
 
 ---
 

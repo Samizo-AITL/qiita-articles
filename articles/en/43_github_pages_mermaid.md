@@ -120,7 +120,7 @@ based on a V–I (voltage–current) flow.
 You can confirm that Mermaid diagrams  
 are rendered correctly on this live page:
 
-- [907 Demo Page (Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/907_demo_math_mermaid.html)
+- [Demo Page (Mermaid Rendering)](https://samizo-aitl.github.io/qiita-articles/articles/en/demo_math_mermaid.html)
 
 📌  
 Always verify that the diagram is rendered  

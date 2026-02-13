@@ -91,19 +91,15 @@ qiita-articles/
 | 06 | 【Mechanical Design】FreeCAD Geometric Model Showcase | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/06_geometric_showcase_freecad.html) |
 | 07 | 【Mechanical Design】FreeCAD, LaTeX, and Klayout Are the Same — The Common Structure of Full-Code Design | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/07_full_code_mechanical_design_scope.html) |
 
+---
 
 ## 📊 Analysis, Visualization & Tools
 
 | No. | Title | Link |
 |---:|---|---|
 | 08 | 【GA4】Visualizing Overseas Access in GA4 with Local Time Zones | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/08_ga4_world_clock.html) |
-| 18 | 【Marp】Creating Presentations from Markdown in VS Code (HTML / PPTX) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/18_vscode_md_to_html_pptx_marp.html) |
-| 19 | 【Marp】Automating Markdown-to-Presentation with GitHub Actions — Stuck on Japanese Tofu | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/19_marp_github_actions_japanese_tofu.html) |
-| 20 | 【Marp】Why Japanese Tofu (□) Cannot Be Fixed by Settings — PPTX and Font Internals | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/20_marp_japanese_tofu_not_fixable_by_settings.html) |
-| 27 | 【Visualization】Animating Semiconductor Physics and Control Theory for Intuition | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/27_gif_animation_visualization_intro.html) |
-| 28 | 【Visualization】3D Animation of PN Junction Band Structures | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/28_gif_anim_pn_junction_band.html) |
-| 29 | 【Visualization】Understanding P-Control Gain Tuning via Animation | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/29_gif_anim_p_control.html) |
 
+---
 
 ## 🎮 Game Design (SVG / Canvas / FSM)
 
@@ -116,6 +112,7 @@ qiita-articles/
 | 13 | 【Game Dev】Canvas Bullet Hell Is Too Fun (Design Discussion Skipped This Time) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/13_canvas_shooter_qiita.html) |
 | 14 | 【Game Dev】SVG vs Canvas — Same Shooter, Totally Different Experience | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/14_svg_vs_canvas_same_game.html) |
 
+---
 
 ## 🏯 Rekiden (Historical Simulation × AI)
 
@@ -125,6 +122,17 @@ qiita-articles/
 | 16 | 【Rekiden】Using AI as an FSM — State Transitions Drive Historical Simulation | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/16_ai_game_fsm_design_rekiden.html) |
 | 17 | 【Rekiden】AI vs AI Auto-Progressing History with Evaluation Functions | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/17_ai_vs_ai_auto_history_rekiden.html) |
 
+---
+
+## 🖼️ Presentation Tools
+
+| No. | Title | Link |
+|---:|---|---|
+| 18 | 【Marp】Creating Presentations from Markdown in VS Code (HTML / PPTX) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/18_vscode_md_to_html_pptx_marp.html) |
+| 19 | 【Marp】Automating Markdown-to-Presentation with GitHub Actions — Stuck on Japanese Tofu | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/19_marp_github_actions_japanese_tofu.html) |
+| 20 | 【Marp】Why Japanese Tofu (□) Cannot Be Fixed by Settings — PPTX and Font Internals | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/20_marp_japanese_tofu_not_fixable_by_settings.html) |
+
+---
 
 ## 🧪 Generative AI Experiments & Comparisons
 
@@ -134,6 +142,7 @@ qiita-articles/
 | 22 | 【Generative AI Experiments】Temple Architecture Prompt Comparison — 10 Instruction Patterns | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/22_image-generation_temple-architecture_10patterns.html) |
 | 23 | 【Generative AI Experiments】Japanese vs English Prompts — Same Meaning, Different Results | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/23_image-generation_japanese-vs-english_prompt.html) |
 
+---
 
 ## 🧠 LLM / AI Design
 
@@ -143,6 +152,17 @@ qiita-articles/
 | 25 | 【LLM Architecture】Why LLMs Break Control Loops — Structural Failure of Feedback | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/25_llm_in_control_loop_breaks.html) |
 | 26 | 【LLM Architecture】Stabilizing with an Outer Layer — Do Not Control LLMs, Isolate Them | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/26_llm_outer_layer_stability.html) |
 
+---
+
+## 👀 Anim, Visualization
+
+| No. | Title | Link |
+|---:|---|---|
+| 27 | 【Visualization】Animating Semiconductor Physics and Control Theory for Intuition | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/27_gif_animation_visualization_intro.html) |
+| 28 | 【Visualization】3D Animation of PN Junction Band Structures | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/28_gif_anim_pn_junction_band.html) |
+| 29 | 【Visualization】Understanding P-Control Gain Tuning via Animation | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/29_gif_anim_p_control.html) |
+
+---
 
 ## 🎙 Audio AI Design
 
@@ -154,6 +174,7 @@ qiita-articles/
 | 33 | 【Audio AI Design】Interruptions Break Voice AI — What Happens When Humans Talk Mid-Speech | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/33_audio_ai_interrupt_handling.html) |
 | 34 | 【Audio AI Design】Safely Connecting LLMs — Why They Belong Only in the Thinking State | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/34_audio_ai_llm_safe_connection.html) |
 
+---
 
 ## 🤖 Physical AI Design (PID × FSM × LLM)
 
@@ -164,6 +185,7 @@ qiita-articles/
 | 37 | 【Physical AI Design】Building Unbreakable Systems — PID × FSM × LLM Architecture | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/37_physical_ai_three_layer_architecture.html) |
 | 38 | 【Physical AI Design】Does AITL Really Work? — Side-by-Side PID vs AITL Demo | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/38_aitl_demo_pid_vs_fsm.html) |
 
+---
 
 ## 🧪 IEEE Control Systems Papers × LaTeX
 
@@ -174,6 +196,7 @@ qiita-articles/
 | 41 | 【IEEE Paper】Final Destination of the Control Systems LaTeX PoC: Published PDF | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/41_ieee_control_latex_final_pdf.html) |
 | 42 | 【IEEE Paper】Running a Control Systems LaTeX PoC to the End with CI (GitHub Actions) | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/42_ieee_controlsystems_latex_ci_github_actions.html) |
 
+---
 
 ## 🧩 GitHub Pages × Qiita Article Management (MathJax / Mermaid)
 
@@ -184,6 +207,7 @@ qiita-articles/
 | 45 | 【GitHub Pages】Minimal Template to Render Math and Mermaid Together | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/45_github_pages_mathjax_mermaid_template.html) |
 | demo | 【GitHub Pages】Math, Matrix, and Mermaid Rendering Demo | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/demo_math_mermaid.html) |
 
+---
 
 ## 🚁 Real-World Case Studies & Specifications (900 Series)
 
@@ -193,6 +217,7 @@ qiita-articles/
 | 902 | 【SkyEdge】Defining the Per-Flight V–I Budget | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】Trade-offs Among CMOS Sensor, Lens, and Shooting Distance | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html) |
 
+---
 
 ## 🌏 Physics Worldview & Scale Intuition
 

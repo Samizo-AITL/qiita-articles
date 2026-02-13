@@ -121,7 +121,7 @@ flowchart TD
 
 この構成を使って **実際に Mermaid 図が描画されているページ**はこちらです。
 
-- [907 デモページ（Mermaid 表示例）](https://samizo-aitl.github.io/qiita-articles/articles/907_demo_math_mermaid.html)
+- [デモページ（Mermaid 表示例）](https://samizo-aitl.github.io/qiita-articles/articles/demo_math_mermaid.html)
 
 📌  
 **「コードではなく図として見えているか」**を  

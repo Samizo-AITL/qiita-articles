@@ -1,7 +1,9 @@
 ---
-title: "前提基礎知識：Markdownは実務ドキュメントの正形式です"
-description: "本プロジェクトにおけるMarkdownの位置づけと、Python・LaTeX・AI連携における実務的役割を定義します。"
+layout: default
+title: Qiita Articles
 ---
+
+# 007.【Markdown基礎】Markdownは実務ドキュメントの正形式です
 
 ## 本記事の位置づけ
 

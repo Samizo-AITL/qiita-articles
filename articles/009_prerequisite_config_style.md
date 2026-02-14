@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 009.【Markdown基礎】_config.yml と style.css は文書仕様です

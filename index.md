@@ -97,6 +97,16 @@ qiita-articles/
 
 ---
 
+## 🧱 Markdown / GitHub Pages 前提基礎知識
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 007 | 【Markdown基礎】Markdownは実務ドキュメントの正形式です | [link](https://samizo-aitl.github.io/qiita-articles/articles/007_prerequisite_markdown.html) |
+| 008 | 【Markdown基礎】GitHub PagesはMarkdownの実行・確認環境です | [link](https://samizo-aitl.github.io/qiita-articles/articles/008_prerequisite_github_pages.html) |
+| 009 | 【Markdown基礎】_config.yml と style.css は文書仕様です | [link](https://samizo-aitl.github.io/qiita-articles/articles/009_prerequisite_config_style.html) |
+
+---
+
 ## 📘 Qiita投稿記事 (No.01-)
 
 ---

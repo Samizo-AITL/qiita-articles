@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 25. What Breaks When You Put an LLM Inside a Control Loop  
+# 25.【LLM Architecture】 What Breaks When You Put an LLM Inside a Control Loop  
 ## Failure Patterns Explained by Structure
 
 tags: [LLM, AI, Design, Mermaid]

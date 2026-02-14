@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 002.【物理の世界観】⚡ 抵抗と電流｜nA・A・kAは同じ電流じゃない

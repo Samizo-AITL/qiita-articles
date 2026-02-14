@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 004.【Python基礎】 計算して実行結果を見る

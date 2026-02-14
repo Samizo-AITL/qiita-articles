@@ -1,7 +1,9 @@
 ---
-title: "前提基礎知識：GitHub PagesはMarkdownの実行・確認環境です"
-description: "Markdown文書の表示基準としてGitHub Pagesを用いる理由と、その実務的意味を定義します。"
+layout: default
+title: Qiita Articles
 ---
+
+# 008.【Markdown基礎】GitHub PagesはMarkdownの実行・確認環境です
 
 ## 本記事の位置づけ
 

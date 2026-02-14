@@ -1,7 +1,9 @@
 ---
-title: "前提基礎知識：_config.yml と style.css は文書仕様です"
-description: "GitHub Pagesにおける設定ファイルとCSSを、装飾ではなく文書仕様として扱う前提を定義します。"
+layout: default
+title: Qiita Articles
 ---
+
+# 009.【Markdown基礎】_config.yml と style.css は文書仕様です
 
 ## 本記事の位置づけ
 

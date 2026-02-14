@@ -82,7 +82,3 @@ $$
 
 - [008.【Markdown基礎】：GitHub PagesはMarkdownの実行環境です](008_prerequisite_github_pages.md)
 - [009.【Markdown基礎】：_config.ymlとstyle.cssは文書仕様です](009_prerequisite_config_style.md)
-
----
-
-以上です。

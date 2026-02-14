@@ -63,9 +63,5 @@ title: qiita-articles
 
 ## 🔗 関連前提記事
 
-- [前提基礎知識：Markdownは実務ドキュメントの正形式です](007_prerequisite_markdown.md)
-- [前提基礎知識：GitHub PagesはMarkdownの実行環境です](008_prerequisite_github_pages.md)
-
----
-
-以上です。
+- [007.【Markdown基礎】：Markdownは実務ドキュメントの正形式です](007_prerequisite_markdown.md)
+- [008.【Markdown基礎】：GitHub PagesはMarkdownの実行環境です](008_prerequisite_github_pages.md)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 007.【Markdown基礎】Markdownは実務ドキュメントの正形式です

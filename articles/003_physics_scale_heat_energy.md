@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 003.【物理の世界観】🔥 熱とエネルギー｜fJから恒星まで全部つながっている

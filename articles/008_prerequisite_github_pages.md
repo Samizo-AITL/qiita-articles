@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 008.【Markdown基礎】GitHub PagesはMarkdownの実行・確認環境です

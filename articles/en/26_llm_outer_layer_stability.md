@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 26. Why Systems Become Stable When LLMs Are Placed Outside  
+# 26.【LLM Architecture】 Why Systems Become Stable When LLMs Are Placed Outside  
 ## How to Build Structures That Do Not Break
 
 tags: [LLM, AI, Design, Mermaid]

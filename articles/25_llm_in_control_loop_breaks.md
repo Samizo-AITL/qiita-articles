@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 25. LLMを制御ループに入れるとどう壊れるか ― 構造で見る失敗パターン
+# 25. 【LLM設計】LLMを制御ループに入れるとどう壊れるか ― 構造で見る失敗パターン
 tags: [LLM, AI, 設計, Mermaid]
 
 ---

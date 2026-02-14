@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 001.【物理の世界観】🌌 距離と時間｜Å・nm・km・光年を同じ軸で踏み抜く

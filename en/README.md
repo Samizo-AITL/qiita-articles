@@ -94,6 +94,17 @@ qiita-articles/
 
 ---
 
+## 🧱 Markdown / GitHub Pages Prerequisites
+
+| No. | Title | Link |
+|---:|---|---|
+| 007 | 【Markdown Basics】Markdown Is the Standard Format for Practical Documents | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/007_prerequisite_markdown.html) |
+| 008 | 【Markdown Basics】GitHub Pages Is the Execution and Validation Environment for Markdown | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/008_prerequisite_github_pages.html) |
+| 009 | 【Markdown Basics】_config.yml and style.css Are Document Specifications | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/009_prerequisite_config_style.html) |
+
+---
+---
+
 ## 📘 Qiita-Published Articles (No.01–)
 
 ---

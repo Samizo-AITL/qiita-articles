@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 24. Understanding LLMs by Structure  
+# 24. 【LLM Architecture】Understanding LLMs by Structure  
 ## Why They Make Us Feel Like We “Understand”
 
 tags: [LLM, AI, Design, Mermaid]

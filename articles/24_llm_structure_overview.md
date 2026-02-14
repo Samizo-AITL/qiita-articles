@@ -3,7 +3,7 @@ layout: default
 title: Qiita Articles
 ---
 
-# 24. LLMのからくりを構造で見る ― なぜ分かった気になるのか
+# 24. 【LLM設計】LLMのからくりを構造で見る ― なぜ分かった気になるのか
 tags: [LLM, AI, 設計, Mermaid]
 
 ---

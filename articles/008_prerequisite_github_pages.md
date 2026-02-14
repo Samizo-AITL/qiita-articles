@@ -56,9 +56,5 @@ GitHub Pagesを基準にすることで、これらを回避できます。
 
 ## 🔗 関連前提記事
 
-- [前提基礎知識：Markdownは実務ドキュメントの正形式です](007_prerequisite_markdown.md)
-- [前提基礎知識：_config.ymlとstyle.cssは文書仕様です](009_prerequisite_config_style.md)
-
----
-
-以上です。
+- [007.【Markdown基礎】：Markdownは実務ドキュメントの正形式です](007_prerequisite_markdown.md)
+- [009.【Markdown基礎】：_config.ymlとstyle.cssは文書仕様です](009_prerequisite_config_style.md)

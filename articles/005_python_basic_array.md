@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 005.【Python基礎】 まとめて計算する

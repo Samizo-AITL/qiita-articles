@@ -236,6 +236,16 @@ qiita-articles/
 
 ---
 
+## 🧨🛠 LLM暴走（事例・検証・対策）
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 46 | 【LLM暴走:事例】LLMが「当たり前」を技術記事にしてしまった失敗例 | [link](https://samizo-aitl.github.io/qiita-articles/articles/46_llm_failure_obvious_not_value.html) |
+| 47 | 【LLM暴走:検証】なぜLLMは価値の低いテーマを選びやすいのか | [link](https://samizo-aitl.github.io/qiita-articles/articles/47_llm_theme_selection_problem_verification.html) |
+| 48 | 【LLM暴走:対策】LLMを使っても技術記事を難しくしないための実務ルール | [link](https://samizo-aitl.github.io/qiita-articles/articles/48_llm_article_quality_control_rules.html) |
+
+---
+
 ## 🧪 自由記事 (No.901-)
 
 ---

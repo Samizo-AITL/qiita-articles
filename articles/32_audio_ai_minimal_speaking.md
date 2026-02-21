@@ -184,7 +184,3 @@ https://samizo-aitl.github.io/qiita-articles/demos/audio-fsm-minimal/
 
 次は **地獄回**。  
 **割り込み**をやる。
-
----
-
-（GitHub上のMarkdownを正本とし、Qiitaには抜粋・調整して投稿）

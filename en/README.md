@@ -243,9 +243,9 @@ qiita-articles/
 
 | No. | Title | Link |
 |---:|---|---|
-| 46 | 【LLM Runaway: Case】How an LLM Turned an “Obvious Fact” into a Useless Tech Article | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/46_llm_failure_obvious_not_value_en.html) |
-| 47 | 【LLM Runaway: Analysis】Why LLMs Tend to Choose Low-Value Topics | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/47_llm_theme_selection_problem_verification_en.html) |
-| 48 | 【LLM Runaway: Countermeasures】Practical Rules to Keep LLM-Written Tech Articles Simple | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/48_llm_article_quality_control_rules_en.html) |
+| 46 | 【LLM Runaway: Case】How an LLM Turned an “Obvious Fact” into a Useless Tech Article | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/46_llm_failure_obvious_not_value.html) |
+| 47 | 【LLM Runaway: Analysis】Why LLMs Tend to Choose Low-Value Topics | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/47_llm_theme_selection_problem_verification.html) |
+| 48 | 【LLM Runaway: Countermeasures】Practical Rules to Keep LLM-Written Tech Articles Simple | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/48_llm_article_quality_control_rules.html) |
 
 ---
 

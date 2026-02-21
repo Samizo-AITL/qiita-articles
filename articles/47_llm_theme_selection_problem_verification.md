@@ -1,9 +1,11 @@
 ---
-title: "【検証】なぜLLMは価値の低いテーマを選びやすいのか"
-emoji: "🔍"
-type: "tech"
+layout: default
+title: qiita-articles
+---
+
+# 47. 【LLM暴走:検証】🔍 なぜLLMは価値の低いテーマを選びやすいのか"
 topics: ["LLM", "Qiita", "技術記事", "検証"]
-published: true
+
 ---
 
 ## 概要

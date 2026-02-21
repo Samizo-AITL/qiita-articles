@@ -201,7 +201,3 @@ https://samizo-aitl.github.io/qiita-articles/demos/audio-fsm-interrupt/
 
 次でようやく  
 **LLMが戻ってくる**。
-
----
-
-（GitHub上のMarkdownを正本とし、Qiitaには抜粋・調整して投稿）

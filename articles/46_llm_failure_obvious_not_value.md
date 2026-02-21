@@ -3,12 +3,9 @@ layout: default
 title: qiita-articles
 ---
 
----
-title: "【事例】LLMが「当たり前」を技術記事にしてしまった失敗例"
-emoji: "🧨"
-type: "tech"
+# 46. 【LLM暴走:事例】🧨 LLMが「当たり前」を技術記事にしてしまった失敗例
 topics: ["LLM", "Qiita", "技術記事", "失敗談"]
-published: true
+
 ---
 
 ## 概要

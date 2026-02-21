@@ -218,7 +218,3 @@ https://samizo-aitl.github.io/qiita-articles/demos/audio-fsm-visual/
 
 次は **ちゃんと音が出る**。  
 ただし、**FSMの言うことを聞く音だけ**。
-
----
-
-（GitHub上のMarkdownを正本とし、Qiitaには抜粋・調整して投稿）

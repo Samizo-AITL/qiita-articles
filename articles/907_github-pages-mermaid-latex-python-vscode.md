@@ -1,15 +1,11 @@
 ---
-title: "【907】生成AIで「技術スタック宣伝画像」を作る：GitHub×Pages×Mermaid×LaTeX×Python×VSCode（プロンプト公開）"
-tags:
-  - 生成AI
-  - PromptEngineering
-  - GitHub
-  - GitHubPages
-  - Mermaid
-  - LaTeX
-  - Python
-  - VSCode
-private: false
+layout: default
+title: qiita-articles
+---
+
+# 907. 生成AIで「技術スタック宣伝画像」を作る：GitHub×Pages×Mermaid×LaTeX×Python×VSCode（プロンプト公開）
+topics: ["生成AI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid", "LaTeX",  "Python", "VSCode"]
+
 ---
 
 ![GitHub Pages Mermaid LaTeX Python VSCode](../assets/images/900/900_github-pages-mermaid-latex-python-vscode.png)

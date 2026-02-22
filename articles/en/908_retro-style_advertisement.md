@@ -4,7 +4,7 @@ title: qiita-articles
 ---
 
 # 908.【Generative AI】Creating a “Kansai TV Shopping–Style” Tech Stack Promo Image 
-Character-Driven Prompt Engineering (Practical Example)
+## Character-Driven Prompt Engineering (Practical Example)
 
 topics: ["GenerativeAI", "PromptEngineering", "GitHub", "GitHubPages", "Python", "VSCode"]
 

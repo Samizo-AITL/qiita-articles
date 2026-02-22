@@ -236,16 +236,6 @@ qiita-articles/
 
 ---
 
-## 🧨🛠 LLM暴走（事例・検証・対策）
-
-| No. | タイトル | リンク |
-|---:|---|---|
-| 46 | 【LLM暴走:事例】LLMが「当たり前」を技術記事にしてしまった失敗例 | [link](https://samizo-aitl.github.io/qiita-articles/articles/46_llm_failure_obvious_not_value.html) |
-| 47 | 【LLM暴走:検証】なぜLLMは価値の低いテーマを選びやすいのか | [link](https://samizo-aitl.github.io/qiita-articles/articles/47_llm_theme_selection_problem_verification.html) |
-| 48 | 【LLM暴走:対策】LLMを使っても技術記事を難しくしないための実務ルール | [link](https://samizo-aitl.github.io/qiita-articles/articles/48_llm_article_quality_control_rules.html) |
-
----
-
 ## 🧪 自由記事 (No.901-)
 
 ---
@@ -257,6 +247,16 @@ qiita-articles/
 | 901 | 【SkyEdge】差別化を仕様で固定する | [link](https://samizo-aitl.github.io/qiita-articles/articles/901_skyedge_powerline_inspection_spec.html) |
 | 902 | 【SkyEdge】1フライトV–I予算を切る | [link](https://samizo-aitl.github.io/qiita-articles/articles/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】CMOS×レンズ×撮影距離のトレードオフ | [link](https://samizo-aitl.github.io/qiita-articles/articles/903_skyedge_cmos_lens_distance_tradeoff.html) |
+
+---
+
+## 🧨🛠 LLM暴走（事例・検証・対策）
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 904 | 【LLM暴走:事例】LLMが「当たり前」を技術記事にしてしまった失敗例 | [link](https://samizo-aitl.github.io/qiita-articles/articles/904_llm_failure_obvious_not_value.html) |
+| 905 | 【LLM暴走:検証】なぜLLMは価値の低いテーマを選びやすいのか | [link](https://samizo-aitl.github.io/qiita-articles/articles/905_llm_theme_selection_problem_verification.html) |
+| 906 | 【LLM暴走:対策】LLMを使っても技術記事を難しくしないための実務ルール | [link](https://samizo-aitl.github.io/qiita-articles/articles/906_llm_article_quality_control_rules.html) |
 
 ---
 

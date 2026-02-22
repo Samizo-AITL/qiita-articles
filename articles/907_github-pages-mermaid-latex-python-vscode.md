@@ -4,7 +4,7 @@ title: qiita-articles
 ---
 
 # 907. 【生成AI活用】「技術スタック宣伝画像」を作る  
-GitHub × Pages × Mermaid × LaTeX × Python × VSCode（プロンプト公開）
+**GitHub × Pages × Mermaid × LaTeX × Python × VSCode（プロンプト公開）**
 
 topics: ["生成AI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid", "LaTeX", "Python", "VSCode"]
 

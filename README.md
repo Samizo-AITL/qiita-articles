@@ -265,6 +265,7 @@ qiita-articles/
 | No. | タイトル | リンク |
 |---:|---|---|
 | 907 | 【生成AI活用】技術スタック宣伝画像を作る：GitHub×Pages×Mermaid×LaTeX×Python×VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/907_github-pages-mermaid-latex-python-vscode.html) |
+| 908 | 生成AIで「関西テレビ通販ノリ」の技術スタック宣伝画像を作る｜キャラ指定プロンプト実例 | [link](https://samizo-aitl.github.io/qiita-articles/articles/908_retro-style_advertisement.html) |
 
 ---
 

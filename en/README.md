@@ -239,16 +239,6 @@ qiita-articles/
 
 ---
 
-## 🧨🛠 LLM Runaway (Case / Analysis / Countermeasures)
-
-| No. | Title | Link |
-|---:|---|---|
-| 46 | 【LLM Runaway: Case】How an LLM Turned an “Obvious Fact” into a Useless Tech Article | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/46_llm_failure_obvious_not_value.html) |
-| 47 | 【LLM Runaway: Analysis】Why LLMs Tend to Choose Low-Value Topics | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/47_llm_theme_selection_problem_verification.html) |
-| 48 | 【LLM Runaway: Countermeasures】Practical Rules to Keep LLM-Written Tech Articles Simple | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/48_llm_article_quality_control_rules.html) |
-
----
-
 ## 🧪 Independent Articles (No.901–)
 
 ---
@@ -260,6 +250,16 @@ qiita-articles/
 | 901 | 【SkyEdge】Locking Differentiation Through Fixed Specifications | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/901_skyedge_powerline_inspection_spec.html) |
 | 902 | 【SkyEdge】Defining the Per-Flight V–I Budget | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】Trade-offs Among CMOS Sensor, Lens, and Shooting Distance | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html) |
+
+---
+
+## 🧨🛠 LLM Runaway (Case / Analysis / Countermeasures)
+
+| No. | Title | Link |
+|---:|---|---|
+| 904 | 【LLM Runaway: Case】How an LLM Turned an “Obvious Fact” into a Useless Tech Article | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/904_llm_failure_obvious_not_value.html) |
+| 905 | 【LLM Runaway: Analysis】Why LLMs Tend to Choose Low-Value Topics | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/905_llm_theme_selection_problem_verification.html) |
+| 906 | 【LLM Runaway: Countermeasures】Practical Rules to Keep LLM-Written Tech Articles Simple | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/906_llm_article_quality_control_rules.html) |
 
 ---
 

@@ -9,7 +9,7 @@ topics: ["GenerativeAI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid"
 
 ---
 
-![Zhuge Liang summoning the southeastern wind and promoting the tech stack](../assets/images/900/909_Zhuge-wind.png)
+![Zhuge Liang summoning the southeastern wind and promoting the tech stack](../../assets/images/900/909_Zhuge-wind.png)
 
 ## 📌 Purpose of This Article
 

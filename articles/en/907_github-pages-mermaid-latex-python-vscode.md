@@ -10,7 +10,7 @@ topics: ["GenerativeAI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid"
 
 ---
 
-![GitHub Pages Mermaid LaTeX Python VSCode](../assets/images/900/900_github-pages-mermaid-latex-python-vscode.png)
+![GitHub Pages Mermaid LaTeX Python VSCode](.../assets/images/900/900_github-pages-mermaid-latex-python-vscode.png)
 
 ## 🎯 Purpose of this article
 

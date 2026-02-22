@@ -12,7 +12,7 @@ tags:
 private: false
 ---
 
-![GitHub Pages Mermaid LaTeX Python VSCode](/qiita-articles/assets/images/900/900_github-pages-mermaid-latex-python-vscode.png)
+![GitHub Pages Mermaid LaTeX Python VSCode](../assets/images/900/900_github-pages-mermaid-latex-python-vscode.png)
 
 ## この記事のねらい
 

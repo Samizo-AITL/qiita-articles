@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 47. 【LLM Runaway: Analysis】🔍 Why LLMs Tend to Choose Low-Value Topics
+# 905. 【LLM Runaway: Analysis】🔍 Why LLMs Tend to Choose Low-Value Topics
 topics: ["LLM", "Qiita", "Technical Writing", "Analysis"]
 
 ---

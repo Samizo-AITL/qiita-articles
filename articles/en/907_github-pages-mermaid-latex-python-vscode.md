@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 907. Creating Fun “Tech Stack Promo Images” with Generative AI  
+# 907.【Generative AI】 Creating Fun “Tech Stack Promo Images” 
 GitHub × Pages × Mermaid × LaTeX × Python × VSCode (Prompt Collection)
 
 topics: ["GenerativeAI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid", "LaTeX", "Python", "VSCode"]

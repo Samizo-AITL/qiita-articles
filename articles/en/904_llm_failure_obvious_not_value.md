@@ -89,4 +89,4 @@ The real criterion is not correctness, but:
 ---
 
 This English version is ready to be placed alongside the JP version  
-(e.g. `46_llm_failure_obvious_not_value_en.md`).
+(e.g. `904_llm_failure_obvious_not_value_en.md`).

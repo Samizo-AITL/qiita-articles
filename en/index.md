@@ -271,8 +271,8 @@ qiita-articles/
 
 | No. | Title | Link |
 |---:|---|---|
-| 907 | [Generative AI] Creating Tech Stack Promo Images: GitHub × Pages × Mermaid × LaTeX × Python × VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_github-pages-mermaid-latex-python-vscode.html) |
-| 908 | Creating a Kansai TV Shopping–Style Tech Stack Promo Image with Generative AI | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/908_retro-style_advertisement.html) |
+| 907 | 【Generative AI】 Creating Tech Stack Promo Images: GitHub × Pages × Mermaid × LaTeX × Python × VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_github-pages-mermaid-latex-python-vscode.html) |
+| 908 | 【Generative AI】 Creating a Kansai TV Shopping–Style Tech Stack Promo Image | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/908_retro-style_advertisement.html) |
 
 ---
 

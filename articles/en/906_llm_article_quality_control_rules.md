@@ -3,14 +3,14 @@ layout: default
 title: qiita-articles
 ---
 
-# 48. 【LLM Runaway: Countermeasures】🛠 Practical Rules to Keep LLM-Written Tech Articles Simple
+# 906. 【LLM Runaway: Countermeasures】🛠 Practical Rules to Keep LLM-Written Tech Articles Simple
 topics: ["LLM", "Qiita", "Operational Rules", "Technical Writing"]
 
 ---
 
 ## 🧩 Overview
 
-Based on the case study (46) and analysis (47),  
+Based on the case study (904) and analysis (905),  
 this article summarizes **practical rules to prevent technical articles from becoming unnecessarily complex when using LLMs**.
 
 These are not ideals or theory.  
@@ -82,4 +82,4 @@ These rules are effective in **any situation where LLMs are used for technical w
 ---
 
 This English version is intended to be placed alongside the Japanese version  
-(e.g. `48_llm_article_quality_control_rules_en.md`).
+(e.g. `906_llm_article_quality_control_rules_en.md`).

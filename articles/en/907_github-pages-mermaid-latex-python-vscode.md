@@ -4,7 +4,7 @@ title: qiita-articles
 ---
 
 # 907. Creating Fun “Tech Stack Promo Images” with Generative AI  
-GitHub × Pages × Mermaid × LaTeX × Python × VSCode (Prompt 공개)
+GitHub × Pages × Mermaid × LaTeX × Python × VSCode (Prompt Collection)
 
 topics: ["GenerativeAI", "PromptEngineering", "GitHub", "GitHubPages", "Mermaid", "LaTeX", "Python", "VSCode"]
 

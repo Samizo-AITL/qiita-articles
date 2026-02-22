@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 908. 生成AIで「関西テレビ通販ノリ」の技術スタック宣伝画像を作る｜キャラ指定プロンプト実例
+# 908. 【生成AI活用】「関西テレビ通販ノリ」の技術スタック宣伝画像を作る｜キャラ指定プロンプト実例
 topics: ["生成AI", "PromptEngineering", "GitHub", "GitHubPages", "Python", "VSCode"]
 
 ---

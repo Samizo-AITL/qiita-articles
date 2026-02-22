@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 46. 【LLM Runaway: Case】🧨 How an LLM Turned an “Obvious Fact” into a Useless Tech Article
+# 904. 【LLM Runaway: Case】🧨 How an LLM Turned an “Obvious Fact” into a Useless Tech Article
 topics: ["LLM", "Qiita", "Technical Writing", "Failure Case"]
 
 ---

@@ -265,6 +265,14 @@ qiita-articles/
 
 ---
 
+## 🎨🧪 生成AIで遊ぶ（プロンプト公開）
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 907 | 【生成AI活用】技術スタック宣伝画像を作る：GitHub×Pages×Mermaid×LaTeX×Python×VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/907_github-pages-mermaid-latex-python-vscode.html) |
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |

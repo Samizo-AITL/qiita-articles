@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 48. 【LLM暴走:対策】🛠 LLMを使っても技術記事を難しくしないための実務ルール
+# 906. 【LLM暴走:対策】🛠 LLMを使っても技術記事を難しくしないための実務ルール
 topics: ["LLM", "Qiita", "運用ルール", "技術記事"]
 
 ---

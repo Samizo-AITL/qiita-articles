@@ -263,6 +263,14 @@ qiita-articles/
 
 ---
 
+## 🎨🧪 Playing with Generative AI (Prompt Collection)
+
+| No. | Title | Link |
+|---:|---|---|
+| 907 | [Generative AI] Creating Tech Stack Promo Images: GitHub × Pages × Mermaid × LaTeX × Python × VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_github-pages-mermaid-latex-python-vscode.html) |
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |

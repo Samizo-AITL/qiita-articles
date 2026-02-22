@@ -73,4 +73,4 @@ These findings apply to **anyone using LLMs for technical writing**.
 ---
 
 This English version is intended to be placed alongside the Japanese version  
-(e.g. `47_llm_theme_selection_problem_verification_en.md`).
+(e.g. `905_llm_theme_selection_problem_verification_en.md`).

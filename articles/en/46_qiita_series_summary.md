@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 46. [Final] Summary of the Qiita Series and Future References 🏁
+# 46. 【Final】 Summary of the Qiita Series and Future References 🏁
 topics: ["Qiita", "GitHub", "Zenn", "Semiconductor", "Control"]
 
 ---

@@ -282,8 +282,8 @@ AIに貼るだけで遊べる、歴史エンタメ特化の戦国シミュレー
 
 | No. | シナリオ | リンク |
 |---:|---|---|
-| 910 | 川中島（1561）信玄 vs 謙信 | [link](https://samizo-aitl.github.io/qiita-articles/articles/910_rekiden_kawanakajima.html) |
-| 911 | 長篠（1575）騎馬 vs 鉄砲 | [link](https://samizo-aitl.github.io/qiita-articles/articles/911_rekiden_nagashino.html) |
+| 910 | 川中島の戦い（1561）信玄 vs 謙信 | [link](https://samizo-aitl.github.io/qiita-articles/articles/910_rekiden_kawanakajima.html) |
+| 911 | 長篠の戦い（1575）騎馬 vs 鉄砲 | [link](https://samizo-aitl.github.io/qiita-articles/articles/911_rekiden_nagashino.html) |
 | 912 | 中国大返し（1582）電撃行軍 | [link](https://samizo-aitl.github.io/qiita-articles/articles/912_rekiden_chugoku.html) |
 | 913 | 大坂の陣（1614–1615）最終決戦 | [link](https://samizo-aitl.github.io/qiita-articles/articles/913_rekiden_osaka.html) |
 

@@ -1,11 +1,9 @@
 ---
-title: "【Rekiden × 戦国AIシミュ】913 大坂の陣（1614–1615）"
-series: "Rekiden 戦国AIシミュレーション"
-number: 913
-period: "1614–1615 大坂の陣（冬・夏）"
+layout: default
+title: qiita-articles
 ---
 
-# 【Rekiden × 戦国AIシミュ】913 大坂の陣（1614–1615）🏯🔥  
+#  913.【Rekiden】 戦国AIシミュ 大坂の陣（1614–1615）🏯🔥  
 ## 籠城か、包囲か｜最終決戦シナリオ
 
 1614年。  

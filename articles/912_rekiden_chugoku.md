@@ -1,11 +1,9 @@
 ---
-title: "【Rekiden × 戦国AIシミュ】912 中国大返し（1582）"
-series: "Rekiden 戦国AIシミュレーション"
-number: 912
-period: "1582 中国大返し"
+layout: default
+title: qiita-articles
 ---
 
-# 【Rekiden × 戦国AIシミュ】912 中国大返し（1582）💨🔥  
+#  912.【Rekiden】戦国AIシミュ 中国大返し（1582）💨🔥  
 ## 走れ秀吉｜時間がすべてを決める電撃シナリオ
 
 1582年。  

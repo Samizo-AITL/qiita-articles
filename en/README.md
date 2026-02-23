@@ -239,6 +239,14 @@ qiita-articles/
 
 ---
 
+## 🏁 Final Article (Summary)
+
+| No. | Title | Link |
+|---:|---|---|
+| 46 | [Final] Summary of the Qiita Series and Future References | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/46_qiita_series_summary_en.html) |
+
+---
+
 ## 🧪 Independent Articles (No.901–)
 
 ---

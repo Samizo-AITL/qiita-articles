@@ -273,6 +273,23 @@ qiita-articles/
 
 ---
 
+## ⚔️🎮 Rekiden | Sengoku AI Simulation (Prompt 공개)
+
+A Sengoku-era, history-entertainment AI simulation series  
+designed to be played by **simply pasting prompts into AI**.  
+No analysis, no theory — just numbers, choices, and instant results.
+
+| No. | Scenario | Link |
+|---:|---|---|
+| 910 | Battle of Kawanakajima (1561) Shingen vs Kenshin | [link](https://samizo-aitl.github.io/qiita-articles/articles/910_rekiden_kawanakajima.html) |
+| 911 | Battle of Nagashino (1575) Cavalry vs Firearms | [link](https://samizo-aitl.github.io/qiita-articles/articles/911_rekiden_nagashino.html) |
+| 912 | The Great Retreat from Chugoku (1582) Lightning March | [link](https://samizo-aitl.github.io/qiita-articles/articles/912_rekiden_chugoku.html) |
+| 913 | Siege of Osaka (1614–1615) Final Battle | [link](https://samizo-aitl.github.io/qiita-articles/articles/913_rekiden_osaka.html) |
+
+👉 **All scenarios are playable by simply pasting them into AI**
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |

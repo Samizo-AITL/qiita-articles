@@ -75,7 +75,7 @@ qiita-articles/
 
 ---
 
-## 🧭 Fundamental Articles (No.001–)
+## 🧭 Fundamental Articles (No.001–) : Foundation articles for beginners, covering terminology and basic operations from the minimum required level.
 
 ---
 
@@ -109,7 +109,7 @@ qiita-articles/
 
 ---
 
-## 📘 Qiita-Published Articles (No.01–)
+## 📘 Qiita-Published Articles (No.01–) : Qiita-ready articles focused on immediately usable procedures and clear conclusions.
 
 ---
 
@@ -251,7 +251,7 @@ qiita-articles/
 
 ---
 
-## 🧪 Independent Articles (No.901–)
+## 🧪 Independent Articles (No.901–) : Pre-organized articles for recording experimental notes and work-in-progress trials.
 
 ---
 

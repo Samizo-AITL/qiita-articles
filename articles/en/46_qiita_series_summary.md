@@ -20,7 +20,7 @@ They are positioned as **introductory and foundational materials** that guide re
 
 The articles published on Qiita are intended as **foundational and overview-oriented content** for understanding the technical materials published on the official portal site:
 
-[https://samizo-aitl.github.io/](https://samizo-aitl.github.io/)
+[https://samizo-aitl.github.io/en/](https://samizo-aitl.github.io/en/)
 
 On Qiita, the focus is on presenting the overall picture and prerequisite knowledge.  
 More detailed and large-volume technical content is managed on other platforms.
@@ -32,7 +32,7 @@ More detailed and large-volume technical content is managed on other platforms.
 All Markdown sources of the Qiita articles, as well as supplementary articles not published on Qiita, are centrally managed in the following GitHub repository:
 
 - **qiita-articles**  
-  [https://samizo-aitl.github.io/qiita-articles](https://samizo-aitl.github.io/qiita-articles)
+  [https://samizo-aitl.github.io/qiita-articles/en/](https://samizo-aitl.github.io/qiita-articles/en/)
 
 This repository includes:
 
@@ -66,7 +66,7 @@ Zenn focuses on **more technically detailed or theme-specific content** compared
 The source files for Zenn articles are managed in the following repository:
 
 - **zenn-articles**  
-  [https://samizo-aitl.github.io/zenn-articles](https://samizo-aitl.github.io/zenn-articles)
+  [https://samizo-aitl.github.io/zenn-articles/en/](https://samizo-aitl.github.io/zenn-articles/en/)
 
 ---
 
@@ -74,7 +74,7 @@ The source files for Zenn articles are managed in the following repository:
 
 The official portal site:
 
-[https://samizo-aitl.github.io/](https://samizo-aitl.github.io/)
+[https://samizo-aitl.github.io/en/](https://samizo-aitl.github.io/en/)
 
 hosts technical materials that exceed what can reasonably be covered on Qiita or Zenn, focusing primarily on:
 

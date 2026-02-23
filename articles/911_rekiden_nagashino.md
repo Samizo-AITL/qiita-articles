@@ -1,11 +1,9 @@
 ---
-title: "【Rekiden × 戦国AIシミュ】911 長篠（1575）"
-series: "Rekiden 戦国AIシミュレーション"
-number: 911
-period: "1575 長篠・設楽原"
+layout: default
+title: qiita-articles
 ---
 
-# 【Rekiden × 戦国AIシミュ】911 長篠（1575）🔥🔫  
+#  911. 【Rekiden】戦国AIシミュ 長篠（1575）🔥🔫  
 ## 騎馬 🐎 vs 鉄砲 🔫｜突撃か、迎撃か
 
 1575年・長篠。  

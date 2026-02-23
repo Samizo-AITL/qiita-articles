@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 910.【Rekiden】戦国AIシミュ 川中島（1561）⚔️🔥  
+# 910.【Rekiden】川中島の戦い（1561）⚔️🔥  
 ## 信玄 🐯 vs 謙信 🐲｜AIに貼るだけで始まる最凶バトル
 
 1561年・川中島。  

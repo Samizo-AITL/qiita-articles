@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 #  46. 【最終回】Qiita連載の総括と今後の参照先について 🏁
+topics: ["Qiita", "GitHub", "Zenn", "半導体", "制御"]
+
+---
 
 本連載としてQiitaに投稿した記事は第45回までとし、本記事（第46回）をもって総括とします。
 

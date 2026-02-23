@@ -236,6 +236,14 @@ qiita-articles/
 
 ---
 
+## 🏁 最終回（総括）
+
+| No. | タイトル | リンク |
+|---:|---|---|
+| 46 | 【最終回】Qiita連載の総括と今後の参照先について | [link](https://samizo-aitl.github.io/qiita-articles/articles/46_qiita_series_summary.html) |
+
+---
+
 ## 🧪 自由記事 (No.901-)
 
 ---

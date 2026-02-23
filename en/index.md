@@ -277,7 +277,7 @@ qiita-articles/
 
 ---
 
-## ⚔️🎮 Rekiden | Sengoku AI Simulation (Prompt 공개)
+## ⚔️🎮 Rekiden | Sengoku AI Simulation (Prompt Collection)
 
 A Sengoku-era, history-entertainment AI simulation series  
 designed to be played by **simply pasting prompts into AI**.  

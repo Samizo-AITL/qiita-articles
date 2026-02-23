@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-#  913.【Rekiden】 戦国AIシミュ 大坂の陣（1614–1615）🏯🔥  
+#  913.【Rekiden】 大坂の陣（1614–1615）🏯🔥  
 ## 籠城か、包囲か｜最終決戦シナリオ
 
 1614年。  

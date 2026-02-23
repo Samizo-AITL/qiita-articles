@@ -281,10 +281,10 @@ No analysis, no theory — just numbers, choices, and instant results.
 
 | No. | Scenario | Link |
 |---:|---|---|
-| 910 | Battle of Kawanakajima (1561) Shingen vs Kenshin | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/910_rekiden_kawanakajima.html) |
-| 911 | Battle of Nagashino (1575) Cavalry vs Firearms | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/911_rekiden_nagashino.html) |
-| 912 | The Great Retreat from Chugoku (1582) Lightning March | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/912_rekiden_chugoku.html) |
-| 913 | Siege of Osaka (1614–1615) Final Battle | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/913_rekiden_osaka.html) |
+| 910 | 【Rekiden】 Battle of Kawanakajima (1561) Shingen vs Kenshin | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/910_rekiden_kawanakajima.html) |
+| 911 | 【Rekiden】 Battle of Nagashino (1575) Cavalry vs Firearms | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/911_rekiden_nagashino.html) |
+| 912 | 【Rekiden】 The Great Retreat from Chugoku (1582) Lightning March | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/912_rekiden_chugoku.html) |
+| 913 | 【Rekiden】 Siege of Osaka (1614–1615) Final Battle | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/913_rekiden_osaka.html) |
 
 👉 **All scenarios are playable by simply pasting them into AI**
 

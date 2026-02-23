@@ -32,7 +32,7 @@ More detailed and large-volume technical content is managed on other platforms.
 All Markdown sources of the Qiita articles, as well as supplementary articles not published on Qiita, are centrally managed in the following GitHub repository:
 
 - **qiita-articles**  
-  [https://github.com/Samizo-AITL/qiita-articles](https://github.com/Samizo-AITL/qiita-articles)
+  [https://samizo-aitl.github.io/qiita-articles](https://samizo-aitl.github.io/qiita-articles)
 
 This repository includes:
 
@@ -66,7 +66,7 @@ Zenn focuses on **more technically detailed or theme-specific content** compared
 The source files for Zenn articles are managed in the following repository:
 
 - **zenn-articles**  
-  [https://github.com/Samizo-AITL/zenn-articles](https://github.com/Samizo-AITL/zenn-articles)
+  [https://samizo-aitl.github.io/zenn-articles](https://samizo-aitl.github.io/zenn-articles)
 
 ---
 

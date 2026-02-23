@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-#  911. 【Rekiden】戦国AIシミュ 長篠（1575）🔥🔫  
+#  911. 【Rekiden】長篠の戦い（1575）🔥🔫  
 ## 騎馬 🐎 vs 鉄砲 🔫｜突撃か、迎撃か
 
 1575年・長篠。  

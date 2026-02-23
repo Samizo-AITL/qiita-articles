@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-#  912.【Rekiden】 中国大返し（1582）💨🔥  
+#  912. 【Rekiden】 中国大返し（1582）💨🔥  
 ## 走れ秀吉｜時間がすべてを決める電撃シナリオ
 
 1582年。  

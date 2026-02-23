@@ -29,7 +29,7 @@ Qiitaでは全体像の把握を重視し、分量や詳細が必要な内容に
 Qiitaに投稿した全記事のMarkdown原稿、およびQiita未投稿の補足記事は、以下のGitHubリポジトリで一元管理しています。
 
 - **qiita-articles**  
-  [https://github.com/Samizo-AITL/qiita-articles](https://github.com/Samizo-AITL/qiita-articles)
+  [https://samizo-aitl.github.io/qiita-articles](https://samizo-aitl.github.io/qiita-articles)
 
 本リポジトリには、以下の内容を含めています。
 
@@ -63,11 +63,11 @@ Zennでは、Qiitaよりも **技術寄りの内容** や、特定テーマに�
 Zenn記事の原稿は、以下のリポジトリで管理しています。
 
 - **zenn-articles**  
-  [https://github.com/Samizo-AITL/zenn-articles](https://github.com/Samizo-AITL/zenn-articles)
+  [https://samizo-aitl.github.io/zenn-articles](https://samizo-aitl.github.io/zenn-articles)
 
 ---
 
-## 🏗 公式ポータル（本チャン）について
+## 🏗 公式ポータル について
 
 公式ポータルサイト  
 [https://samizo-aitl.github.io/](https://samizo-aitl.github.io/)  

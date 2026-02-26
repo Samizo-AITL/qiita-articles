@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 --- 
 
-# 🧩📚 qiita-articles
+# 📜 qiita-articles
 
 This repository manages technical articles published on **Qiita**  
 with **GitHub as the single source of truth (SSOT)** for the original manuscripts.

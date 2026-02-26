@@ -1,4 +1,4 @@
-# 🧩📚　qiita-articles
+# 📜 qiita-articles
 
 このリポジトリは、Qiitaに投稿した技術記事を  
 **「原稿（一次情報）」としてGitHubで管理するためのリポジトリ**です。

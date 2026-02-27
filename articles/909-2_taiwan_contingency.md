@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 909-2. 【生成AI活用】台湾有事と高市閣下
+# 909-2. 【生成AI活用】台湾有事
 
 topics: ["生成AI"]
 

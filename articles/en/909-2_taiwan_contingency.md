@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 909-2. 【Generative AI Use】❓❓❓
+# 909-2. 【Generative AI Use】Prompt Record for AI Image Generation Including Flags and Military Elements
 
 topics: ["Generative AI"]
 

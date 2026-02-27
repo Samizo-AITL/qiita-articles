@@ -257,6 +257,7 @@ qiita-articles/
 | 901 | 【SkyEdge】Locking Differentiation Through Fixed Specifications | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/901_skyedge_powerline_inspection_spec.html) |
 | 902 | 【SkyEdge】Defining the Per-Flight V–I Budget | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/902_skyedge_powerline_vi_budget.html) |
 | 903 | 【SkyEdge】Trade-offs Among CMOS Sensor, Lens, and Shooting Distance | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/903_skyedge_cmos_lens_distance_tradeoff.html) |
+| 909-2 | 【Generative AI】Prompt Record for AI Image Generation Including Flags and Military Elements | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/909-2_taiwan_contingency.html) |
 
 ---
 

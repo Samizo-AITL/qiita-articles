@@ -1,17 +1,12 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 36.【Physical AI Design】💥 Why Directly Connecting an LLM Always Fails  
 ## Latency, Non-Determinism, and Loss of Control
 
-tags:
-  - Physical AI
-  - LLM
-  - Control Engineering
-  - FSM
-  - System Design
+tags: Physical AI, LLM, Control Engineering, FSM, System Design
 
 ---
 

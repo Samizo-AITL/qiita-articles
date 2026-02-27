@@ -4,12 +4,8 @@ title: qiita-articles
 ---
 
 # 38.【フィジカルAI設計】🧪 AITLは本当に壊れないのか｜PIDのみ vs AITLを並べて見せる
-tags:
-  - フィジカルAI
-  - AITL
-  - デモ
-  - 制御工学
-  - 可視化
+tags: フィジカルAI, AITL, デモ, 制御工学, 可視化
+
 ---
 
 ## 🧪 AITLは本当に壊れないのか  

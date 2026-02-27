@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 38.【Physical AI Design】🧪 Is AITL Really Robust?｜PID Only vs AITL Side-by-Side
@@ -10,7 +10,6 @@ tags:
   - Demo
   - ControlEngineering
   - Visualization
-
 ---
 
 ## 🧪 Is AITL Really Robust?  
@@ -31,6 +30,23 @@ In this article,
 **no new theory is introduced.**
 
 We show **only the difference in behavior**.
+
+---
+
+## ℹ️ What “AITL” Means in This Article
+
+In this article, **AITL** refers to the following configuration:
+
+- **PID for real-time control**
+- **FSM for explicit state management and mode switching**
+- LLM is **not** part of the control loop
+
+That is,
+
+> **AITL = PID + FSM (as used here)**
+
+All comparisons below are limited to  
+**whether an FSM exists or not**.
 
 ---
 
@@ -152,8 +168,7 @@ Physical AI systems become **far more robust**.
 
 The full design framework and additional demos are collected here:
 
-**Samizo-AITL Portal**  
-https://samizo-aitl.github.io/
+[Samizo-AITL Portal](https://samizo-aitl.github.io/)
 
 This is not promotion.  
 It is an **index of the design system**.

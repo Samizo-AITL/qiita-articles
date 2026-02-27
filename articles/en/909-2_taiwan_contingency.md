@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 909-2. 【Generative AI Use】Taiwan Contingency and Minister Takaichi
+# 909-2. 【Generative AI Use】❓❓❓
 
 topics: ["Generative AI"]
 

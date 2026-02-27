@@ -9,7 +9,7 @@ topics: ["Generative AI"]
 
 ---
 
-![Taiwan Contingency and Minister Takaichi](../assets/images/900/takaichi.png)
+![Taiwan Contingency and Minister Takaichi](../../assets/images/900/takaichi.png)
 
 ## Overview
 

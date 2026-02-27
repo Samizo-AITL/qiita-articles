@@ -282,7 +282,7 @@ qiita-articles/
 | 907 | 【Generative AI】 Creating Tech Stack Promo Images: GitHub × Pages × Mermaid × LaTeX × Python × VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_github-pages-mermaid-latex-python-vscode.html) |
 | 908 | 【Generative AI】 Creating a Kansai TV Shopping–Style Tech Stack Promo Image | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/908_retro-style_advertisement.html) |
 | 909 | 【Generative AI】Zhuge Liang Summons the Southeastern Wind at Red Cliffs and Proclaims the Tech Stack as “THE BEST” | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/909_Zhuge-wind.html) |
-| 909-2 | 【Generative AI】Prompt Record for AI Image Generation Including Flags and Military Elements | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/909-2_taiwan_contingency.html) |
+| 909-2 | 【Generative AI】Prompt Record for AI Image Generation Including Flags and Military Elements | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/909-2_taiwan_contingency) |
 
 ---
 

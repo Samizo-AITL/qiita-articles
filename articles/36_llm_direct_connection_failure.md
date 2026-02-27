@@ -1,15 +1,10 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 36.【フィジカルAI設計】💥 なぜLLM直結は失敗するのか｜遅延・非決定性・制御不能
-tags:
-  - フィジカルAI
-  - LLM
-  - 制御工学
-  - FSM
-  - システム設計
+tags: フィジカルAI, LLM, 制御工学, FSM,システム設計
 
 ---
 

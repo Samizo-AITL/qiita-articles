@@ -4,12 +4,8 @@ title: qiita-articles
 ---
 
 # 38.【Physical AI Design】🧪 Is AITL Really Robust?｜PID Only vs AITL Side-by-Side
-tags:
-  - PhysicalAI
-  - AITL
-  - Demo
-  - ControlEngineering
-  - Visualization
+tags: PhysicalAI, AITL, Demo, ControlEngineering, Visualization
+
 ---
 
 ## 🧪 Is AITL Really Robust?  

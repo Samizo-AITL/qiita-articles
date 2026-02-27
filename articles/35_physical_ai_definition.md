@@ -1,15 +1,10 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 35.【フィジカルAI設計】🤖⚙️ フィジカルAIとは何か｜なぜAIは現実世界に出ると壊れるのか
-tags:
-  - フィジカルAI
-  - PhysicalAI
-  - 設計思想
-  - 制御工学
-  - LLM
+tags: フィジカルAI, PhysicalAI, 設計思想, 制御工学, LLM
 
 ---
 

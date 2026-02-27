@@ -1,17 +1,12 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 37.【Physical AI Design】🏗️ How to Build Systems That Don’t Break  
 ## The Three-Layer Architecture: PID × FSM × LLM
 
-tags:
-  - Physical AI
-  - AITL
-  - PID Control
-  - FSM
-  - Architecture Design
+tags: Physical AI, AITL, PID Control, FSM, Architecture Design
 
 ---
 

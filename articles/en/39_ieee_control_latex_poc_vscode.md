@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 39. 【IEEE Paper】 Preparing the LaTeX Environment for an IEEE Control Systems Paper

@@ -1,17 +1,12 @@
 ---
 layout: default
-title: Qiita Articles
+title: qiita-articles
 ---
 
 # 35.【Physical AI Design】🤖⚙️ What Is Physical AI?  
 ## Why AI Breaks When It Enters the Real World
 
-tags:
-  - Physical AI
-  - Embodied AI
-  - Design Philosophy
-  - Control Engineering
-  - LLM
+tags: Physical AI, Embodied AI, Design Philosophy, Control Engineering, LLM
 
 ---
 

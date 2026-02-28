@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# 909-2. 【生成AI活用】旗・軍事表現を含むAI画像生成プロンプトログ
+# Z01. 【生成AI活用】旗・軍事表現を含むAI画像生成プロンプトログ
 
 topics: ["生成AI"]
 

@@ -9,5 +9,5 @@ topics: ["生成AI"]
 
 ---
 
-![](../assets/images/900/everything-went-wrong.png)
+![everything-went-wrong.png](../assets/images/900/everything-went-wrong.png)
 

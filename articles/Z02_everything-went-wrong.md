@@ -3,7 +3,7 @@ layout: default
 title: qiita-articles
 ---
 
-# Z01. 【生成AI活用】
+# Z02. 【生成AI活用】
 
 topics: ["生成AI"]
 

@@ -11,13 +11,13 @@ topics: ["Generative AI"]
 
 ## Source Image
 
-![Snake in the Eagle’s Shadow (source)](../images/jackie_snake.png)
+![Snake in the Eagle’s Shadow (source)](../../assets/images/900/915_jackie_snake.png)
 
 ---
 
 ## Generated Image
 
-![OpenLane Procession (derived from Snake in the Eagle’s Shadow)](../images/openlane_jackie_snake.png)
+![OpenLane Procession (derived from Snake in the Eagle’s Shadow)](../../assets/images/900/915_openlane_jackie_snake.png)
 
 ---
 

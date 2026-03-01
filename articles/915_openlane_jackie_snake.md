@@ -11,13 +11,13 @@ topics: ["生成AI"]
 
 ## 生成元画像
 
-![蛇拳（生成元）](./images/jackie_snake.png)
+![蛇拳（生成元）](../assets/images/900/915_jackie_snake.png)
 
 ---
 
 ## 生成画像
 
-![OpenLane行列（蛇拳派生）](./images/openlane_jackie_snake.png)
+![OpenLane行列（蛇拳派生）](../assets/images/900/915_openlane_jackie_snake.png)
 
 ---
 

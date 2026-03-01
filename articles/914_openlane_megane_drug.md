@@ -11,13 +11,13 @@ topics: ["生成AI"]
 
 ## 生成元画像
 
-![メガネドラッグ（生成元）](./images/megane_drug.png)
+![メガネドラッグ（生成元）](../assets/images/900/914_megane_drug.png)
 
 ---
 
 ## 生成画像
 
-![OpenLane行列](./images/openlane_megane_drug.png)
+![OpenLane行列](../assets/images/900/914_openlane_megane_drug.png)
 
 ---
 

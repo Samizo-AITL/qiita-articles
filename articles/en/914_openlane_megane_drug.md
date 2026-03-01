@@ -11,13 +11,13 @@ topics: ["Generative AI"]
 
 ## Source Image
 
-![Megane Drug (source image)](../images/megane_drug.png)
+![Megane Drug (source image)](../../assets/images/900/914_megane_drug.png)
 
 ---
 
 ## Generated Image
 
-![OpenLane March](../images/openlane_megane_drug.png)
+![OpenLane March](../../assets/images/900/914_openlane_megane_drug.png)
 
 ---
 

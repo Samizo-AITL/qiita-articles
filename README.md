@@ -275,8 +275,6 @@ qiita-articles/
 | 907 | 【生成AI活用】技術スタック宣伝画像を作る：GitHub×Pages×Mermaid×LaTeX×Python×VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/907_github-pages-mermaid-latex-python-vscode.html) |
 | 908 | 【生成AI活用】「関西テレビ通販ノリ」の技術スタック宣伝画像を作る｜キャラ指定プロンプト実例 | [link](https://samizo-aitl.github.io/qiita-articles/articles/908_retro-style_advertisement.html) |
 | 909 | 【生成AI活用】諸葛亮が赤壁で東南の風を呼び、技術スタックを「最高」と宣伝する | [link](https://samizo-aitl.github.io/qiita-articles/articles/909_Zhuge-wind.html) |
-| 914 | 【生成AI活用】昭和CM「メガネドラッグ」を基にした象徴的ビジュアル生成ログ | [link](https://samizo-aitl.github.io/qiita-articles/articles/914_openlane_megane_drug.html) |
-| 915 | 【生成AI活用】映画ポスター「蛇拳」を基にした象徴的ビジュアル生成ログ | [link](https://samizo-aitl.github.io/qiita-articles/articles/915_openlane_jackie_snake.html) |
 
 ---
 

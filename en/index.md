@@ -282,8 +282,6 @@ qiita-articles/
 | 907 | 【Generative AI】 Creating Tech Stack Promo Images: GitHub × Pages × Mermaid × LaTeX × Python × VSCode | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/907_github-pages-mermaid-latex-python-vscode.html) |
 | 908 | 【Generative AI】 Creating a Kansai TV Shopping–Style Tech Stack Promo Image | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/908_retro-style_advertisement.html) |
 | 909 | 【Generative AI】Zhuge Liang Summons the Southeastern Wind at Red Cliffs and Proclaims the Tech Stack as “THE BEST” | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/909_Zhuge-wind.html) |
-| 914 | 【Generative AI】Image Generation Log Based on the Showa-Era CM “Megane Drug" | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/914_openlane_megane_drug.html) |
-| 915 | 【Generative AI】Symbolic Visual Generation Log Based on the Film Poster “Snake in the Eagle’s Shadow” | [link](https://samizo-aitl.github.io/qiita-articles/articles/en/915_openlane_jackie_snake.html) |
 
 ---
 
